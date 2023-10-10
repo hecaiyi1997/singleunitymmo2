@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 299645539
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7dcfa2f65994134a581c673e2ea0cca7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/sound/role/girl_skill_120010.ogg
+- Assets/AssetBundleRes/sound/role/boy_skill_110011.ogg
+- Assets/AssetBundleRes/sound/role/girl_skill_120011.ogg
+- Assets/AssetBundleRes/sound/role/girl_skill_120012.ogg
+- Assets/AssetBundleRes/sound/role/boy_atk4.ogg
+- Assets/AssetBundleRes/sound/role/boy_skill_110010.ogg
+- Assets/AssetBundleRes/sound/role/girl_atk4.ogg
+- Assets/AssetBundleRes/sound/role/girl_skill_120013.ogg
+- Assets/AssetBundleRes/sound/role/boy_atk1.ogg
+- Assets/AssetBundleRes/sound/role/boy_skill_110013.ogg
+- Assets/AssetBundleRes/sound/role/boy_skill_110012.ogg
+- Assets/AssetBundleRes/sound/role/girl_atk1.ogg
+- Assets/AssetBundleRes/sound/role/boy_atk2.ogg
+- Assets/AssetBundleRes/sound/role/girl_atk3.ogg
+- Assets/AssetBundleRes/sound/role/boy_atk3.ogg
+- Assets/AssetBundleRes/sound/role/girl_atk2.ogg
+Dependencies: []

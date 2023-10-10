@@ -5,6 +5,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
 using UnityEngine;
+using UnityMMO.Component;
 
 namespace UnityMMO
 {
@@ -110,6 +111,7 @@ public class SkillManager
     private static int GetAttackID(int career, int comboIndex)
     {
         //技能id：十万位是类型1角色，2怪物，3NPC，万位为职业，个十百位随便用
+
         return 100000+career*10000+comboIndex;
     }
 
@@ -154,6 +156,7 @@ public class SkillManager
 
     public void CastSkill(int skillID)
     {
+        Debug.Log("CastSkillCastSkillCastSkill");
         // var skillID = GetSkillIDByIndex(skillIndex);
         var isInCD = IsSkillInCD(skillID);
         if (isInCD)
@@ -161,7 +164,18 @@ public class SkillManager
             XLuaFramework.CSLuaBridge.GetInstance().CallLuaFuncStr(GlobalEvents.MessageShow, "技能冷却中...");
             return;
         }
-        var roleGameOE = RoleMgr.GetInstance().GetMainRole();
+        var roleGameOE = RoleMgr.GetInstance().GetMainRole();       
+         if (!roleGameOE || roleGameOE.Entity == Entity.Null)
+         {
+                Debug.Log("CastSkill fail");
+                return;
+         }
+         var locoState = SceneMgr.Instance.EntityManager.GetComponentData<UnityMMO.Component.LocomotionState>(roleGameOE.Entity);
+         if(locoState.LocoState == LocomotionState.State.Dead)
+         {
+                return;
+         }
+        Debug.Log("CastSkill succsfully");
         var roleInfo = roleGameOE.GetComponent<RoleInfo>();
         string assetPath = ResPath.GetRoleSkillResPath(skillID);
         bool isNormalAttack = IsNormalAttack(skillID);//普通攻击

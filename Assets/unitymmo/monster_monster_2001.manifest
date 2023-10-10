@@ -1,0 +1,56 @@
+ManifestFileVersion: 0
+CRC: 1149052878
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0e015228ccf11449d85a10e3cd83ea7c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f2327bf7865e9be1411a219bfe3df009
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/monster/monster_2001/action/action.controller
+- Assets/AssetBundleRes/monster/monster_2001/action/model_clothe_10020003@dizzy.FBX
+- Assets/AssetBundleRes/monster/monster_2001/action/model_clothe_10020003@attack2.FBX
+- Assets/AssetBundleRes/monster/monster_2001/model_clothe_2001.FBX
+- Assets/AssetBundleRes/monster/monster_2001/Materials/model_clothe_2001.mat
+- Assets/AssetBundleRes/monster/monster_2001/action/model_clothe_10020003@behit.FBX
+- Assets/AssetBundleRes/monster/monster_2001/action/model_clothe_10020003@idle.FBX
+- Assets/AssetBundleRes/monster/monster_2001/model_clothe_2001.jpg
+- Assets/AssetBundleRes/monster/monster_2001/action/model_clothe_10020003@casual.FBX
+- Assets/AssetBundleRes/monster/monster_2001/action/model_clothe_10020003@attack.FBX
+- Assets/AssetBundleRes/monster/monster_2001/action/model_clothe_10020003@run.FBX
+- Assets/AssetBundleRes/monster/monster_2001/action/model_clothe_10020003@death.FBX
+- Assets/AssetBundleRes/monster/monster_2001/model_clothe_2001.prefab
+- Assets/AssetBundleRes/monster/monster_2001/Materials/model_clothe_10020003.mat
+Dependencies: []

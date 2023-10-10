@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 2719783564
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8f86aa4589a8bf2bf0b9412047c4be95
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/bp/src/log.lua.bytes
+- Assets/luatemp/bp/src/all_true.lua.bytes
+- Assets/luatemp/bp/src/any_true.lua.bytes
+- Assets/luatemp/bp/src/get_bb.lua.bytes
+- Assets/luatemp/bp/src/random.lua.bytes
+- Assets/luatemp/bp/src/bt_helper.lua.bytes
+- Assets/luatemp/bp/src/bt_mgr.lua.bytes
+- Assets/luatemp/bp/src/parallel.lua.bytes
+- Assets/luatemp/bp/src/operator.lua.bytes
+- Assets/luatemp/bp/src/loop.lua.bytes
+- Assets/luatemp/bp/src/call_func.lua.bytes
+- Assets/luatemp/bp/src/wait.lua.bytes
+- Assets/luatemp/bp/src/sequence.lua.bytes
+- Assets/luatemp/bp/src/if_else.lua.bytes
+- Assets/luatemp/bp/src/bb_mgr.lua.bytes
+- Assets/luatemp/bp/src/set_bb.lua.bytes
+- Assets/luatemp/bp/src/slot_mgr.lua.bytes
+- Assets/luatemp/bp/src/graph.lua.bytes
+Dependencies: []

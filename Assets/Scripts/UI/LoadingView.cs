@@ -10,9 +10,8 @@ namespace UnityMMO
 public class LoadingView : MonoBehaviour
 {
     public static LoadingView Instance;
-    RectTransform proBar;
-    RectTransform butterfly;
-    TextMeshProUGUI tip;
+    Slider proBar;
+    Text tip;
     float curPercent;
     float nextPercent;
     float playSpeed = 0.4f;
@@ -21,9 +20,9 @@ public class LoadingView : MonoBehaviour
     void Start()
     {
         Instance = this;
-        proBar = transform.Find("pro_bar") as RectTransform;
-        butterfly = transform.Find("butterfly") as RectTransform;
-        tip = transform.Find("tip").GetComponent<TextMeshProUGUI>();
+        proBar = transform.Find("Slider").GetComponent<Slider>();
+            //butterfly = transform.Find("butterfly") as RectTransform;
+        tip = transform.Find("tip").GetComponent<Text>();
         ResetData();
     }
 
@@ -32,9 +31,8 @@ public class LoadingView : MonoBehaviour
         curPercent = 0;
         nextPercent = 0;
         playSpeed = 0;
-        proBar.sizeDelta = new Vector2(0, proBar.sizeDelta.y);
-        var butterPos = butterfly.localPosition;
-        butterfly.localPosition = new Vector3(-551, butterPos.y, butterPos.z);
+        proBar.value = 0;
+ 
     }
 
     public void SetPlaySpeed(float speed)
@@ -77,20 +75,19 @@ public class LoadingView : MonoBehaviour
         playSpeed = Mathf.Clamp(nextPercent-curPercent, 0.3f, 1);
         // Debug.Log("loading percent : "+percent+" tips:"+tipStr+" playSpeed:"+playSpeed+" "+curPercent+" track:"+ new System.Diagnostics.StackTrace().ToString());
         tip.text = tipStr;
-    }
+        //proBar.value = nextPercent;
+        }
 
-    void Update()
-    {
-        if (curPercent == nextPercent)
-            return;
-        float newPercent = curPercent + playSpeed*Time.deltaTime;
-        // Debug.Log("newPercent : "+newPercent+" cur:"+curPercent+" speed:"+playSpeed+" clamp:"+Mathf.Clamp(newPercent, 0, nextPercent));
-        newPercent = Mathf.Clamp(newPercent, 0, nextPercent);
-        proBar.sizeDelta = new Vector2(maxProWidth*newPercent, proBar.sizeDelta.y);
-        var butterPos = butterfly.localPosition;
-        butterfly.localPosition = new Vector3(-551+maxProWidth*newPercent, butterPos.y, butterPos.z);
-        curPercent = newPercent;
+        void Update()
+        {
+            if (curPercent == nextPercent)
+                return;
+            float newPercent = curPercent + playSpeed * Time.deltaTime;
+            // Debug.Log("newPercent : "+newPercent+" cur:"+curPercent+" speed:"+playSpeed+" clamp:"+Mathf.Clamp(newPercent, 0, nextPercent));
+            newPercent = Mathf.Clamp(newPercent, 0, nextPercent);
+            curPercent = newPercent;
+            proBar.value = curPercent;
+        }
     }
-}
 
 }

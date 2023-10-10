@@ -2,6 +2,8 @@ BagConst = require("Game/Bag/BagConst")
 BagModel = require("Game/Bag/BagModel")
 local GoodsInfoView = require("Game.Common.UI.GoodsInfoView")
 
+require("Game/Bag/BagServer")
+
 BagController = {}
 
 function BagController:Init(  )
@@ -15,18 +17,58 @@ end
 
 function BagController:AddEvents(  )
 	local onGameStart = function (  )
+
+        print("BagControlleronGameStartdddddffggghhhhh")
         self.model:Reset()
         self:ReqAllBags()
-        self:ListenBagChange()
+        --self:ListenBagChange()
     end
     GlobalEventSystem:Bind(GlobalEvents.GameStart, onGameStart)
 
-end
+    local onBagChanged = function ( ackData )
+        print("BagController:ListenBagChange");
+        print("Cat:BagController [start:38] onBagChanged ackData:", ackData)
+        PrintTable(ackData)
+        print("Cat:BagController [end]")
+        self.model:UpdateBagInfos(ackData)
+    end
+    --NetDispatcher:Listen("Bag_GetChangeList", nil, onBagChanged)
+    GlobalEventSystem:Bind(BagConst.Event.BagChange, onBagChanged)
 
+end
+function BagController:useGood(typeID,num)
+    print("BagController:useGood",typeID,num)
+    if 100001==typeID then
+        Bag_ChangeBagGoods(typeID,num)
+        self:ReqBagList(BagConst.Pos.Bag)
+        return{result=0}
+    end
+    if 100000==typeID then
+        Bag_ChangeBagGoods(typeID,num)
+        self:ReqBagList(BagConst.Pos.Bag)
+        return{result=0}
+    end
+    if 100002==typeID then
+        Bag_ChangeBagGoods(typeID,num)
+        self:ReqBagList(BagConst.Pos.Bag)
+        return{result=0}
+    end
+    return{result=1}
+end
+function BagController:addGood(typeID,num)
+    print("BagController:addGood",typeID,num)
+    if 100001==typeID then
+        Bag_ChangeBagGoods(typeID,num)
+        self:ReqBagList(BagConst.Pos.Bag)
+        return{result=0}
+    end
+    return{result=0}
+end
 function BagController:ReqAllBags(  )
+    print("BagController:ReqAllBags")
     self:ReqBagList(BagConst.Pos.Bag)
-    self:ReqBagList(BagConst.Pos.Warehouse)
-    self:ReqBagList(BagConst.Pos.Equip)
+    --self:ReqBagList(BagConst.Pos.Warehouse)
+    --self:ReqBagList(BagConst.Pos.Equip)
 end
 
 function BagController:ReqBagList( pos )
@@ -36,7 +78,16 @@ function BagController:ReqBagList( pos )
 		print("Cat:BagController [end]")
 		self.model:SetBagInfo(ackData)
 	end
-    NetDispatcher:SendMessage("Bag_GetInfo", {pos=pos}, on_ack)
+    local goe = RoleMgr.GetInstance():GetMainRole().Entity;
+
+    local roleid = ECS:GetComponentData(goe, CS.UnityMMO.UID)
+    print("BagController roleid=",roleid);
+    local bagList=Bag_GetInfo({cur_role_id=roleid.Value,pos=pos})
+    -----bagList={cellNum=200, pos=pos,goodsList = goodsList},而goodsList只是一个列表{table，table，}
+    self.model:SetBagInfo(bagList)
+    --得到的这个bagList是啥格式？一个列表，每个元素一个gold详情
+
+    --NetDispatcher:SendMessage("Bag_GetInfo", {cur_role_id=roleid.Value,pos=pos}, on_ack)
 end
 
 function BagController:ReqDropGoods( uid )
@@ -50,13 +101,16 @@ function BagController:ReqDropGoods( uid )
 end
 
 function BagController:ListenBagChange(  )
+    
 	local onBagChanged = function ( ackData )
+        print("BagController:ListenBagChange");
         print("Cat:BagController [start:38] onBagChanged ackData:", ackData)
         PrintTable(ackData)
         print("Cat:BagController [end]")
         self.model:UpdateBagInfos(ackData)
     end
-    NetDispatcher:Listen("Bag_GetChangeList", nil, onBagChanged)
+    --NetDispatcher:Listen("Bag_GetChangeList", nil, onBagChanged)
+    GlobalEventSystem:Bind(BagConst.Event.BagChange, onBagChanged)
 end
 
 function BagController:ShowGoodsTips( goodsInfo, showData )

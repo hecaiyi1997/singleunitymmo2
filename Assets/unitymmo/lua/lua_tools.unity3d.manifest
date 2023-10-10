@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 1271322415
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2e2844eeeb50602507d181945e7e2b06
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/Tools/ConfigMgr.lua.bytes
+- Assets/luatemp/Tools/CookieWrapper.lua.bytes
+- Assets/luatemp/Tools/print_delegate.lua.bytes
+Dependencies: []

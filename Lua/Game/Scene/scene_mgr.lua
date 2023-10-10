@@ -1,23 +1,154 @@
 local scene_const = require("Game.Scene.scene_const")
-
+local monster_cfg = require "config.config_monster"
+local npc_cfg = require "config.config_npc"
 local mt = {}
+
+	
 
 function mt:init()
 	print('Cat:SceneController.lua[Init]')
+    self.scene_cfg = require("config.config_scene_"..1001)
+    self.nest_cfg=self.scene_cfg.monster_list
+    self.npcCfgList=self.scene_cfg.npc_list
+    self.scene_uid_counter = {0, 0, 0};
     self.sceneNode = GameObject.Find("UICanvas/Scene")
     self.sceneNode:SetActive(false)
 	self.mainCamera = Camera.main
 	self:init_events()
+    
+end
+function mt:addmonsterTerrain()
+    local posarry={}
+    for i,v in ipairs(self.nest_cfg) do
+		local patrolInfo = {x=v.pos_x, y=v.pos_y, z=v.pos_z, radius=v.radius}
+			--self:CreateMonster(v.monster_type_id, patrolInfo, v)
+            local type_id=v.monster_type_id
+            local cfg = monster_cfg[type_id]
+            if not cfg then return end
+            
+            local radius = patrolInfo.radius/2
+            local pos_x = patrolInfo.x + math.random(-radius, radius)
+            local pos_y = patrolInfo.y 
+            local pos_z = patrolInfo.z + math.random(-radius, radius)
+            local maxHp = cfg.attr_list[scene_const.Attr.HP] or 0
+            local cur=maxHp 
+            local max=maxHp
+            local uid=self:NewSceneUID(scene_const.ObjectType.Monster)
+            local mng=CS.UnityMMO.MonsterMgr.GetInstance()
+            local pos=CS.UnityEngine.Vector3()
+            pos.x=pos_x/100;
+            pos.y=pos_y/100
+            pos.z=pos_z/100
+            table.insert(posarry,pos)
+            SceneMgr.Instance:RecordSceneObjectsingleTerrain(uid,type_id,pos,pos,cur,max)
+    end
+
+	for i,v in ipairs(self.nest_cfg) do
+		local patrolInfo = {x=v.pos_x, y=v.pos_y, z=v.pos_z, radius=v.radius}
+			--self:CreateMonster(v.monster_type_id, patrolInfo, v)
+            local type_id=v.monster_type_id
+            local cfg = monster_cfg[type_id]
+            if not cfg then return end
+            
+            local radius = patrolInfo.radius/2
+            local pos_x = patrolInfo.x + math.random(-radius, radius)
+            local pos_y = patrolInfo.y + math.random(-radius, radius)
+            local pos_z = patrolInfo.z + math.random(-radius, radius)
+            local maxHp = cfg.attr_list[scene_const.Attr.HP] or 0
+            local cur=maxHp 
+            local max=maxHp
+            local uid=self:NewSceneUID(scene_const.ObjectType.Monster)
+            local mng=CS.UnityMMO.MonsterMgr.GetInstance()
+            local pos=CS.UnityEngine.Vector3()
+            pos.x=pos_x/100;
+            pos.y=pos_y/100
+            pos.z=pos_z/100
+            --print("AddSceneObjectsingle",pos.x,pos.y,pos.z)
+            --{x=pos_x,y=pos_y,z=pos_z},{x=pos_x,y=pos_y,z=pos_z}
+            SceneMgr.Instance:AddSceneObjectsingleTerrain(uid,type_id,posarry[i],posarry[i],cur,max)
+            
+	end
+end
+function mt:InitMonster(  )
+	local create_num = 0
+	for i,v in ipairs(self.nest_cfg) do
+		local mons_type_ok = true
+		if mons_type_ok then
+			local patrolInfo = {x=v.pos_x, y=v.pos_y, z=v.pos_z, radius=v.radius}
+			for ii=1,v.monster_num do
+				self:CreateMonster(v.monster_type_id, patrolInfo, v)
+				create_num = create_num + 1
+			end
+		end
+	end
+end
+function mt:InitNpc(  )
+	for i,v in ipairs(self.npcCfgList) do
+		self:CreateNPC(v.npc_id, v.pos_x, v.pos_y, v.pos_z)
+	end
+end
+function mt:CreateNPC( type_id, pos_x, pos_y, pos_z )
+    print("CreateNPC",type_id)
+	local cfg = npc_cfg[type_id]
+	if not cfg then return end
+
+    local uid=self:NewSceneUID(scene_const.ObjectType.NPC)
+    local pos=CS.UnityEngine.Vector3()
+    pos.x=pos_x/100;
+    pos.y=pos_y/100
+    pos.z=pos_z/100
+    print("AddSceneObjectsingle CreateNPC",uid,pos.x,pos.y,pos.z)
+    --{x=pos_x,y=pos_y,z=pos_z},{x=pos_x,y=pos_y,z=pos_z}
+    SceneMgr.Instance:AddSceneObjectsingle(uid,type_id,pos,pos,0,0)
+
+end
+
+function mt:CreateMonster( type_id, patrolInfo )
+    local cfg = monster_cfg[type_id]
+	if not cfg then return end
+	
+	local radius = patrolInfo.radius/2
+	local pos_x = patrolInfo.x + math.random(-radius, radius)
+	local pos_y = patrolInfo.y + math.random(-radius, radius)
+	local pos_z = patrolInfo.z + math.random(-radius, radius)
+    local maxHp = cfg.attr_list[scene_const.Attr.HP] or 0
+    local cur=maxHp 
+    local max=maxHp
+    local uid=self:NewSceneUID(scene_const.ObjectType.Monster)
+    local mng=CS.UnityMMO.MonsterMgr.GetInstance()
+    local pos=CS.UnityEngine.Vector3()
+    pos.x=pos_x/100;
+    pos.y=pos_y/100
+    pos.z=pos_z/100
+    --print("AddSceneObjectsingle",pos.x,pos.y,pos.z)
+    --{x=pos_x,y=pos_y,z=pos_z},{x=pos_x,y=pos_y,z=pos_z}
+    SceneMgr.Instance:AddSceneObjectsingle(uid,type_id,pos,pos,cur,max)
+    
+end
+function mt:NewSceneUID( scene_obj_type )
+	self.scene_uid_counter[scene_obj_type] = self.scene_uid_counter[scene_obj_type] + 1
+	return scene_obj_type*10000000000 + self.scene_uid_counter[scene_obj_type]
+end
+function mt:onsceneloaded()
+    print("scene_mgr.onsceneloaded")
+    self:InitMonster()
+    --self:InitNpc()
 end
 
 function mt:init_events()
+    print("scene_mgr.init_events......")
+    --GlobalEventSystem:Bind(NetDispatcher.Event.OnReceiveLine, mt.onsceneloaded,self)
 	local on_start_game = function (  )
+        print("scene_mgr.on_start_game",CS.UnityEngine.Application.platform==CS.UnityEngine.RuntimePlatform.WindowsEditor)
         self.sceneNode:SetActive(true)
 		ECS:Init(SceneMgr.Instance.EntityManager)
-
-
-        local view = require("Game/Task/openwordsView").New()
-        view:SetData({type_id=2005,u_id=uid})
+        if CS.UnityEngine.RuntimePlatform.WindowsEditor==CS.UnityEngine.Application.platform then--安卓的不显示
+            local view = require("Game/Task/openwordsView").New()
+            view:SetData({type_id=2005,u_id=uid})
+        end
+        self:InitNpc()
+        self:addmonsterTerrain()
+        CS.XLuaManager.Instance:OnchunkloadedOk()
 	end
     GlobalEventSystem:Bind(GlobalEvents.GameStart, on_start_game)
 
@@ -56,7 +187,7 @@ function mt:init_events()
         end
     end
 	UI.BindClickEvent(self.sceneNode, on_up)
-
+ 
     local on_drag_begin = function ( obj, x, y )
         print('Cat:SceneController.lua[85]on_drag_begin obj, x, y', obj, x, y)
         self.is_dragged = true

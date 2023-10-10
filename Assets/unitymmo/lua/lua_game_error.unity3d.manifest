@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1318677280
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 367cd97f3b1b6081c334d61545b5fda7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/Game/Error/ErrorCode.lua.bytes
+- Assets/luatemp/Game/Error/ErrorView.lua.bytes
+- Assets/luatemp/Game/Error/ErrorController.lua.bytes
+- Assets/luatemp/Game/Error/ErrorConst.lua.bytes
+Dependencies: []

@@ -1,0 +1,47 @@
+ManifestFileVersion: 0
+CRC: 2946352862
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 226a35d2fe25857d5afb85dc533c57dc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ef5451dbd96945784ed6417ff9df8425
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: b7f59e54f2bfd184b9dd451a678d089b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5b826d36e7d45894588f5009caff1123, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a3402976b8fd5044aabcc47a815a31cc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3b7a2a181df889e42838c6c50572dc89, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3cd7e85a5e0d78f4297af25dd961b004, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 43a15ffa6f4da2b41b0aa9a0f8cac273, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8149045ebb3b68d42a0ea5f2b00bd91f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 119
+  Script: {instanceID: 0}
+- Class: 320
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/role/prefab/Role.prefab
+- Assets/AssetBundleRes/role/prefab/MainRole.prefab
+Dependencies:
+- D:/Users/UnityMMO-farmework/StreamingAssets/effect_projectors

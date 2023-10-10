@@ -1,0 +1,77 @@
+ManifestFileVersion: 0
+CRC: 1816342912
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9daad4016b63a6be92d7a018f39ffe8c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9f2256c0a88100464855cfbebb433c01
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/role/hair/hair_1100/action/model_head_1100@run2.FBX
+- Assets/AssetBundleRes/role/hair/hair_1100/action/headaction.controller
+- Assets/AssetBundleRes/role/hair/hair_1100/model_hair_1100.jpg
+- Assets/AssetBundleRes/role/hair/hair_1101/action/headaction.controller
+- Assets/AssetBundleRes/role/hair/hair_1201/action/model_head_1207_new@run2.anim
+- Assets/AssetBundleRes/role/hair/hair_1200/model_hair_1200.jpg
+- Assets/AssetBundleRes/role/hair/hair_1101/Materials/model_head_1107.mat
+- Assets/AssetBundleRes/role/hair/hair_1201/model_hair_1201.FBX
+- Assets/AssetBundleRes/role/hair/hair_1101/action/model_head_1107_new@show.anim
+- Assets/AssetBundleRes/role/hair/hair_1100/model_hair_1100.prefab
+- Assets/AssetBundleRes/role/hair/hair_1101/model_hair_1101.prefab
+- Assets/AssetBundleRes/role/hair/hair_1101/action/model_head_1107_new@idle.anim
+- Assets/AssetBundleRes/role/hair/hair_1200/action/model_head_1200@idle.FBX
+- Assets/AssetBundleRes/role/hair/hair_1100/action/model_head_1100@show.FBX
+- Assets/AssetBundleRes/role/hair/hair_1201/action/model_head_1207_new@run.anim
+- Assets/AssetBundleRes/role/hair/hair_1101/action/model_head_1107_new@run.anim
+- Assets/AssetBundleRes/role/hair/hair_1200/action/model_head_1200@run2.FBX
+- Assets/AssetBundleRes/role/hair/hair_1100/Materials/model_head_1100_1.mat
+- Assets/AssetBundleRes/role/hair/hair_1100/Materials/model_head_1100.mat
+- Assets/AssetBundleRes/role/hair/hair_1201/model_hair_1201.jpg
+- Assets/AssetBundleRes/role/hair/hair_1200/action/headaction.controller
+- Assets/AssetBundleRes/role/hair/hair_1101/action/model_head_1107_new@run2.anim
+- Assets/AssetBundleRes/role/hair/hair_1200/model_hair_1200.prefab
+- Assets/AssetBundleRes/role/hair/hair_1201/action/model_head_1207_new@idle.anim
+- Assets/AssetBundleRes/role/hair/hair_1200/action/model_head_1200@show.FBX
+- Assets/AssetBundleRes/role/hair/hair_1201/action/model_head_1207_new@show.anim
+- Assets/AssetBundleRes/role/hair/hair_1200/model_hair_1200.FBX
+- Assets/AssetBundleRes/role/hair/hair_1201/action/headaction.controller
+- Assets/AssetBundleRes/role/hair/hair_1201/model_hair_1201.prefab
+- Assets/AssetBundleRes/role/hair/hair_1201/Materials/model_head_1207.mat
+- Assets/AssetBundleRes/role/hair/hair_1101/model_hair_1101.jpg
+- Assets/AssetBundleRes/role/hair/hair_1200/Materials/model_head_1200_1.mat
+- Assets/AssetBundleRes/role/hair/hair_1100/model_hair_1100.FBX
+- Assets/AssetBundleRes/role/hair/hair_1100/action/model_head_1100@idle.FBX
+- Assets/AssetBundleRes/role/hair/hair_1200/Materials/model_head_1200.mat
+- Assets/AssetBundleRes/role/hair/hair_1200/action/model_head_1200@run.FBX
+- Assets/AssetBundleRes/role/hair/hair_1101/model_hair_1101.FBX
+- Assets/AssetBundleRes/role/hair/hair_1100/action/model_head_1100@run.FBX
+Dependencies:
+- D:/Users/UnityMMO-farmework/StreamingAssets/effect_sharder

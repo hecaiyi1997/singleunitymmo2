@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 137520769
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 54a6b0b06baa0a064ba8bfb44df0c15d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 46bbd9da48cff8d17f0c89eef78da528
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/ui/icon/icon_go_hook.png
+- Assets/AssetBundleRes/ui/icon/icon_dungeon.png
+Dependencies: []

@@ -1,0 +1,133 @@
+ManifestFileVersion: 0
+CRC: 3328680035
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 082c46045bfbd6b79e241ed095e2e750
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3d092d4eba9c8d50c7ca337d00c2ea02
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 154
+  Script: {instanceID: 0}
+- Class: 156
+  Script: {instanceID: 0}
+- Class: 218
+  Script: {instanceID: 0}
+- Class: 1953259897
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain1_4.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain4_9.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain3_0.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain8_7.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain5_7.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain0_9.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain4_5.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain0_3.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain2_5.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain8_9.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain9_0.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain5_9.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain6_9.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain9_4.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain5_0.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain1_3.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain0_1.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain1_5.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain7_3.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain6_5.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain5_8.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain1_1.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain2_0.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain1_6.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain7_8.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain6_0.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain5_5.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain6_2.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain7_4.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain9_1.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain9_2.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain1_0.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain7_1.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain8_8.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain9_6.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain5_1.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain7_5.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain4_0.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain4_1.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain3_5.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain3_8.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain7_0.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain4_3.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain0_8.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain0_0.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain8_5.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain8_0.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain7_9.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain9_7.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain5_2.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain0_2.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain6_3.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain2_3.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain7_7.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain5_4.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain3_1.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain0_5.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain2_6.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain9_3.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain6_6.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain3_9.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain0_6.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain3_7.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain9_9.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain1_8.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain7_2.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain4_8.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain2_8.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain4_4.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain6_8.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain3_4.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain2_7.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain0_4.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain5_6.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain9_5.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain2_2.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain2_4.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain8_3.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain1_7.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain8_1.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain8_4.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain3_6.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain6_7.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain7_6.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain4_6.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain4_7.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain8_2.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain6_1.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain4_2.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain2_9.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain1_2.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain5_3.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain8_6.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain3_3.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain2_1.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain0_7.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain6_4.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain3_2.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain1_9.prefab
+- Assets/AssetBundleRes/SplitPrefabs/terrainprefabs/Terrain9_8.prefab
+Dependencies:
+- D:/Users/UnityMMO-farmework/StreamingAssets/scene_newterain

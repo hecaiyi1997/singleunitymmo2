@@ -1,0 +1,75 @@
+ManifestFileVersion: 0
+CRC: 2986952626
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ea7884bf76a7e63d9b8799bfc61e02a4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ed32debbe89936db930c107ffb1ba8d5
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ed92efb0cd92c2a42adc331f44d72d3f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d21dcc2386d650c4597f3633c75a1f98, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 974e475371163f64791e7c4b80e23a74, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 48853ae485fa386428341ac1ea122570, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6c0c8d357283b6f4da3526562cac3662, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 15e0374501f39d54eb30235764636e0e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 14651c7a84c56d64fb27889289cc4ab6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8b22792c3b570444eb18cb78c2af3a74, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2a16748d9461eae46a725db9776d5390, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 82cd92ffc29383742932b27ca414c80f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5c288f6077425e9438e40b25ffa6c78e, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/role/timeline/skill_120001.playable
+- Assets/AssetBundleRes/role/timeline/jump_career2_2.playable
+- Assets/AssetBundleRes/role/timeline/skill_110000.playable
+- Assets/AssetBundleRes/role/timeline/skill_110013.playable
+- Assets/AssetBundleRes/role/timeline/skill_120010.playable
+- Assets/AssetBundleRes/role/timeline/skill_120012.playable
+- Assets/AssetBundleRes/role/timeline/jump_career1_1.playable
+- Assets/AssetBundleRes/role/timeline/skill_110002.playable
+- Assets/AssetBundleRes/role/timeline/skill_110012.playable
+- Assets/AssetBundleRes/role/timeline/skill_120002.playable
+- Assets/AssetBundleRes/role/timeline/skill_120011.playable
+- Assets/AssetBundleRes/role/timeline/jump_career2_1.playable
+- Assets/AssetBundleRes/role/timeline/skill_120000.playable
+- Assets/AssetBundleRes/role/timeline/skill_120013.playable
+- Assets/AssetBundleRes/role/timeline/skill_110003.playable
+- Assets/AssetBundleRes/role/timeline/skill_110010.playable
+- Assets/AssetBundleRes/role/timeline/skill_110011.playable
+- Assets/AssetBundleRes/role/timeline/skill_110001.playable
+- Assets/AssetBundleRes/role/timeline/jump_career1_3.playable
+- Assets/AssetBundleRes/role/timeline/jump_career2_3.playable
+- Assets/AssetBundleRes/role/timeline/jump_career1_2.playable
+- Assets/AssetBundleRes/role/timeline/skill_120003.playable
+Dependencies:
+- D:/Users/UnityMMO-farmework/StreamingAssets/effect_objs
+- D:/Users/UnityMMO-farmework/StreamingAssets/role_action
+- D:/Users/UnityMMO-farmework/StreamingAssets/sound_role

@@ -1,0 +1,80 @@
+ManifestFileVersion: 0
+CRC: 3478118878
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 748816aa6b03c0e8295e3c779c99cfd7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a28b2feb1860c4020f22b3ceae8242fa
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9c66f5489a8166a41866c661f338befd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/ui/login/ac_shaizi.png
+- Assets/AssetBundleRes/ui/login/empty.png
+- Assets/AssetBundleRes/ui/login/login_role_tip_2.png
+- Assets/AssetBundleRes/ui/login/login_name_input_bg.png
+- Assets/AssetBundleRes/ui/login/login_add_role.png
+- Assets/AssetBundleRes/ui/login/login_create_btn.png
+- Assets/AssetBundleRes/ui/login/login_role_name_bg_sel.png
+- Assets/AssetBundleRes/ui/login/LoginCreateRoleView.prefab
+- Assets/AssetBundleRes/ui/login/LoginView.prefab
+- Assets/AssetBundleRes/ui/login/LoginCreateRoleItem.prefab
+- Assets/AssetBundleRes/ui/login/login_role_item_bg_sel.png
+- Assets/AssetBundleRes/ui/login/login_btn_back.png
+- Assets/AssetBundleRes/ui/login/LoginSelectRoleView.prefab
+- Assets/AssetBundleRes/ui/login/login_role_sex_bg.png
+- Assets/AssetBundleRes/ui/login/login_btn_enter.png
+- Assets/AssetBundleRes/ui/login/login_role_tip_1.png
+- Assets/AssetBundleRes/ui/login/login_role_name_bg_nor.png
+- Assets/AssetBundleRes/ui/login/LoginUI.prefab
+- Assets/AssetBundleRes/ui/login/LoginSelectRoleItem.prefab
+- Assets/AssetBundleRes/ui/login/login_role_item_bg_nor.png
+Dependencies:
+- D:/Users/UnityMMO-farmework/StreamingAssets/ui_bigimage
+- D:/Users/UnityMMO-farmework/StreamingAssets/ui_common

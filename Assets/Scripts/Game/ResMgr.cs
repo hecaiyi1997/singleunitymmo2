@@ -67,10 +67,21 @@ public class ResMgr
         preloadTimelineRes.Add(new KeyValuePair<string,string>("Playable", "Assets/AssetBundleRes/role/timeline/skill_120013.playable"));
         preloadMaterialRes =  new List<KeyValuePair<string, string>>();
         preloadMaterialRes.Add(new KeyValuePair<string,string>("function_hitfresnel", "Assets/AssetBundleRes/effect/materials/function_hitfresnel.mat"));
-	}
 
-    public void StartPreLoadRes(Action<bool> onOk)
+
+        preloadRes.Add(new KeyValuePair<string, string>("Bottle_Endurance", "Assets/AssetBundleRes/Goods/Prefabs/Bottle_Endurance.prefab"));
+        preloadRes.Add(new KeyValuePair<string, string>("Bottle_Health", "Assets/AssetBundleRes/Goods/Prefabs/Bottle_Health.prefab"));
+        preloadRes.Add(new KeyValuePair<string, string>("Bottle_Mana", "Assets/AssetBundleRes/Goods/Prefabs/Bottle_Mana.prefab"));
+        }
+
+    public void StartPreLoadRes(Action<float, string> on_update,Action<bool> onOk)
     {
+        Debug.Log("StartPreLoadRes");
+            //string m_BaseDownloadingURL = XLuaFramework.AppConfig.GetRelativePath();
+            //string url = m_BaseDownloadingURL + "lua/lua";
+            //Debug.Log("StartPreLoadRes url=" + url);//file://D:/Users/UnityMMO-farmework/Assets/unitymmo/lua/lua
+            //XLuaFramework.ResourceManager.GetInstance().ForLoadAssetBundle("lua/lua", null);
+    
         int count = 0;
         for (int i = 0; i < preloadRes.Count; i++)
         {
@@ -78,6 +89,7 @@ public class ResMgr
                 if (obj != null)
                 {
                     count++;
+                    on_update((count+1)/preloadRes.Count,"预加载文件"+ preloadRes[count-1].Key);
                     if (count >= preloadRes.Count)
                     {
                         if (onOk != null)
@@ -297,6 +309,7 @@ public class ResMgr
             int resID = i;
             XLuaFramework.ResourceManager.GetInstance().LoadAsset<GameObject>(list[i], delegate(UnityEngine.Object[] objs) 
             {
+                //Debug.Log("loadscenseinfo="+ list[i]);
                 if (objs.Length > 0 && (objs[0] as GameObject)!=null)
                 {
                     GameObject prefab = objs[0] as GameObject;

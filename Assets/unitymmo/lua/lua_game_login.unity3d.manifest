@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 3677334658
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 13dd3076a1e3bffa9feda0ff68d00cb4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/Game/Login/LoginController.lua.bytes
+- Assets/luatemp/Game/Login/LoginSelectRoleView.lua.bytes
+- Assets/luatemp/Game/Login/LoginSceneBgView.lua.bytes
+- Assets/luatemp/Game/Login/LoginView.lua.bytes
+- Assets/luatemp/Game/Login/LoginModel.lua.bytes
+- Assets/luatemp/Game/Login/LoginCreateRoleView.lua.bytes
+- Assets/luatemp/Game/Login/LoginConst.lua.bytes
+Dependencies: []

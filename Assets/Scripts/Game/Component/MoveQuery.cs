@@ -90,9 +90,10 @@ public class MoveQuery : MonoBehaviour
         // Debug.Log("transform.position : "+transform.position.x+" "+transform.position.y+" "+transform.position.z);
         if (NavMesh.SamplePosition(transform.position, out closestHit, 1000f, NavMesh.AllAreas)) 
         {
-            Debug.Log("update nav agent in sample pos");
-            transform.position = closestHit.position;
-            charController.transform.position = closestHit.position;
+            Debug.Log("main role pos update nav agent in sample pos"+ closestHit.position.x+ ":"+closestHit.position.y+":"+ closestHit.position.z);
+            //transform.position = closestHit.position;
+
+            transform.position = new Vector3(closestHit.position.x, closestHit.position.y, closestHit.position.z);
             if (navAgent == null)
             {
                 navAgent = charController.gameObject.AddComponent<NavMeshAgent>();

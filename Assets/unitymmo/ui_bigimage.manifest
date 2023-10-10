@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 883134047
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 86b9704dd5e4074a6c26ac0d2901e90c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 46bbd9da48cff8d17f0c89eef78da528
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/ui/bigimage/login_bg.jpg
+- Assets/AssetBundleRes/ui/bigimage/bag_main_bg.png
+- Assets/AssetBundleRes/ui/bigimage/load_bg_1.jpg
+- Assets/AssetBundleRes/ui/bigimage/4.jpg
+Dependencies: []

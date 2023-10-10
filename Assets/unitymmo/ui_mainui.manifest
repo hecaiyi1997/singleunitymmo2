@@ -1,0 +1,116 @@
+ManifestFileVersion: 0
+CRC: 2446267532
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 64b353182a063ec94830b2884a1ab14d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 091320891cc2075f1f8809f5c743b66a
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cecce8d3f549de045bea5fd79de9e7cb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9c66f5489a8166a41866c661f338befd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0c8577abac7683e47b09b9e86b882944, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/ui/mainui/mainui_head_circle_blue.png
+- Assets/AssetBundleRes/ui/mainui/MainUIJoystickView2.prefab
+- Assets/AssetBundleRes/ui/mainui/MainUIRoleHeadView.prefab
+- Assets/AssetBundleRes/ui/mainui/mainui_btn_bag.png
+- Assets/AssetBundleRes/ui/mainui/mainui_joystick_bg.png
+- Assets/AssetBundleRes/ui/mainui/mainui_pkstatus_flag_1.png
+- Assets/AssetBundleRes/ui/mainui/mainui_btn_change_target.png
+- Assets/AssetBundleRes/ui/mainui/mainui_task_guide_bg.png
+- Assets/AssetBundleRes/ui/mainui/mainui_btn_jump.png
+- Assets/AssetBundleRes/ui/mainui/mainui_icon_skill.png
+- Assets/AssetBundleRes/ui/mainui/mainui_autofight.png
+- Assets/AssetBundleRes/ui/mainui/mainui_chat_channel_5.png
+- Assets/AssetBundleRes/ui/mainui/mainui_chat_channel_10.png
+- Assets/AssetBundleRes/ui/mainui/skill_icon_120010.png
+- Assets/AssetBundleRes/ui/mainui/mainui_taskbtn_normal.png
+- Assets/AssetBundleRes/ui/mainui/skill_icon_120011.png
+- Assets/AssetBundleRes/ui/mainui/skill_icon_110010.png
+- Assets/AssetBundleRes/ui/mainui/mainui_money_1.png
+- Assets/AssetBundleRes/ui/mainui/mainui_task_arrow.png
+- Assets/AssetBundleRes/ui/mainui/mainui_btn_attack.png
+- Assets/AssetBundleRes/ui/mainui/mainui_taskbtn_light.png
+- Assets/AssetBundleRes/ui/mainui/MainUIRoleHeadView_old.prefab
+- Assets/AssetBundleRes/ui/mainui/mainui_chat_channel_1.png
+- Assets/AssetBundleRes/ui/mainui/mainui_icon_equip.png
+- Assets/AssetBundleRes/ui/mainui/mainui_task_shoe.png
+- Assets/AssetBundleRes/ui/mainui/mainui_icon_guild.png
+- Assets/AssetBundleRes/ui/mainui/MainUIJoystickView.prefab
+- Assets/AssetBundleRes/ui/mainui/main_ui_red.png
+- Assets/AssetBundleRes/ui/mainui/mainui_joystick_center.png
+- Assets/AssetBundleRes/ui/mainui/mainui_task_accept.png
+- Assets/AssetBundleRes/ui/mainui/MainUITaskView.prefab
+- Assets/AssetBundleRes/ui/mainui/mainui_role_embellish.png
+- Assets/AssetBundleRes/ui/mainui/mainui_swith_icon.png
+- Assets/AssetBundleRes/ui/mainui/skill_icon_120012.png
+- Assets/AssetBundleRes/ui/mainui/mainui_task_finish.png
+- Assets/AssetBundleRes/ui/mainui/mainui_role_blood_bar.png
+- Assets/AssetBundleRes/ui/mainui/mainui_chat.png
+- Assets/AssetBundleRes/ui/mainui/mainui_money_2.png
+- Assets/AssetBundleRes/ui/mainui/skill_cd_mask.png
+- Assets/AssetBundleRes/ui/mainui/skill_icon_110011.png
+- Assets/AssetBundleRes/ui/mainui/skill_icon_110012.png
+- Assets/AssetBundleRes/ui/mainui/mainui_btn_task_back.png
+- Assets/AssetBundleRes/ui/mainui/MainUITaskItem.prefab
+- Assets/AssetBundleRes/ui/mainui/MainUISkillBtnView.prefab
+- Assets/AssetBundleRes/ui/mainui/MainUIMenuIcon.prefab
+- Assets/AssetBundleRes/ui/mainui/mainui_head_circle_purple.png
+- Assets/AssetBundleRes/ui/mainui/mainui_role_border.png
+- Assets/AssetBundleRes/ui/mainui/mainui_task_bg.png
+- Assets/AssetBundleRes/ui/mainui/main_ui_tip.png
+- Assets/AssetBundleRes/ui/mainui/main_ui_gm.png
+- Assets/AssetBundleRes/ui/mainui/mainui_icon_role.png
+- Assets/AssetBundleRes/ui/mainui/MainUIActIconView.prefab
+- Assets/AssetBundleRes/ui/mainui/mainui_taskbtn_bg.png
+- Assets/AssetBundleRes/ui/mainui/mainui_line.png
+- Assets/AssetBundleRes/ui/mainui/skill_icon_120013.png
+- Assets/AssetBundleRes/ui/mainui/MainUITaskTeamBaseView.prefab
+- Assets/AssetBundleRes/ui/mainui/skill_icon_110013.png
+- Assets/AssetBundleRes/ui/mainui/mainui_pkstatus_flag_0.png
+- Assets/AssetBundleRes/ui/mainui/MainUISkillBtn.prefab
+- Assets/AssetBundleRes/ui/mainui/MainUIMenuView.prefab
+- Assets/AssetBundleRes/ui/mainui/main_ui_setting.png
+Dependencies:
+- D:/Users/UnityMMO-farmework/StreamingAssets/ui_icon

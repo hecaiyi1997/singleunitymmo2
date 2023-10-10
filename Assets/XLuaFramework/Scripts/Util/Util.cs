@@ -249,21 +249,67 @@ namespace XLuaFramework {
 
 
         /// <summary>
-        /// 应用程序内容路径
+        /// 应用程序内容路径StreamingAssets路径
         /// </summary>
-        public static string AppContentPath() {
+        public static string AppContentPath(){
             string path = string.Empty;
-            switch (Application.platform) {
-                case RuntimePlatform.Android:
-                    path = "jar:file://" + Application.dataPath + "!/assets/";
-                break;
-                case RuntimePlatform.IPhonePlayer:
-                    path = Application.dataPath + "/Raw/";
-                break;
-                default:
-                    path = AppConfig.AppDataPath + "/" + AppConfig.AssetDir + "/";
-                break;
+            /*
+            string head = string.Empty;
+            if (Application.platform == RuntimePlatform.Android)
+                head="jar:file://";
+            else
+                head="";
+            */
+            
+           
+            Debug.Log("AppContentPath Application.platform=11?" + Application.platform+ RuntimePlatform.Android);
+            string pathh = "";
+            if (Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.OSXEditor)
+            {
+                pathh = string.Format("{0}/StreamingAssets/", Application.dataPath.Replace("/Assets",""));//window
             }
+            else if (Application.platform == RuntimePlatform.Android)
+            {
+                //pathh = string.Format("{0}!/assets/", Application.dataPath);//在网上看到这样写，我觉得应该pathh = string.Format("{0}/!/assets/", Application.dataPath);
+                /*                 
+                Application.xxxPath对应的路径
+                IOS:
+                Application.dataPath :                      Application/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/xxx.app/Data
+                Application.streamingAssetsPath :   Application/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/xxx.app/Data/Raw
+                Application.persistentDataPath :      Application/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/Documents
+                Application.temporaryCachePath :   Application/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/Library/Caches
+
+                Android:
+                Application.dataPath :                         /data/app/xxx.xxx.xxx.apk
+                Application.streamingAssetsPath :      jar:file:///data/app/xxx.xxx.xxx.apk/!/assets
+                Application.persistentDataPath :         /data/data/xxx.xxx.xxx/files
+                Application.temporaryCachePath :      /data/data/xxx.xxx.xxx/cache
+
+                Windows:
+                Application.dataPath :                         /Assets
+                Application.streamingAssetsPath :      /Assets/StreamingAssets
+                Application.persistentDataPath :         C:/Users/xxxx/AppData/LocalLow/CompanyName/ProductName
+                Application.temporaryCachePath :      C:/Users/xxxx/AppData/Local/Temp/CompanyName/ProductName
+
+                Mac:
+                Application.dataPath :                         /Assets
+                Application.streamingAssetsPath :      /Assets/StreamingAssets
+                Application.persistentDataPath :         /Users/xxxx/Library/Caches/CompanyName/Product Name
+                Application.temporaryCachePath :     /var/folders/57/6b4_9w8113x2fsmzx_yhrhvh0000gn/T/CompanyName/Product Name
+                */
+                
+                pathh = Application.streamingAssetsPath + "/";
+                Debug.Log("AppContentPath------pathh="+pathh);
+            }
+            else if (Application.platform == RuntimePlatform.IPhonePlayer)
+            {
+                //pathh = string.Format("{0}/Raw/", Application.dataPath.Replace("/Assets", ""));
+                pathh = Application.streamingAssetsPath + "/";
+            }
+            Debug.Log("Application.platform=" + Application.platform);
+
+            //path = head+pathh;
+            path =pathh;
             return path;
         }
 

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Unity.Entities;
 using UnityEngine;
+using UnityMMO.Component;
 
 namespace UnityMMO
 {
@@ -9,7 +10,8 @@ public struct RaycastSceneObjHit
     public Entity entity;
     public Vector3 point;
     public bool hit;
-}
+    public long typeID;
+    }
 public class SceneHelper
 {
     private static EntityManager EntityMgr;
@@ -20,6 +22,33 @@ public class SceneHelper
         EntityMgr = entityMgr;
     }
 
+        public static void changehp(float num)
+        {
+            GameObjectEntity goe = UnityMMO.RoleMgr.GetInstance().GetMainRole();
+            if (goe.Entity == Entity.Null)
+            {
+                Debug.LogError("changehp goe.Entity == Entity.Null");
+                return;
+
+            }
+            Entity e = goe.Entity;
+            var healthData = EntityMgr.GetComponentData<HealthStateData>(e);
+            healthData.CurHp = healthData.CurHp + num;
+            if (healthData.CurHp > 100) healthData.CurHp = 100.0f;
+            EntityMgr.SetComponentData(e, healthData);
+            XLuaFramework.CSLuaBridge.GetInstance().CallLuaFunc2Num(GlobalEvents.MainRoleHPChanged, (long)(healthData.CurHp), (long)healthData.MaxHp);
+
+            var nameboardData = EntityMgr.GetComponentObject<NameboardData>(e);
+            if (nameboardData.UIResState == NameboardData.ResState.Loaded)
+            {
+                var nameboardNode = nameboardData.LooksNode.GetComponent<Nameboard>();
+                if (nameboardNode != null)
+                {
+                    nameboardNode.CurHp = healthData.CurHp;
+
+                }
+            }
+        }
     public static RaycastSceneObjHit GetClickSceneObject()
     {
         RaycastSceneObjHit result = new RaycastSceneObjHit();
@@ -37,6 +66,23 @@ public class SceneHelper
             {
                 result.entity = SceneMgr.Instance.GetSceneObject(uid.Value.Value);
             }
+            if(hit.collider.name== "bottle_green")
+            {
+                    result.typeID = 100000;
+                    GameObject.Destroy(hit.collider.transform.parent.parent.gameObject);
+
+            }
+           else if (hit.collider.name == "bottle_red") 
+           {
+                    result.typeID = 100002;
+                    GameObject.Destroy(hit.collider.transform.parent.parent.gameObject);
+
+                }
+           else if (hit.collider.name == "bottle_blue") 
+           {
+                    result.typeID = 100001;
+                    GameObject.Destroy(hit.collider.transform.parent.parent.gameObject);
+                }
         }
         return result;
     }

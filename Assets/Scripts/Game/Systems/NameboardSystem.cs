@@ -83,7 +83,8 @@ public class NameboardSystem : BaseComponentSystem
         var nameboardBehav = looksNode.GetComponent<Nameboard>();
         var uid = EntityManager.GetComponentData<UID>(owner);
         string name = SceneMgr.Instance.GetNameByUID(uid.Value);
-        // nameboardBehav.Name = name;
+        Debug.Log("namenamename=" + name+ uid.Value);
+        nameboardBehav.Name = name;
         var isMainRole = RoleMgr.GetInstance().IsMainRoleEntity(owner);
         nameboardBehav.CurColorStyle = isMainRole ? Nameboard.ColorStyle.Green : Nameboard.ColorStyle.Red;
         nameboardData.LooksNode = looksNode.transform;

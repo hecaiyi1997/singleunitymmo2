@@ -1,0 +1,323 @@
+ManifestFileVersion: 0
+CRC: 2625979337
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3460e42e032fbaf458498bde3c4f15ed
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cc27a7c2b7aeda57fe404097db2213c0
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/effect/materials/effect_god_1003_skill_01_17.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_normal atk01_001_daoguang004.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_28.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_1_glow02.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang004.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_15.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_shandian004.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_feijian010.mat
+- Assets/AssetBundleRes/effect/materials/xms_effect_male_skill_007_daoguang002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_daoguang005.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_daoguang001.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_006_1_baodian006.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_017_fazhen002.mat
+- Assets/AssetBundleRes/effect/materials/effect_xemlvup_lizi04.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_07_001_dilie06.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_007_canying006.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_daoguang010.mat
+- Assets/AssetBundleRes/effect/materials/effect_god_1003_skill_01_08.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_07_baodian006.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_line04.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_007_tuowei002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_daoguang014.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_normal atk01_001_daoguang009.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_008_01_longjuan001.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_16.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_04.mat
+- Assets/AssetBundleRes/effect/materials/scener_shiqiwupin_2_02.mat
+- Assets/AssetBundleRes/effect/materials/function_hitfresnel.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_006_2_glow01.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_005_smoke001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_008_shandian06.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_feijian002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_feijian005.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_03.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_012_glow02.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_daoguang003.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_01.mat
+- Assets/AssetBundleRes/effect/materials/effect_xemlvup_glow08.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_1_glow06.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_glow05.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_shandian003.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_glow08.mat
+- Assets/AssetBundleRes/effect/materials/effect_xemlvup_glow25.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_glow01.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_009_lizituowei_19.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang007.mat
+- Assets/AssetBundleRes/effect/materials/xem_model_tail_1200.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_1_glow10.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang017.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_006_2_glow02.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill014_10.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_07_baodian005.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_001_huli02.mat
+- Assets/AssetBundleRes/effect/materials/xemeffect_male_skill_001_daoguang001.mat
+- Assets/AssetBundleRes/effect/materials/exm_nv_longjuan001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_19.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_005_dilie002.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_006_2_glow04.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_16.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_feijian001.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_female_skill_004_zhu03.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_lizi02.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_02.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_007_canying005.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_shandian002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_011_sphere002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_daoguang004.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_015_bing001.mat
+- Assets/AssetBundleRes/effect/materials/xms_effect_male_skill_007_daoguang003.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_1_glow07.mat
+- Assets/AssetBundleRes/effect/materials/effect_xemlvup_lizi02.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_008_01_longjuan002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_004_baodian001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_18.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_005_feijian002.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_004_chongjibo001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_stone003.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_17.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_006_1_baodian002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_shandian003.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_1_glow08.mat
+- Assets/AssetBundleRes/effect/materials/effect_other_suduxian02_1.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_24.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_008_01_xuanwo003.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_008_01_zhu01.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_normal atk01_001_daoguang007.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_stone004.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_baodian_001.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang011.mat
+- Assets/AssetBundleRes/effect/materials/effect_gate_001_line003.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_glow02.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_003_daoguang004.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_06.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_shandian002.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang019.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_25.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_011_sphere001.mat
+- Assets/AssetBundleRes/effect/materials/effect_xemlvup_lizi09.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_008_shandian02.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_003_smoke001.mat
+- Assets/AssetBundleRes/effect/materials/effect_model_god_1002_skill01_glow12.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_09.mat
+- Assets/AssetBundleRes/effect/materials/scener_shiqiwupin_2_01.mat
+- Assets/AssetBundleRes/effect/materials/effet_weapon_r_120111001_07.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_012_glow03.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_normal atk01_001_daoguang003.mat
+- Assets/AssetBundleRes/effect/materials/xms_effect_male_skill_007_daoguang001.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_21.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_normal atk01_001_daoguang010.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_006_1_baodian007.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_normal atk01_001_daoguang005.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_009_lizituowei_01.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_006_1_baodian004.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_008_shandian03.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_015_bing004.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_008_01_xuanwo001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_shandian001.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_19.mat
+- Assets/AssetBundleRes/effect/materials/effect_jiesuan_001_yumao02.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_008_shandian05.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_normal atk01_001_daoguang001.mat
+- Assets/AssetBundleRes/effect/materials/effect_xemlvup_glow07.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_004_baodian002.mat
+- Assets/AssetBundleRes/effect/materials/effect_gate_001_line002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_cone003.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill014_02.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_cone005.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_cone010.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_15.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang013.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_01.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang012.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_gouyv02.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_015_bing002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_feijian003.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_015_feijian001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_line01.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_005_dilie004.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_07_001_dilie02.mat
+- Assets/AssetBundleRes/effect/materials/effect_god_1003_skill_03_07.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_005_dilie001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_lizi01.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill014_01.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_cone001.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_female_skill_004_zhu05.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_015_bing003.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_1_glow09.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_normal atk01_001_daoguang012.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_anse002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill014_07.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_008_01_xuanwo004.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_001_huli01.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_006_2_tuowei02.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_1_glow25.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_female_skill_004_zhu02.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_line03.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_012_chongjibo001.mat
+- Assets/AssetBundleRes/effect/materials/xemeffect_male_skill_001_daoguang004.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_03.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_baodian_004.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_007_fazhen01.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_smoke004.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_017_lizi01.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang003.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_23.mat
+- Assets/AssetBundleRes/effect/materials/xem_model_wing_1100.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill014_08.mat
+- Assets/AssetBundleRes/effect/materials/effect_god_1003_skill_01_12.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_stone001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_daoguang004.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang008.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_feijian008.mat
+- Assets/AssetBundleRes/effect/materials/effect_god_1003_skill_01_13.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_07.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_009_lizituowei_02.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_normal atk01_001_daoguang008.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_smoke001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_baodian_005.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_cone011.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang015.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_007_tuowei003.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_daoguang002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_feijian004.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_012_smoke001.mat
+- Assets/AssetBundleRes/effect/materials/effect_model_wing_1002_fire05.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_shandian005.mat
+- Assets/AssetBundleRes/effect/materials/effect_god_1003_skill_01_02.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill014_09.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_015_dilie001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_daoguang012.mat
+- Assets/AssetBundleRes/effect/materials/effect_xemlvup_glow09.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang001.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_female_skill_004_zhu06.mat
+- Assets/AssetBundleRes/effect/materials/effect_model_wing_1002_fire04.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_07_001_dilie04.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill014_12.mat
+- Assets/AssetBundleRes/effect/materials/xemeffect_male_skill_001_juqi001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_007_canying003.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_07_001_wind003.mat
+- Assets/AssetBundleRes/effect/materials/xemeffect_male_skill_001_daoguang005.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_cone002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_baodian_003.mat
+- Assets/AssetBundleRes/effect/materials/effect_xemlvup_glow10.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_04.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_008_shandian04.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_012_smoke002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_08.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_008_01_glow01.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_009_lizituowei_20.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_normal atk01_001_daoguang013.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang002.mat
+- Assets/AssetBundleRes/effect/materials/effet_weapon_r_120111001_09.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_12.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_005_dilie003.mat
+- Assets/AssetBundleRes/effect/materials/effect_other_suduxian02_5.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_cone012.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_gouyv01.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill014_03.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_008_01_glow02.mat
+- Assets/AssetBundleRes/effect/materials/effect_other_suduxian02_3.mat
+- Assets/AssetBundleRes/effect/materials/effect_model_clothe_181005_lizi03.mat
+- Assets/AssetBundleRes/effect/materials/xemeffect_female_skill_001_juqi001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill014_06.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_line02.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_02.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_011_shandian002.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_27.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_shandian001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_1_glow11.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_daoguang011.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_017_fazhen001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_011_shandian001.mat
+- Assets/AssetBundleRes/effect/materials/effect_huoyuedu_006_lizi005.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_07_baodian007.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_006_2_glow03.mat
+- Assets/AssetBundleRes/effect/materials/effect_model_wing_1002_fire06.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_007_daoguang001.mat
+- Assets/AssetBundleRes/effect/materials/effect_model_god_1002_skill01_glow10.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_008_chongjibo001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_feijian007.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_smoke002.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_normal atk01_001_daoguang006.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_1_glow12.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_007_canying002.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_07_001_dilie03.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang005.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang014.mat
+- Assets/AssetBundleRes/effect/materials/exm_nv_longjuan002.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_07_001_dilie05.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_feijian006.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_cone007.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang018.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_002_daoguang016.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_016_lizi02.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_10.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_normal atk01_001_daoguang002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_13.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_007_canying001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_009_juqi01.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_daoguang013.mat
+- Assets/AssetBundleRes/effect/materials/effect_jiesuan_001_yumao03.mat
+- Assets/AssetBundleRes/effect/materials/effect_skill_nan_08_shandian_26.mat
+- Assets/AssetBundleRes/effect/materials/effect_model_clothe_181005_lizi02.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_003_daoguang003.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_007_canying004.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_003_daoguang001.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_female_skill_004_zhu01.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill014_05.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_007_fazhen02.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_05.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_glow09.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_007_shandian003.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_004_glow01.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_004_smoke001.mat
+- Assets/AssetBundleRes/effect/materials/xemeffect_male_skill_001_juqi003.mat
+- Assets/AssetBundleRes/effect/materials/xms_chuangjue_nv_kaihua01.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_011_shandian004.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_003_daoguang002.mat
+- Assets/AssetBundleRes/effect/materials/effect_xemlvup_lizi03.mat
+- Assets/AssetBundleRes/effect/materials/effect_xemlvup_glow11.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_daoguang006.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_anse001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_016_lizi03.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_009_juqi02.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_female_skill_004_zhu04.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_008_01_xuanwo002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_anse006.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_006_cone006.mat
+- Assets/AssetBundleRes/effect/materials/effect_female_skill_009_lizituowei_21.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_female_skill_005_dilie01.mat
+- Assets/AssetBundleRes/effect/materials/xemeffect_male_skill_001_daoguang003.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_006_2_tuowei01.mat
+- Assets/AssetBundleRes/effect/materials/xms_normal atk01_daoguangzi01.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_feijian009.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill013_14.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_007_tuowei001.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_skill_004_stone002.mat
+- Assets/AssetBundleRes/effect/materials/xemeffect_male_skill_001_daoguang002.mat
+- Assets/AssetBundleRes/effect/materials/effect_male_normal atk01_001_daoguang003.mat
+- Assets/AssetBundleRes/effect/materials/xem_effect_male_skill_005_smoke002.mat
+Dependencies:
+- D:/Users/UnityMMO-farmework/StreamingAssets/effect_sharder
+- D:/Users/UnityMMO-farmework/StreamingAssets/effect_texture
+- D:/Users/UnityMMO-farmework/StreamingAssets/scene_login

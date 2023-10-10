@@ -112,7 +112,8 @@ public static class XLuaGenConfig
         typeof(CinemachineFreeLook),
         typeof(AxisState),
         typeof(UnityEngine.UI.ScrollRect.ScrollRectEvent),
-        typeof(UnityEngine.Debug)
+        typeof(UnityEngine.Debug),
+        typeof(UnityMMO.MonsterMgr),
     };
 
     [LuaCallCSharp]
@@ -123,6 +124,7 @@ public static class XLuaGenConfig
         typeof(Unity.Entities.EntityManagerExtensions),
         typeof(Unity.Entities.EntityManager),
         typeof(Unity.Entities.EntityManager.EntityManagerDebug),
+        
     };
 
     [LuaCallCSharp]
@@ -162,6 +164,7 @@ public static class XLuaGenConfig
         typeof(Action<int,long>),
         typeof(Action<float, float>),
         typeof(Action<float, float,bool,bool>),
+        typeof(Action<long, long, int>),
         typeof(UnityEngine.Events.UnityAction),
         typeof(UnityEngine.Events.UnityAction<long>),
         typeof(UnityEngine.Events.UnityAction<long,long>),

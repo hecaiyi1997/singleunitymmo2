@@ -16,15 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: c1de97a1bf6a7504f99fd34929fb6e72
-  m_SerializeEntries:
-  - m_GUID: 092dfbd1d1f007a448a41cded731f699
-    m_Address: Assets/AssetBundleRes/scene/scene_1001/prefabs/Flower1.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: c07f24e35f07ce74ba43afa35d48adf7
-    m_Address: Assets/AssetBundleRes/scene/scene_1001/prefabs/Rock1.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f20f7cbb21ed41641b3d3d0ec0b3ba20, type: 2}
   m_SchemaSet:

@@ -1,0 +1,98 @@
+ManifestFileVersion: 0
+CRC: 2955682266
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fc238bd5bbdb41d62a956c2a42caf7e7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 29fd69334861977f00cc8abcefeade19
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@death.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@show.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@run2.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@rush.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@attack.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@skill7.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@ride2.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@attack.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@skill2.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@riderun2.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@skill2.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@skill4.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@date.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@skill3.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@skill11.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@run.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@rideup.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@jump.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@idle.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@skill12.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@ride.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@attack4.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@attack2.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@attack3.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@skill8.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@riderun.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@skill1.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@date.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@run2.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@skill6.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@idle2.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@skill12.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@hited.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@jump3.FBX
+- Assets/AssetBundleRes/role/action/action_boy/action.controller
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@jump.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@riderun.FBX
+- Assets/AssetBundleRes/role/action/action_girl/action.controller
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@idle3.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@show.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@jump2.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@attack3.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@run3.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@skill6.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@death.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@idle2.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@jump3.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@jump4.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@skill5.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@collect.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@ride2.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@jump2.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@ride.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@skill11.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@skill5.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@run.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@run3.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@rideup.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@jump4.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@skill8.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@hited.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@skill1.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@attack4.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@riderun2.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@attack2.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@idle3.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@skill3.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@collect.FBX
+- Assets/AssetBundleRes/role/action/action_boy/model_clothe_1100@skill4.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@idle.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@skill7.FBX
+- Assets/AssetBundleRes/role/action/action_girl/model_clothe_1200@rush.FBX
+Dependencies: []

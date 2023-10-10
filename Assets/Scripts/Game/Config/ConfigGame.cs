@@ -29,6 +29,7 @@ namespace UnityMMO
 
         private ConfigGame()
         {
+            //../ 表示是当前目录的上层目录
             FilePath = (AppConfig.DataPath+"../config_"+(AppConfig.AppName).ToLower()+".json").Trim();
             Debug.Log("init config game : "+FilePath);
         }
@@ -46,7 +47,7 @@ namespace UnityMMO
             else
             {
                 Data = new ConfigGameData{
-                    FileServerURL = "http://192.168.43.130"
+                    FileServerURL = "http://192.168.10.35"
                 };
                 Save();
             }

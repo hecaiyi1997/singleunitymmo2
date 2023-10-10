@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 490232171
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5513f20ac0c3cb10fc1d3e6a8521fd3a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 46bbd9da48cff8d17f0c89eef78da528
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/ui/roleHead/head_2000.png
+- Assets/AssetBundleRes/ui/roleHead/head_1000.png
+Dependencies: []

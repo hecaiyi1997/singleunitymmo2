@@ -59,6 +59,7 @@ public class MonsterMgr
         if (curHp==0)
             locoStateData.StartTime = 0;
         EntityManager.AddComponentData(monster, locoStateData);
+        //EntityManager.AddComponentData(monster, new UID { Value = uid });
         EntityManager.AddComponentData(monster, new LooksInfo {CurState=LooksInfo.State.None, LooksEntity=Entity.Null});
         EntityManager.AddComponentData(monster, new TypeID {Value=typeID});
         EntityManager.AddComponentData(monster, ActionData.Empty);
@@ -82,8 +83,13 @@ public class MonsterMgr
         MoveQuery rmq = EntityManager.GetComponentObject<MoveQuery>(monster);
         rmq.Initialize();
 
-        CreateLooks(monster, typeID);
-    }
+        var dynamicBuffer = SceneMgr.Instance.EntityManager.AddBuffer<DamageEvent>(monster);
+        dynamicBuffer.Add(new DamageEvent { instigator = monster, damage = 0, direction = Vector3.zero, impulse = 0 });
+            
+            CreateLooks(monster, typeID);
+            monsterGameOE.gameObject.AddComponent<monsterapi>();
+            monsterGameOE.gameObject.GetComponent<monsterapi>().init(uid,typeID,20f, monster, pos);
+        }
 
     private void CreateLooks(Entity ownerEntity, long typeID)
     {

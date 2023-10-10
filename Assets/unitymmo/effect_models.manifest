@@ -1,0 +1,105 @@
+ManifestFileVersion: 0
+CRC: 1645675821
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a11d90d8b89df3b82a9abc758870cf7c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 714e3e5cfc3a2b3f1bca317f4c731dc0
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/effect/models/exm_nv_longjuan002.FBX
+- Assets/AssetBundleRes/effect/models/exm_daoguang009.FBX
+- Assets/AssetBundleRes/effect/models/xms_shandian_001.FBX
+- Assets/AssetBundleRes/effect/models/xms_chuangjue_nv_kaihua01.FBX
+- Assets/AssetBundleRes/effect/models/luoxuan002.FBX
+- Assets/AssetBundleRes/effect/models/xem_canying_huli002.FBX
+- Assets/AssetBundleRes/effect/models/xem_canying_huli003.FBX
+- Assets/AssetBundleRes/effect/models/Materials/No Name.mat
+- Assets/AssetBundleRes/effect/models/exm_nv_longjuan001.FBX
+- Assets/AssetBundleRes/effect/models/exm_nv_daoguang004.FBX
+- Assets/AssetBundleRes/effect/models/shitou_d_003.FBX
+- Assets/AssetBundleRes/effect/models/effect_male_skill_015_bing004.FBX
+- Assets/AssetBundleRes/effect/models/effect_male_skill_015_bing002.FBX
+- Assets/AssetBundleRes/effect/models/luoxuan_shizi001.FBX
+- Assets/AssetBundleRes/effect/models/wind005.FBX
+- Assets/AssetBundleRes/effect/models/cone005.FBX
+- Assets/AssetBundleRes/effect/models/effect_male_skill_015_bing001.FBX
+- Assets/AssetBundleRes/effect/models/Other/longjuanfeng 2.FBX
+- Assets/AssetBundleRes/effect/models/xem_canying_huli001.FBX
+- Assets/AssetBundleRes/effect/models/exm_daoguang016.FBX
+- Assets/AssetBundleRes/effect/models/mesh_banyuan12.FBX
+- Assets/AssetBundleRes/effect/models/cone001.FBX
+- Assets/AssetBundleRes/effect/models/effect_male_skill_015_bing003.FBX
+- Assets/AssetBundleRes/effect/models/smoke_zhixian_001.FBX
+- Assets/AssetBundleRes/effect/models/daoguang004.FBX
+- Assets/AssetBundleRes/effect/models/Fbx_chibang.FBX
+- Assets/AssetBundleRes/effect/models/sphere001.FBX
+- Assets/AssetBundleRes/effect/models/yuanzhu001.FBX
+- Assets/AssetBundleRes/effect/models/daoguang_wind_002.FBX
+- Assets/AssetBundleRes/effect/models/luoxuan003.FBX
+- Assets/AssetBundleRes/effect/models/zgd_cylinder03.fbx
+- Assets/AssetBundleRes/effect/models/xms_liyu_03.FBX
+- Assets/AssetBundleRes/effect/models/shitou_d_001.FBX
+- Assets/AssetBundleRes/effect/models/xem_canying_huli004.FBX
+- Assets/AssetBundleRes/effect/models/exm_daoguang002.FBX
+- Assets/AssetBundleRes/effect/models/tx_daji01_dsfgs02.FBX
+- Assets/AssetBundleRes/effect/models/xem_canying003.FBX
+- Assets/AssetBundleRes/effect/models/xem_canying005.FBX
+- Assets/AssetBundleRes/effect/models/chongjibo001.FBX
+- Assets/AssetBundleRes/effect/models/plane_shizi_003.FBX
+- Assets/AssetBundleRes/effect/models/Other/Materials/path_00174.mat
+- Assets/AssetBundleRes/effect/models/shitou_d_002.FBX
+- Assets/AssetBundleRes/effect/models/luoxuanxian_012.FBX
+- Assets/AssetBundleRes/effect/models/exm_nv_longjuan004.FBX
+- Assets/AssetBundleRes/effect/models/z_pingmian.FBX
+- Assets/AssetBundleRes/effect/models/shitou_d_005.FBX
+- Assets/AssetBundleRes/effect/models/Materials/sequence_0574.mat
+- Assets/AssetBundleRes/effect/models/xem_canying002.FBX
+- Assets/AssetBundleRes/effect/models/xem_canying001.FBX
+- Assets/AssetBundleRes/effect/models/Other/mesh_pian4.FBX
+- Assets/AssetBundleRes/effect/models/exm_nv_daoguang005.FBX
+- Assets/AssetBundleRes/effect/models/xem_helix001.FBX
+- Assets/AssetBundleRes/effect/models/model_tail_1200.FBX
+- Assets/AssetBundleRes/effect/models/exm_nv_daoguang003.FBX
+- Assets/AssetBundleRes/effect/models/Plane003.FBX
+- Assets/AssetBundleRes/effect/models/xms_shandian_002_2.FBX
+- Assets/AssetBundleRes/effect/models/blendplane03.FBX
+- Assets/AssetBundleRes/effect/models/cone007.FBX
+- Assets/AssetBundleRes/effect/models/Materials/smoke_0261.mat
+- Assets/AssetBundleRes/effect/models/model_wing_1100.FBX
+- Assets/AssetBundleRes/effect/models/chibang_zhangkai.FBX
+- Assets/AssetBundleRes/effect/models/yuanzhu002.FBX
+- Assets/AssetBundleRes/effect/models/xms_shandian_002_1.FBX
+- Assets/AssetBundleRes/effect/models/exm_daoguang015.FBX
+Dependencies:
+- D:/Users/UnityMMO-farmework/StreamingAssets/effect_texture

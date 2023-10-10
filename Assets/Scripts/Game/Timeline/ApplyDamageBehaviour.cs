@@ -12,14 +12,14 @@ using UnityMMO.Component;
 public class ApplyDamageBehaviour : PlayableBehaviour
 {
     // public List<scene_fight_defender_info> Defenders;
-    public Entity Owner;
+    public Entity Owner;//接受伤害的人
     public EntityManager EntityMgr;
 
     private int leftShowCount = 1;
     
     public void Init(Entity owner, EntityManager entityMgr, object param)
     {
-        Owner = owner;
+        Owner = owner;//发出技能的人
         EntityMgr = entityMgr;
         // Defenders = param as List<scene_fight_defender_info>;
     }
@@ -32,11 +32,16 @@ public class ApplyDamageBehaviour : PlayableBehaviour
     // Called when the owning graph stops playing
     public override void OnGraphStop(Playable playable)
     {
+
     }
 
     // Called when the state of the playable is set to Play
     public override void OnBehaviourPlay(Playable playable, FrameData info)
     {
+        Debug.Log("APPOnBehaviourPlay");
+        Entity e = RoleMgr.GetInstance().GetMainRole().Entity;
+        var dynamicBuffer = SceneMgr.Instance.EntityManager.AddBuffer<DamageEvent>(e);
+        //dynamicBuffer.Add(new DamageEvent { instigator = e, damage = 10, direction = Vector3.zero, impulse = 0 });玩家发大招怎么可能自己受伤害
     }
 
     // Called when the state of the playable is set to Paused

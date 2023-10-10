@@ -48,13 +48,25 @@ function BagView:OnUpdate(  )
 end
 
 function BagView:UpdateGoodsItems(  )
-	local goodsList = self.model:GetFullGoodsList(BagConst.Pos.Bag)
+	local goodsList = self.model:GetFullGoodsList(BagConst.Pos.Bag)--self.fullGoodsList[bagInfo.pos] = fullGoodsList 这是背包里面的所有物品，一个物品是一个table
+	--local goe = RoleMgr.GetInstance():GetMainRole().Entity;
+    --local roleid = ECS:GetComponentData(goe, CS.UnityMMO.UID)
+    --local bagInfo=Bag_GetInfo({cur_role_id=roleid.Value,pos=BagConst.Pos.Bag})
+	--local goodsList = bagInfo.goodsList
+	
+	for i,v in pairs(goodsList) do
+		print(i,"goodsListgoodsList",v)
+		for n,m in pairs(v) do --每一个物品一个table
+			print(n,"vvvvvvvvgoodsListgoodsListvvvvv",m)
+		end
+	end
+	 
 	self.goods_item_com = self.goods_item_com or self:AddUIComponent(UI.ItemListCreator)
 	self.infoViewShowData = self.infoViewShowData or {
 		comeFrom = "BagView"
 	}
 	local info = {
-		data_list = goodsList, 
+		data_list = goodsList, --我需要他是一个
 		item_con = self.item_con, 
 		scroll_view = self.item_scroll,
 		create_frequency = 0.1,

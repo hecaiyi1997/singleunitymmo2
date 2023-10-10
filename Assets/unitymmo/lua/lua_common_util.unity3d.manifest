@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 38852875
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 85bf5c3402c17e4c650c14cc4d2b96d8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/Common/Util/sprotoparser.lua.bytes
+- Assets/luatemp/Common/Util/TableUtil.lua.bytes
+- Assets/luatemp/Common/Util/Timer.lua.bytes
+- Assets/luatemp/Common/Util/Functor.lua.bytes
+- Assets/luatemp/Common/Util/sprotoloader.lua.bytes
+- Assets/luatemp/Common/Util/Jury.lua.bytes
+- Assets/luatemp/Common/Util/util.lua.bytes
+- Assets/luatemp/Common/Util/StringUtil.lua.bytes
+- Assets/luatemp/Common/Util/list.lua.bytes
+- Assets/luatemp/Common/Util/sproto.lua.bytes
+- Assets/luatemp/Common/Util/event.lua.bytes
+- Assets/luatemp/Common/Util/LuaUtil.lua.bytes
+- Assets/luatemp/Common/Util/print_r.lua.bytes
+Dependencies: []

@@ -1,0 +1,338 @@
+ManifestFileVersion: 0
+CRC: 2676474855
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8657bc2054f5b6e46bfa29037b3e9a39
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e2459c84103a0544ae85be824c7729b5
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 182
+  Script: {instanceID: 0}
+- Class: 193
+  Script: {instanceID: 0}
+- Class: 205
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/scene/common/shaders/Legacy Shaders/BumpedSpecular_3.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree06.prefab
+- Assets/AssetBundleRes/scene/common/shaders/Legacy Shaders/BumpedSpecular_2.shader
+- Assets/AssetBundleRes/scene/common/tree/Darth_Artisan/Free_Trees/Meshes/Palm_Tree.fbx
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf2_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Darth_Artisan/Free_Trees/Prefabs/Fir_Tree.prefab
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_1_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Tree Pack 2/Bark_GreenFungus1.png
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_Leaf.mat
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf2_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Materials/Parts/Coconut_Palm_Tree_Brush.mat
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_3_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree10_lods.asset
+- Assets/AssetBundleRes/scene/common/tree/Tree Pack 2/bark 1.mat
+- Assets/AssetBundleRes/scene/common/tree/Tree Pack 2/Bark_GreenFungus1_N.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/TreeCreatorEditable/Coconut_Palm_Tree02.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Coconut_Palm_Tree_diffuse.psd
+- Assets/AssetBundleRes/scene/common/tree/Darth_Artisan/Free_Trees/Meshes/Poplar_Tree.fbx
+- Assets/AssetBundleRes/scene/common/tree/Tree9/Tree9_1_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/Textures/branch_2.tga
+- Assets/AssetBundleRes/scene/common/shaders/Basemap/Basemap.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/TreeCreatorEditable/Coconut_Palm_Tree12.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Materials/Parts/Coconut_Palm_Tree_Bark2.mat
+- Assets/AssetBundleRes/scene/common/shaders/Legacy Shaders/Diffuse_6.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_1_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Tree_Branch2_diffuse.psd
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_1_lods.asset
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/AFS/Coconut_Palm_Tree06_AFS.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf2_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Frond_Stem_gloss.psd
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf1_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_2_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/TreeCreatorEditable/Coconut_Palm_Tree10.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Materials/Parts/Coconut_Palm_Tree_Leaf1.mat
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/Textures/Broken.png
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree2_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/AFS/Coconut_Palm_Tree07_AFS.prefab
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/Textures/ends.mat
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Palm_Brush_trans.psd
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Shaders/TFP_treecreator/TFPTreeCreatorLeavesOptimized.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Texture/Dracaena_Leaf_Texture.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/AFS/Coconut_Palm_Tree10_AFS.prefab
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_3.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Bark2_normal.tif
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/Textures/branch_2N.png
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_3.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/AFS/Coconut_Palm_Tree04_AFS.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree01_lods.asset
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Tree_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_2_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Models/Coconut_Palm_Tree11_AFS.asset
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_1_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/tree/Tree Pack 2/leaves23_N.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Tree_Branch2_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Tree9/bark14.mat
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Model/dracaena_Leaf.fbx
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Tree9/Leafs19_N.png
+- Assets/AssetBundleRes/scene/common/shaders/Unlit/Unlit_4.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Tree_Branch1_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Models/Coconut_Palm_Tree06_AFS.asset
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Coconut_Palm_Tree_AFS.psd
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Tree_Branch1_normal.tif
+- Assets/AssetBundleRes/scene/common/tree/Darth_Artisan/Free_Trees/Textures/tree_diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Tree9/bark14.png
+- Assets/AssetBundleRes/scene/common/shaders/Legacy Shaders/BumpedSpecular_4.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree11.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_3_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Models/Coconut_Palm_Tree10_AFS.asset
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Tree_Branch1_shadowoffset.png
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Tree2_1_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree05.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_5_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/models/Tree2_branch.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf1_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Darth_Artisan/Free_Trees/Meshes/Materials/Free_Tree.mat
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree04_lods.asset
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_4_lods.asset
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf1.prefab
+- Assets/AssetBundleRes/scene/common/shaders/One Directional Light/Diffuse_3.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Tree_Branch2_translucency.png
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Texture/bark9.png
+- Assets/AssetBundleRes/scene/common/tree/Tree9/Tree9_1_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree1_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Tree2_1_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/TreeCreatorEditable/Coconut_Palm_Tree06.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree Pack 2/Tree 2.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Material/Bark.mat
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/TreeCreatorEditable/Coconut_Palm_Tree09.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree02_lods.asset
+- Assets/AssetBundleRes/scene/common/shaders/One Directional Light/Bumped_2.shader
+- Assets/AssetBundleRes/scene/common/tree/Darth_Artisan/Free_Trees/Meshes/Materials/No
+  Name.mat
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Tree_Branch2_normal.png
+- Assets/AssetBundleRes/scene/common/shaders/Standard/Diffuse_6.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree9/Tree9_1_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Palm_Brush_normal.tif
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree08_lods.asset
+- Assets/AssetBundleRes/scene/common/shaders/One Directional Light/Diffuse_8.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf1_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/shaders/Standard/Bumped_4.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Tree_Bark_normal.tif
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Tree2_1_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/AFS/Coconut_Palm_Tree02_AFS.prefab
+- Assets/AssetBundleRes/scene/common/shaders/Legacy Shaders/Bumped_2.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf1_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_2_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/AFS/Coconut_Palm_Tree12_AFS.prefab
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_1_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/tree/Tree9/Tree9_5.prefab
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_4.prefab
+- Assets/AssetBundleRes/scene/common/shaders/Standard/Diffuse_5.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Models/Coconut_Palm_Tree07_AFS.asset
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/Textures/branch2.mat
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Demo_Scene_files/Sky.mat
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/Textures/Bark_GreenFungus_N.png
+- Assets/AssetBundleRes/scene/common/shaders/Unlit/Unlit_2.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_2_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/TreeCreatorEditable/Coconut_Palm_Tree11.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/AFS/Coconut_Palm_Tree11_AFS.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Palm_Brush_diffuse.psd
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Materials/Parts/Coconut_Palm_Tree_Bark3.mat
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Bark1_diffuse.psd
+- Assets/AssetBundleRes/scene/common/shaders/Legacy Shaders/Diffuse_2.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_2_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/AFS/Coconut_Palm_Tree08_AFS.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree03.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Texture/bark9_N.png
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_5_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/AFS/Coconut_Palm_Tree03_AFS.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/TreeCreatorEditable/Coconut_Palm_Tree04.prefab
+- Assets/AssetBundleRes/scene/common/shaders/Standard/Bumped_3.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Materials/Leaf.mat
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf2.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_4_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_2_lods.asset
+- Assets/AssetBundleRes/scene/common/tree/Tree9/Leafs19.tga
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_5.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree Pack 2/Tree 2_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree06_lods.asset
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_5_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_1_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Darth_Artisan/Free_Trees/Prefabs/Palm_Tree.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree1_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Demo_Scene_files/WindZones.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_4_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_1.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_2.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_4.prefab
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Tree_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_2_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree10.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/AFS/Coconut_Palm_Tree01_AFS.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_2_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Tree9/bark14_N.png
+- Assets/AssetBundleRes/scene/common/tree/Tree Pack 2/Tree 2_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/shaders/Standard/Bumped_2.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree1_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/shaders/Standard/Diffuse_4.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree08.prefab
+- Assets/AssetBundleRes/scene/common/shaders/One Directional Light/Bumped_4.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Frond_Stem_normal.psd
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree2_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Models/Coconut_Palm_Tree01_AFS.asset
+- Assets/AssetBundleRes/scene/common/shaders/Unlit/Unlit_7.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree10/bark11_N.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree07.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree9/Tree9_1_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree2_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Shaders/TFP_treecreator/TFPTreeCreatorBarkOptimized.shader
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_1_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Model/Materials/Leaf.mat
+- Assets/AssetBundleRes/scene/common/shaders/Unlit/Unlit_6.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree09.prefab
+- Assets/AssetBundleRes/scene/common/shaders/Legacy Shaders/Diffuse_5.shader
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Tree2_1_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree09_lods.asset
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree1.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_5_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_3_lods.asset
+- Assets/AssetBundleRes/scene/common/shaders/One Directional Light/Diffuse_5.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Leaf18.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree12_lods.asset
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/TreeCreatorEditable/Coconut_Palm_Tree07.prefab
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/Textures/Bark_GreenFungus.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Materials/Parts/Coconut_Palm_Tree_Frond_Stem.mat
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_5.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree2_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/tree/Darth_Artisan/Free_Trees/Meshes/Oak_Tree.fbx
+- Assets/AssetBundleRes/scene/common/shaders/One Directional Light/Diffuse_7.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Coconut_Palm_Tree_transgloss.psd
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/TreeCreatorEditable/Coconut_Palm_Tree08.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_1.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_1_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/Textures/Broken_Normal.png
+- Assets/AssetBundleRes/scene/common/shaders/Legacy Shaders/Diffuse_3.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Tree_Branch1_translucency.png
+- Assets/AssetBundleRes/scene/common/shaders/Unlit/Unlit_5.shader
+- Assets/AssetBundleRes/scene/common/tree/Darth_Artisan/Free_Trees/Prefabs/Poplar_Tree.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Dracaena1.prefab
+- Assets/AssetBundleRes/scene/common/shaders/Legacy Shaders/Diffuse_8.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Materials/Parts/Coconut_Palm_Tree_Leaf2.mat
+- Assets/AssetBundleRes/scene/common/tree/Tree Pack 2/Tree 1.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_3_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/TreeCreatorEditable/Coconut_Palm_Tree05.prefab
+- Assets/AssetBundleRes/scene/common/shaders/One Directional Light/Diffuse_2.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Materials/leaf.mat
+- Assets/AssetBundleRes/scene/common/shaders/Legacy Shaders/Diffuse_7.shader
+- Assets/AssetBundleRes/scene/common/shaders/Standard/Diffuse_2.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_1_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree12.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Bark1_normal.tif
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Coconut_Palm_Tree_normalspec_bark.psd
+- Assets/AssetBundleRes/scene/common/shaders/Standard/Diffuse_7.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree Pack 2/leaves 1.mat
+- Assets/AssetBundleRes/scene/common/tree/Tree9/Tree9_leafs.mat
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree2.prefab
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_2.prefab
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/models/Tree2_branch.fbx
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Materials/bark.mat
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Tree_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Tree9/Materials/leaf.mat
+- Assets/AssetBundleRes/scene/common/tree/Darth_Artisan/Free_Trees/Meshes/Fir_Tree.fbx
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Models/Coconut_Palm_Tree02_AFS.asset
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Tree_Branch2_shadowoffset.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Palm_Brush_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Tree10/bark11.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Bark2_diffuse.psd
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree01.prefab
+- Assets/AssetBundleRes/scene/common/shaders/Standard/Diffuse_8.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree9/Tree9_4.prefab
+- Assets/AssetBundleRes/scene/common/shaders/Standard/Diffuse_3.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_4_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Models/Coconut_Palm_Tree05_AFS.asset
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Tree_Bark_gloss.tif
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/TreeCreatorEditable/Coconut_Palm_Tree01.prefab
+- Assets/AssetBundleRes/scene/common/shaders/One Directional Light/Diffuse_6.shader
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_5_lods.asset
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Models/Coconut_Palm_Tree09_AFS.asset
+- Assets/AssetBundleRes/scene/common/shaders/Unlit/Unlit_8.shader
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Rakshi_Tree2_2_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/shaders/Legacy Shaders/Bumped_4.shader
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf.prefab
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/prefab/Tree12/Tree_Textures/shadow.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree02.prefab
+- Assets/AssetBundleRes/scene/common/shaders/One Directional Light/Diffuse_4.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree05_lods.asset
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree1_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Darth_Artisan/Free_Trees/Prefabs/Oak_Tree.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Tree_Branch1_diffuse.psd
+- Assets/AssetBundleRes/scene/common/tree/Rakshi_Realistic Pack Tree 12/Textures/bark2.mat
+- Assets/AssetBundleRes/scene/common/tree/Tree9/Tree9_3.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Leaf18_N.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree03_lods.asset
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Models/Coconut_Palm_Tree12_AFS.asset
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree11_lods.asset
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/shaders/Legacy Shaders/Bumped_3.shader
+- Assets/AssetBundleRes/scene/common/shaders/One Directional Light/Bumped_3.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Materials/Coconut_Palm_Tree_AFS.mat
+- Assets/AssetBundleRes/scene/common/tree/Tree Pack 2/Tree 3.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_3_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/TreeCreatorEditable/Coconut_Palm_Tree03.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree9/Tree9_2.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Leaf2_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_Bark.mat
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Textures/normal_specular.png
+- Assets/AssetBundleRes/scene/common/tree/Tree Pack 2/Tree 2_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree04.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Texture/Dracaena_Leaf_Texture_N.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/Coconut_Palm_Tree07_lods.asset
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/AFS/Coconut_Palm_Tree09_AFS.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree Pack 2/Tree 2_Textures/diffuse.png
+- Assets/AssetBundleRes/scene/common/tree/Tree10/Tree10_4_Textures/translucency_gloss.png
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Prefabs/AFS/Coconut_Palm_Tree05_AFS.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Materials/Parts/Coconut_Palm_Tree_Bark1.mat
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Models/Coconut_Palm_Tree04_AFS.asset
+- Assets/AssetBundleRes/scene/common/shaders/Legacy Shaders/Diffuse_4.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Models/Coconut_Palm_Tree03_AFS.asset
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Dracaena2.prefab
+- Assets/AssetBundleRes/scene/common/tree/Tree9/Tree9_Leaf.fbx
+- Assets/AssetBundleRes/scene/common/tree/Tree Pack 2/leaves23.tga
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Coconut_Palm_Tree_Bark_diffuse.tif
+- Assets/AssetBundleRes/scene/common/tree/Tree24[Dracaena]/Prefab/Tree_Dracaena.prefab
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Coconut_Palm_Tree_normalspec.psd
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Models/Coconut_Palm_Tree08_AFS.asset
+- Assets/AssetBundleRes/scene/common/shaders/Unlit/Unlit_3.shader
+- Assets/AssetBundleRes/scene/common/tree/Coconut Palm Tree Pack/Textures/Parts/Frond_Stem_diffuse.psd
+Dependencies: []

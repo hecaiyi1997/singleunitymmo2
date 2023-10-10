@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 2208777606
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 00ee11989649b5b181fc4d30176b1562
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/Game/Common/UI/GoodsItem.lua.bytes
+- Assets/luatemp/Game/Common/UI/GoodsInfoView.lua.bytes
+- Assets/luatemp/Game/Common/UI/MoneyBar.lua.bytes
+- Assets/luatemp/Game/Common/UI/TabBar.lua.bytes
+- Assets/luatemp/Game/Common/UI/Window.lua.bytes
+Dependencies: []

@@ -53,13 +53,14 @@ public class AssetBundleInfo {
             m_BaseDownloadingURL = AppConfig.GetRelativePath();
             // m_BaseDownloadingURL = AppConfig.DataPath;
             Debug.Log("ResourceManager:Initialize() m_BaseDownloadingURL:" + m_BaseDownloadingURL);
-            if (AppConfig.DebugMode)
+            if (AppConfig.DebugMode)//当前根本没用ab
             {
                 initOK();
                 return;
             }
             LoadAsset<AssetBundleManifest>(manifestName, new string[] { "AssetBundleManifest" }, delegate(UObject[] objs) {
                 if (objs.Length > 0) {
+                    Debug.Log("StreamingAssets");
                     m_AssetBundleManifest = objs[0] as AssetBundleManifest;
                     m_AllManifest = m_AssetBundleManifest.GetAllAssetBundles();
                 }
@@ -101,6 +102,30 @@ public class AssetBundleInfo {
             else
             {
                 Debug.LogError(bundle.error);
+            }
+        }
+        public void ForLoadAssetBundle(string file_name, Action<UObject> action = null)
+        {
+            Debug.Log("StartPreLoadRes ForLoadAssetBundle");
+            StartCoroutine(LoadAssetBundle(file_name, action));
+        }
+            public IEnumerator LoadAssetBundle(string file_name, Action<UObject> action = null)
+        {
+            string url = m_BaseDownloadingURL  + file_name;
+            Debug.Log("StartPreLoadRes url=" + url);
+            UnityWebRequest webRequest = null;
+            webRequest = UnityWebRequestAssetBundle.GetAssetBundle(url);
+            yield return webRequest.SendWebRequest();
+            AssetBundle bundle = DownloadHandlerAssetBundle.GetContent(webRequest);
+            if (bundle!= null)
+            {
+                m_LoadedAssetBundles.Add(file_name, new AssetBundleInfo(bundle));
+                Debug.Log("LoadAssetBundle file_name=" + file_name + bundle != null);
+                if (action != null) action(bundle);
+            }
+            else
+            {
+                Debug.Log("LoadAssetBundle error");
             }
         }
 
@@ -151,6 +176,13 @@ public class AssetBundleInfo {
             Debug.LogError("GetRealAssetPath Error:>>" + abName);
             return "";
         }
+        public string[] AllManifest
+        {
+            get
+            {
+                return m_AllManifest;
+            }
+        }
 
         public void LoadAsset<T>(string file_path, Action<UObject[]> action = null, LuaFunction func = null) where T : UObject 
         {
@@ -163,7 +195,16 @@ public class AssetBundleInfo {
 #endif
             // string assetName = System.IO.Path.GetFileNameWithoutExtension(file_path);
             string abName = PackRule.PathToAssetBundleName(file_path);
-            string resName = file_path.ToLower();
+            /////////
+            //---string resName = file_path.ToLower();
+            string resName = "";
+            int pos = file_path.LastIndexOf('/');
+            if (pos > 0)
+            {
+                resName = file_path.Substring(pos + 1);
+            }
+
+            Debug.Log("LoadAsset<T>" + abName + ":" + resName);
             this.LoadAsset<T>(abName, new string[] {resName}, action, func);
         }
 
@@ -202,10 +243,12 @@ public class AssetBundleInfo {
         /// 载入素材
         /// </summary>
         void LoadAsset<T>(string abName, string[] assetNames, Action<UObject[]> action = null, LuaFunction func = null) where T : UObject {
-            // Debug.Log("ResourceManager:LoadAsset() abName : "+abName+" assetNames:"+assetNames[0]);
+            Debug.Log("ResourceManager:LoadAsset() abName1 : "+abName+" assetNames:"+assetNames[0]);
             abName = GetRealAssetPath(abName);
+            Debug.Log("ResourceManager:LoadAsset() real abName2 : " + abName + typeof(T));
             if (abName=="")
             {
+                Debug.Log("ResourceManager:LoadAsset() real abName==   ");
                 if (action != null)
                     action(null);
                 if (func != null)
@@ -216,7 +259,7 @@ public class AssetBundleInfo {
                 }
                 return;
             }
-            // Debug.Log("ResourceManager:LoadAsset() real abName : "+abName);
+            
 
             LoadAssetRequest request = new LoadAssetRequest();
             request.assetType = typeof(T);
@@ -282,12 +325,18 @@ public class AssetBundleInfo {
         }
 
         IEnumerator OnLoadAssetBundle(string abName, Type type) {
-            string url = m_BaseDownloadingURL + abName;
+            string url = m_BaseDownloadingURL + abName;//要不要加后缀？
+            Debug.Log("OnLoadAssetBundle Application.platform=" + url+":"+ abName);
+            Debug.Log("OnLoadAssetBundle Application.platform=" + Application.platform + RuntimePlatform.Android);
             // Debug.Log("OnLoadAssetBundle : url:"+url+" m_AssetBundleManifest:"+(m_AssetBundleManifest!=null) + new System.Diagnostics.StackTrace().ToString());
             UnityWebRequest webRequest = null;
             if (type == typeof(AssetBundleManifest))
             {
-                webRequest = UnityWebRequestAssetBundle.GetAssetBundle(url);   
+                //@"http://localhost/AssetBundles/cubewall.unity3d" 改成下面这个
+                //string urll = @"file:///D:\Users\UnityMMO-farmework\StreamingAssets\StreamingAssets";
+
+                webRequest = UnityWebRequestAssetBundle.GetAssetBundle(url);
+                Debug.Log("webRequest =" + webRequest);
             }
             else 
             {
@@ -321,14 +370,26 @@ public class AssetBundleInfo {
                 webRequest = UnityWebRequestAssetBundle.GetAssetBundle(url, hash, 0);
             }
             yield return webRequest.SendWebRequest();
-
+            
+            Debug.Log("assetObj :"+webRequest.isDone);
+            //AssetBundle assetObj = (webRequest.downloadHandler as DownloadHandlerAssetBundle).assetBundle;
             AssetBundle assetObj = DownloadHandlerAssetBundle.GetContent(webRequest);
-            // Debug.Log("assetObj : "+(assetObj!=null)+" abName:"+abName+" isDone:"+webRequest.isDone);
+            //AssetBundle assetObj = DownloadHandlerAssetBundle.GetContent(webRequest);
+            //AssetBundleRequest request=assetObj.LoadAssetAsync<AssetBundleManifest>("AssetBundleManifest");
+            //AssetBundleRequest request = assetObj.LoadAssetAsync("StreamingAssets",typeof(AssetBundleManifest));
+            //yield return request;
+
+            //Debug.Log("assetObj : "+(assetObj!=null)+" abName:"+abName+" isDone:"+webRequest.isDone+":"+request.asset);
             if (assetObj != null) {
+                Debug.Log("assetObj != null?=" + assetObj != null);
                 m_LoadedAssetBundles.Add(abName, new AssetBundleInfo(assetObj));
             }
         }
+        public void Addassetbundles(string abName, AssetBundle assetObj)
+        {
+            m_LoadedAssetBundles.Add(abName, new AssetBundleInfo(assetObj));
 
+        }
         IEnumerator WaitForAssetBundleLoaded(string abName)
         {
             float tryTime = 30.0f;

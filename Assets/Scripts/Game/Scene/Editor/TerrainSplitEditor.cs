@@ -111,10 +111,10 @@ public class SplitTerrain : EditorWindow
         GameObject gameObject = Terrain.CreateTerrainGameObject(td);
         Terrain newTerrain = gameObject.GetComponent<Terrain>();
 
-        if (!AssetDatabase.IsValidFolder("Assets/Resources"))
-            AssetDatabase.CreateFolder("Assets", "Resources");
+        if (!AssetDatabase.IsValidFolder("Assets/AssetBundleRes/SplitTerrain"))
+            AssetDatabase.CreateFolder("Assets/AssetBundleRes", "SplitTerrain");
         // Must do this before Splat
-        AssetDatabase.CreateAsset(td, "Assets/Resources/" + newName + ".asset");
+        AssetDatabase.CreateAsset(td, "Assets/AssetBundleRes/SplitTerrain/" + newName + ".asset");
 
         // Copy over all vars
         newTerrain.bakeLightProbesForTrees = origTerrain.bakeLightProbesForTrees;

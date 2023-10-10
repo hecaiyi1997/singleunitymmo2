@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 4066111702
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 51e7051e1d5e404763cf59993ffb584b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/Game/Common/ResPath.lua.bytes
+- Assets/luatemp/Game/Common/UIManager.lua.bytes
+- Assets/luatemp/Game/Common/PrefabPool.lua.bytes
+- Assets/luatemp/Game/Common/UIGlobal.lua.bytes
+- Assets/luatemp/Game/Common/LuaPool.lua.bytes
+- Assets/luatemp/Game/Common/EventDispatcher.lua.bytes
+- Assets/luatemp/Game/Common/GlobalEvents.lua.bytes
+- Assets/luatemp/Game/Common/AlertView.lua.bytes
+- Assets/luatemp/Game/Common/LoadingView.lua.bytes
+- Assets/luatemp/Game/Common/Stack.lua.bytes
+- Assets/luatemp/Game/Common/ColorUtil.lua.bytes
+- Assets/luatemp/Game/Common/ECS.lua.bytes
+- Assets/luatemp/Game/Common/GameResPath.lua.bytes
+- Assets/luatemp/Game/Common/Message.lua.bytes
+Dependencies: []

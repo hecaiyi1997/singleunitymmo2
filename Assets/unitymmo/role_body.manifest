@@ -1,0 +1,93 @@
+ManifestFileVersion: 0
+CRC: 3958661579
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 14cf7ac5105b41a4a4dab1476a7534a4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 1d057da8e5716d761a384ac6023c2be1
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/role/body/body_1200/model_body_1200.FBX
+- Assets/AssetBundleRes/role/body/body_1201/model_body_1201.FBX
+- Assets/AssetBundleRes/role/body/body_1201/Materials/model_clothe_1207.mat
+- Assets/AssetBundleRes/role/body/body_1203/material/Wolf3D_Headwear.mat
+- Assets/AssetBundleRes/role/body/body_1100/model_body_1100.jpg
+- Assets/AssetBundleRes/role/body/body_1203/material/Wolf3D_Teeth.mat
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/Wolf3D_Male_Athletic_nm.jpg
+- Assets/AssetBundleRes/role/body/body_1101/model_body_1101.prefab
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/headwear-pullandbear-02-D.jpg
+- Assets/AssetBundleRes/role/body/body_1203/material/Wolf3D_Glasses.mat
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/outfit-newbalance-04-v2-m-bottom-M-outfit-newbalance-04-v2-m-bo.jpg
+- Assets/AssetBundleRes/role/body/body_1100/Materials/model_clothe_1100_2.mat
+- Assets/AssetBundleRes/role/body/body_1201/model_body_1201.prefab
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/newbalance-male-costume-03-footwear-D.jpg
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/glasses_id_12_D.png
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/Wolf3D_Teeth.jpg
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/newbalance-male-costume-03-footwear-R.jpg
+- Assets/AssetBundleRes/role/body/body_1201/model_body_1201.jpg
+- Assets/AssetBundleRes/role/body/body_1203/model_body_1203.prefab
+- Assets/AssetBundleRes/role/body/body_1200/Materials/model_clothe_1200_1.mat
+- Assets/AssetBundleRes/role/body/body_1200/model_body_1200.prefab
+- Assets/AssetBundleRes/role/body/body_1203/material/Wolf3D_Outfit_Bottom.mat
+- Assets/AssetBundleRes/role/body/body_1101/model_body_1101.jpg
+- Assets/AssetBundleRes/role/body/body_1203/material/Wolf3D_Skin.mat
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/newbalance-male-costume-03-top-D.jpg
+- Assets/AssetBundleRes/role/body/body_1100/model_body_1100.prefab
+- Assets/AssetBundleRes/role/body/body_1200/Materials/model_clothe_1200_2.mat
+- Assets/AssetBundleRes/role/body/body_1203/material/Wolf3D_Body.mat
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/baseColor.001.jpg
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/headwear-pullandbear-02-R.png
+- Assets/AssetBundleRes/role/body/body_1100/Materials/model_clothe_1100.mat
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/baseColor.002.png
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/outfit-newbalance-04-v2-m-bottom-N.jpg
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/newbalance-male-costume-03-footwear-N.jpg
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/headwear-pullandbear-02-N.jpg
+- Assets/AssetBundleRes/role/body/body_1100/Materials/model_wing_1000.mat
+- Assets/AssetBundleRes/role/body/body_1203/readplyer_tex/outfit-newbalance-04-v2-m-bottom-N.png
+- Assets/AssetBundleRes/role/body/body_1200/model_body_1200.jpg
+- Assets/AssetBundleRes/role/body/body_1100/model_body_1100.FBX
+- Assets/AssetBundleRes/role/body/body_1203/model_body_1203.fbx
+- Assets/AssetBundleRes/role/body/body_1101/model_body_1101.FBX
+- Assets/AssetBundleRes/role/body/body_1101/Materials/model_clothe_1107.mat
+- Assets/AssetBundleRes/role/body/body_1203/material/Wolf3D_Eye.mat
+- Assets/AssetBundleRes/role/body/body_1200/Materials/model_clothe_1200.mat
+- Assets/AssetBundleRes/role/body/body_1100/Materials/model_clothe_1100_1.mat
+- Assets/AssetBundleRes/role/body/body_1203/material/Wolf3D_Outfit_Top.mat
+- Assets/AssetBundleRes/role/body/body_1203/material/Wolf3D_Outfit_Footwear.mat
+Dependencies:
+- D:/Users/UnityMMO-farmework/StreamingAssets/effect_sharder
+- D:/Users/UnityMMO-farmework/StreamingAssets/role_action

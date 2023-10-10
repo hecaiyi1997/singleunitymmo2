@@ -1,0 +1,90 @@
+ManifestFileVersion: 0
+CRC: 1631442933
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0e77a3bee04425de7d16dc362c969ccd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bbfaa0f72a86ec3f92b1fc3129632085
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_008_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_007_gua1.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/model_wing_1100@jump4.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_005_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/model_wing_1100@jump4.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/model_tail_1200@jump3.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_008_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_006_2_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_skill_001_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_004_3_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_normal atk01_004_gua2.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_normal atk01_002_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_003_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_004_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_normal atk01_004_gua2.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_009_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_skill_002_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/model_tail_1200@jump4.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_normal atk01_004_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/model_tail_1200@skill8.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_normal atk01_002_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_normal atk01_001_gua1.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/model_wing_1100@jump3.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_skill_008_01_gua1.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill014_01.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/model_wing_1100@skill8.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill014_02.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_normal atk01_003_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_006_2_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/model_wing_1100@skill8.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/model_tail_1200@jump3.controller
+- Assets/AssetBundleRes/effect/animations/other_animations/effect_character creat_show3_female_smoke01_gua1.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_skill_007_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/model_tail_1200@skill8.anim
+- Assets/AssetBundleRes/effect/animations/other_animations/effect_character creat_show3_female_smoke01_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_skill_002_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_skill_009_01_gua1.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/model_tail_1200@jump4.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_015_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_skill_009_01_gua1.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill014_02.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_normal atk01_001_gua1.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_normal atk01_003_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_002_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/dazhao_chibang.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill013.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_004_3_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_normal atk01_001_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_002_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_005_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_normal atk01_004_gua1.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_normal atk01_002_gua1.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill013_01.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/model_wing_1100@jump3.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_normal atk01_002_gua1.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill013_01.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_normal atk01_004_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_skill_001_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_015_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_skill_008_01_gua1.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_normal atk01_001_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/chibang_dazhao.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_009_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill013.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_004_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_normal atk01_003_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_007_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_normal atk01_004_gua1.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill014_01.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_skill_003_gua0.anim
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_female_skill_007_gua0.controller
+- Assets/AssetBundleRes/effect/animations/skill_animations/effect_male_normal atk01_003_gua0.controller
+Dependencies: []

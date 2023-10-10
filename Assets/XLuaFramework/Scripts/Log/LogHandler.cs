@@ -34,11 +34,8 @@ namespace XLuaFramework
         private string output_path = null;
         void Awake()
         {
-            LogManager.RegisterLogCallback(delegate (string message, LogType type)
-            {
-                AddMessage(message, type);
-            });
 
+            
             string log_dir = Path.Combine(AppConfig.DataPath, "log");
             if (!Directory.Exists(log_dir))
                 Directory.CreateDirectory(log_dir);
@@ -50,15 +47,20 @@ namespace XLuaFramework
             Debug.Log("LogHandler.cs log_dir : " + log_dir+ "  Directory.Exists(log_dir)"+ Directory.Exists(log_dir).ToString());
             Debug.Log("LogHandler.cs output_path : " + output_path+ "  Directory.Exists(output_path)"+ Directory.Exists(output_path).ToString());
             //每次启动先删除旧的
-            File.WriteAllText(output_path, "");
+            File.WriteAllText(output_path, "begin to record logs......\n");
+
+            LogManager.RegisterLogCallback(delegate (string message, LogType type)
+            {
+                AddMessage(message, type);
+            });
             // if (File.Exists(output_path))
             //     File.Delete(output_path);
             // if (!File.Exists(output_path))
-                // File.Create(output_path);
+            // File.Create(output_path);
 
 #if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
             // console.Initialize();
-            // console.SetTitle("game log");
+            //console.SetTitle("game log");
 #endif
 
             thread = new Thread(OnUpdateThread);
@@ -75,6 +77,8 @@ namespace XLuaFramework
         {
             lock (m_lockObject2)
             {
+                if(type!= LogType.Log) Debug.Log("AddMessage type=" + type);
+
                 LogInfo li = new LogInfo(message, type);
                 string day_str = System.DateTime.Now.Day.ToString()+"/";
                 string hour_str = System.DateTime.Now.Hour.ToString()+":";

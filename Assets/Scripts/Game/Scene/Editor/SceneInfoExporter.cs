@@ -121,7 +121,8 @@ public class SceneInfoExporter : Editor
         var scaleInfo = transform.GetComponent<BoundScaleInfo>();
         if (scaleInfo != null)
             curScale = scaleInfo.BoundScale;
-        if (obj != null)
+        
+        if (obj != null )
         {
             string path = AssetDatabase.GetAssetPath(obj);
             Debug.Log("pickchild:"+path);
@@ -131,6 +132,16 @@ public class SceneInfoExporter : Editor
         }
         else
         {   Debug.Log("obj == null"+transform.childCount+curScale);
+            /*if(transform.gameObject.name != "SceneMgr")
+                {
+                    string new_file_path = "Assets/AssetBundleRes/scene/temp/" + transform.gameObject.name + ".prefab";
+                    //GameObject prefab = PrefabUtility.CreatePrefab(new_file_path, transform.gameObject);
+                    PrefabUtility.SaveAsPrefabAssetAndConnect(transform.gameObject, new_file_path, InteractionMode.AutomatedAction);
+                    var o = GetChildInfo(transform, new_file_path, curScale);
+                    if (o != null)
+                        sceneObjectList.Add(o);
+                }
+            */
             for (int i = 0; i < transform.childCount; i++)
             {
                 Debug.Log("transform.GetChild(i).gameObject.activeSelf"+transform.GetChild(i).gameObject.name+transform.GetChild(i).gameObject.activeSelf);
@@ -159,6 +170,7 @@ public class SceneInfoExporter : Editor
     private static SceneStaticObject GetChildInfo(Transform transform, string resPath, Vector3 boundScale)
     {
         int resID = GetResID(resPath);
+        Debug.Log("resID=" + resPath);
         if (string.IsNullOrEmpty(resPath))
             return null;
         Renderer[] renderers = transform.gameObject.GetComponentsInChildren<MeshRenderer>();

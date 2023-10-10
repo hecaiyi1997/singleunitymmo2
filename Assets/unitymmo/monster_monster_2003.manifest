@@ -1,0 +1,61 @@
+ManifestFileVersion: 0
+CRC: 4108444532
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 73c4b8480ab19c6cd90e501f6e570b4e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b351df95a0213d0c50cd0b1d32b8d03f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/monster/monster_2003/model_clothe_2003.FBX
+- Assets/AssetBundleRes/monster/monster_2003/model_clothe_2003.jpg
+- Assets/AssetBundleRes/monster/monster_2003/action/model_clothe_10010001@death.FBX
+- Assets/AssetBundleRes/monster/monster_2003/action/model_clothe_10010001@casual.FBX
+- Assets/AssetBundleRes/monster/monster_2003/action/model_clothe_10010001@attack2.FBX
+- Assets/AssetBundleRes/monster/monster_2003/action/model_clothe_10010001@run.FBX
+- Assets/AssetBundleRes/monster/monster_2003/action/model_clothe_10010001@idle.FBX
+- Assets/AssetBundleRes/monster/monster_2003/action/action.controller
+- Assets/AssetBundleRes/monster/monster_2003/Materials/model_clothe_10010001.mat
+- Assets/AssetBundleRes/monster/monster_2003/Materials/model_clothe_2003.mat
+- Assets/AssetBundleRes/monster/monster_2003/action/model_clothe_10010001@behit.FBX
+- Assets/AssetBundleRes/monster/monster_2003/action/model_clothe_10010001@attack.FBX
+- Assets/AssetBundleRes/monster/monster_2003/model_clothe_2003.prefab
+- Assets/AssetBundleRes/monster/monster_2003/action/model_clothe_10010001@dizzy.FBX
+Dependencies:
+- D:/Users/UnityMMO-farmework/StreamingAssets/effect_materials

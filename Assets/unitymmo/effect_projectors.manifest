@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 4000817664
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1afe8d2ae9ac16128e3e917096e0d6ad
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e24b3bade2338fa6b278480643a5fcd9
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 119
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/effect/projectors/Textures/Light.psd
+- Assets/AssetBundleRes/effect/projectors/Guidelines.txt
+- Assets/AssetBundleRes/effect/projectors/Prefabs/GridProjector.prefab
+- Assets/AssetBundleRes/effect/projectors/Textures/Falloff.psd
+- Assets/AssetBundleRes/effect/projectors/Materials/ShadowProjector.mat
+- Assets/AssetBundleRes/effect/projectors/Textures/Grid.psd
+- Assets/AssetBundleRes/effect/projectors/Prefabs/BlobShadowProjector.prefab
+- Assets/AssetBundleRes/effect/projectors/Textures/Shadow.psd
+- Assets/AssetBundleRes/effect/projectors/Shaders/ProjectorLight.shader
+- Assets/AssetBundleRes/effect/projectors/Prefabs/BlobLightProjector.prefab
+- Assets/AssetBundleRes/effect/projectors/Materials/LightProjector.mat
+- Assets/AssetBundleRes/effect/projectors/Materials/GridProjector.mat
+- Assets/AssetBundleRes/effect/projectors/Shaders/ProjectorMultiply.shader
+Dependencies: []

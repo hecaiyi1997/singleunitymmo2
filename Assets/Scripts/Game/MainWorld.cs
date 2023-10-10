@@ -21,6 +21,7 @@ namespace UnityMMO{
             SceneMgr.Instance.Init(m_GameWorld);
             SynchFromNet.Instance.Init();
             ECSHelper.entityMgr = m_GameWorld.GetEntityManager();
+            SceneHelper.Init(m_GameWorld.GetEntityManager());
             InitializeSystems();
         }
 
@@ -58,14 +59,31 @@ namespace UnityMMO{
             m_Systems.Add(m_GameWorld.GetECSWorld().CreateSystem<EffectHarmonizeSys>(m_GameWorld));
             m_Systems.Add(m_GameWorld.GetECSWorld().CreateSystem<BeHitEffectSys>(m_GameWorld));
             m_Systems.Add(m_GameWorld.GetECSWorld().CreateSystem<SuckHPEffectSys>(m_GameWorld));
+
+            m_Systems.Add(m_GameWorld.GetECSWorld().CreateSystem<HandleDamage>(m_GameWorld));
         }
 
         public void StartGame() {
             Initialize();
+            Debug.Log("GameVariable.IsSingleMode=!"+ GameVariable.IsSingleMode);
             if (GameVariable.IsSingleMode)
             {
-                SceneMgr.Instance.AddMainRole(1, 1, "testRole", 2, Vector3.zero, 100, 100);
+                //把这些内容放在场景加载完成之后加载玩家
+                XLuaManager.Instance.userinfo.Get("role_id", out long id);
+                XLuaManager.Instance.userinfo.Get("career", out int career);
+                XLuaManager.Instance.userinfo.Get("pos_x", out long pos_x);
+                XLuaManager.Instance.userinfo.Get("pos_y", out long pos_y);
+                XLuaManager.Instance.userinfo.Get("pos_z", out long pos_z);
+                XLuaManager.Instance.userinfo.Get("cur_hp", out long cur_hp);
+                XLuaManager.Instance.userinfo.Get("max_hp", out long max_hp);
+                XLuaManager.Instance.userinfo.Get("name", out string name);
+
+
+                Debug.Log("GameVariable.IsSingleMode=true !"+id + pos_x + ":" + pos_y + ":" + pos_z);
+                SceneMgr.Instance.AddMainRole(id, 1100, name, career, new Vector3( pos_x,pos_y,pos_z), cur_hp, max_hp);//把uid 等同role_id
+                
                 SceneMgr.Instance.LoadScene(1001);
+
             }
             else
             {
@@ -73,7 +91,6 @@ namespace UnityMMO{
                 SynchFromNet.Instance.StartSynchFromNet();
             }
         }
-
         private void Update() {
             // Debug.Log("main world update");
             m_Systems.Update();
@@ -82,19 +99,23 @@ namespace UnityMMO{
         }
         public void OnApplicationPause(bool pus){
             Debug.Log("OnApplicationPause");
-            if(pus){
+#if UNITY_EDITOR
+            if (pus){
                 SpeechVoice.Instance.Pause();
             }
             else{
                 SpeechVoice.Instance.Resume();
             }
+#endif
         }
         public void OnApplicationFocus(bool pus){
         }
 
         public void OnApplicationQuit(){
+#if UNITY_EDITOR
             Debug.Log("OnApplicationQuit");
             SpeechVoice.Instance.StopVoice();
+#endif
         }
 
     }

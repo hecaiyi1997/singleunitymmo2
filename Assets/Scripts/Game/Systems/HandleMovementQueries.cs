@@ -49,7 +49,7 @@ class HandleMovementQueries : BaseComponentSystem
                 query.UpdateSpeed();
                 var isReachTarget = !query.navAgent.pathPending && query.navAgent.remainingDistance<=query.navAgent.stoppingDistance;
                 var newPos = query.navAgent.transform.localPosition;
-                UnityEngine.Debug.Log("newPos--- :"+newPos.x+" "+newPos.y+" "+newPos.z+" reach:"+isReachTarget+" remainDis:"+query.navAgent.remainingDistance+" stopDis:"+query.navAgent.stoppingDistance);
+                //UnityEngine.Debug.Log("newPos--- :"+newPos.x+" "+newPos.y+" "+newPos.z+" reach:"+isReachTarget+" remainDis:"+query.navAgent.remainingDistance+" stopDis:"+query.navAgent.stoppingDistance);
                 query.isGrounded = query.charController.isGrounded;
                 query.transform.localPosition = newPos;
                 if (isReachTarget)

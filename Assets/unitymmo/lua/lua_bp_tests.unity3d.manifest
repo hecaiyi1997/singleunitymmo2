@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1197708239
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 13107c9641e71eec25ec05c472a8720b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/bp/tests/test_custom.lua.bytes
+- Assets/luatemp/bp/tests/test_ai.lua.bytes
+- Assets/luatemp/bp/tests/test.lua.bytes
+- Assets/luatemp/bp/tests/test_lua_oo.lua.bytes
+Dependencies: []

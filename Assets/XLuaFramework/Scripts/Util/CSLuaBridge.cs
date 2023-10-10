@@ -41,7 +41,7 @@ public class CSLuaBridge
 
     public void SetLuaFunc2Num(int funcID, UnityAction<long, long> func)
     {
-        // Debug.Log("SetLuaFunc2Num funcID : "+funcID+" func:"+(func!=null));
+        Debug.Log("SetLuaFunc2Num funcID : "+funcID+" func:"+(func!=null));
         if (funcs2Num.ContainsKey(funcID))
         {
             throw new Exception("already bind func2num for funcID :"+funcID);

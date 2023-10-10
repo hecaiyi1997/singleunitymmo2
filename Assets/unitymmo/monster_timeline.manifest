@@ -1,0 +1,59 @@
+ManifestFileVersion: 0
+CRC: 183119659
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 31e5df74cf31af014d340594cd4fe35f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 43fbe44a49c3e85ee6fb551ff5714060
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d21dcc2386d650c4597f3633c75a1f98, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 275b568952dc2f24c8a392e61faad3c2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 14651c7a84c56d64fb27889289cc4ab6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8b22792c3b570444eb18cb78c2af3a74, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2a16748d9461eae46a725db9776d5390, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 82cd92ffc29383742932b27ca414c80f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5c288f6077425e9438e40b25ffa6c78e, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/monster/timeline/skill_200300.playable
+- Assets/AssetBundleRes/monster/timeline/skill_200201.playable
+- Assets/AssetBundleRes/monster/timeline/skill_200101.playable
+- Assets/AssetBundleRes/monster/timeline/skill_200501.playable
+- Assets/AssetBundleRes/monster/timeline/skill_200400.playable
+- Assets/AssetBundleRes/monster/timeline/skill_200000.playable
+- Assets/AssetBundleRes/monster/timeline/skill_200401.playable
+- Assets/AssetBundleRes/monster/timeline/skill_200001.playable
+- Assets/AssetBundleRes/monster/timeline/skill_200500.playable
+- Assets/AssetBundleRes/monster/timeline/skill_200301.playable
+- Assets/AssetBundleRes/monster/timeline/skill_200100.playable
+- Assets/AssetBundleRes/monster/timeline/skill_200200.playable
+Dependencies:
+- D:/Users/UnityMMO-farmework/StreamingAssets/monster_monster_2000
+- D:/Users/UnityMMO-farmework/StreamingAssets/monster_monster_2001
+- D:/Users/UnityMMO-farmework/StreamingAssets/monster_monster_2002
+- D:/Users/UnityMMO-farmework/StreamingAssets/monster_monster_2003
+- D:/Users/UnityMMO-farmework/StreamingAssets/monster_monster_2004
+- D:/Users/UnityMMO-farmework/StreamingAssets/monster_monster_2005
+- D:/Users/UnityMMO-farmework/StreamingAssets/sound_role

@@ -1,0 +1,62 @@
+ManifestFileVersion: 0
+CRC: 341088906
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3a75635a4a60059e704a0a37e68e1fbc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f77cb515511e372e5a5bddac07b3fea4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/ui/bag/BagView.prefab
+- Assets/AssetBundleRes/ui/bag/bag_role_name_bg.png
+- Assets/AssetBundleRes/ui/bag/bag_txt_title_1.png
+- Assets/AssetBundleRes/ui/bag/bag_color_bg_5.png
+- Assets/AssetBundleRes/ui/bag/BagMainView.prefab
+- Assets/AssetBundleRes/ui/bag/bag_color_bg_1.png
+- Assets/AssetBundleRes/ui/bag/bag_color_bg_4.png
+- Assets/AssetBundleRes/ui/bag/bag_color_bg_2.png
+- Assets/AssetBundleRes/ui/bag/bag_color_bg_0.png
+- Assets/AssetBundleRes/ui/bag/bag_all_star.png
+- Assets/AssetBundleRes/ui/bag/bag_depot_btn.png
+- Assets/AssetBundleRes/ui/bag/bag_color_bg_3.png
+- Assets/AssetBundleRes/ui/bag/bag_txt_title_2.png
+- Assets/AssetBundleRes/ui/bag/bag_all_stren.png
+- Assets/AssetBundleRes/ui/bag/bag_lock.png
+- Assets/AssetBundleRes/ui/bag/bag_item_bg.png
+- Assets/AssetBundleRes/ui/bag/bag_all_stone.png
+Dependencies:
+- D:/Users/UnityMMO-farmework/StreamingAssets/ui_common

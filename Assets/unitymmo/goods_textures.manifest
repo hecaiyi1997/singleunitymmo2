@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 200525043
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 85ba7a611f937828a179be112b918d98
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0a6f9ca6de27cedd10f0532db8ca5f17
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/Goods/Textures/Dust_particles.tif
+- Assets/AssetBundleRes/Goods/Textures/star.png
+- Assets/AssetBundleRes/Goods/Textures/Coin_normals.png
+- Assets/AssetBundleRes/Goods/Textures/Coin_diffuse.png
+- Assets/AssetBundleRes/Goods/Textures/Bottle_blue_diff.png
+- Assets/AssetBundleRes/Goods/Textures/Bottles_normal.png
+- Assets/AssetBundleRes/Goods/Textures/Bottle_red_diff.png
+- Assets/AssetBundleRes/Goods/Textures/Bottle_green_diff.png
+- Assets/AssetBundleRes/Goods/Textures/sprite_radiance.tif
+- Assets/AssetBundleRes/Goods/Textures/Bottles_spec.png
+Dependencies: []

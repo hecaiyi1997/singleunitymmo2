@@ -59,7 +59,15 @@ function GoodsInfoView:AddEvents( )
 		elseif self.btns.buy_btn_obj == click_obj then
 		elseif self.btns.sell_btn_obj == click_obj then
 		elseif self.btns.use_btn_obj == click_obj then
-			
+			if not self.goodsInfo or not self.goodsInfo.uid then
+				Message:Show("道具信息有误")
+				return
+			end
+			local ackData=BagController:GetInstance():useGood(self.goodsInfo.typeID,-1)
+			if ackData.result == ErrorCode.Succeed then--==0
+				Message:Show("使用成功")
+				self:Unload()
+			end
 		end
 	end
 	UI.BindClickEvent(self.btns.use_btn_obj, on_click)
@@ -94,7 +102,8 @@ function GoodsInfoView:UpdateBtns()
 		local comeFrom = self.showData.comeFrom
 		if comeFrom == "BagView" then
 			-- self.showData.btnList = self.showData.btnList or {}
-			table.insert(showBtnList, "drop_btn")
+			--table.insert(showBtnList, "drop_btn")改成使用
+			table.insert(showBtnList, "use_btn")
 		elseif comeFrom == "WarehouseView" then
 			table.insert(showBtnList, "store_btn")
 		end

@@ -144,7 +144,7 @@ function SprotoHandlers.Task_TakeTask( userInfo, reqData )
 	end
 	return {result=result}
 end
-
+--DoTask
 function SprotoHandlers.Task_DoTask( userInfo, reqData )
 	local taskInfos = Task.taskInfos[userInfo.cur_role_id]
 	local taskInfo = table.get_value_in_array(taskInfos and taskInfos.taskList, "taskID", reqData.taskID)

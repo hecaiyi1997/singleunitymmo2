@@ -56,6 +56,7 @@ public class TimelineSpawnSystem : BaseComponentSystem
 
     bool Process(TimelineInfo timelineInfo)
     {
+        if(timelineInfo.Owner == Entity.Null) return false;
         var timelineState = EntityManager.GetComponentData<TimelineState>(timelineInfo.Owner);
         bool isCanInterrupt = timelineState.InterruptStatus == TimelineState.InterruptState.Allow;
         if (!isCanInterrupt)

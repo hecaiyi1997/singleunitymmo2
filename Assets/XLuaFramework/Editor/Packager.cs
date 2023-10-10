@@ -11,7 +11,14 @@ public class Packager {
     static List<string> paths = new List<string>();
     static List<string> files = new List<string>();
     static List<AssetBundleBuild> maps = new List<AssetBundleBuild>();
-    
+
+    /// <summary>new for build lua file
+    static string bytesPath = "Assets/luatemp";    // 输出的 *.bytes文件所在目录，这个目录需要放在Assets下，不然没法设置bundleName以及打包操作
+    static string luaPath = "/Lua";            // lua源文件
+    static string bundlePath = "/StreamingAssets/lua";  // 打包后放的位置
+    //static List<AssetBundleBuild> luaBundleMaps = new List<AssetBundleBuild>();// 打包map
+
+    /// </summary>
     const string ApachePathForAndroid = "E:/Apache24/htdocs/AndroidStreamingAssets";
 
     static string[] exts = { ".txt", ".xml", ".lua", ".assetbundle", ".json" };
@@ -146,6 +153,7 @@ public class Packager {
         string tempLuaDir = dataPath + "/" + AppConfig.LuaTempDir;
         if (AppConfig.LuaBundleMode)
             HandleLuaBundle(tempLuaDir);
+
         else
             HandleLuaFile(streamPath);
         if (AppConfig.SprotoBinMode)
@@ -159,7 +167,8 @@ public class Packager {
         HandleNormalBundles("npc");
         HandleNormalBundles("monster");
         HandleUIBundles();
-
+        HandleSplitPrefabsBundles();
+        HandleNormalBundles("Goods");
         BuildPipeline.BuildAssetBundles(streamPath, maps.ToArray(), BuildAssetBundleOptions.None, target);
 
         // BuildSceneBundles("Assets/AssetBundleRes/scene/navmesh", streamPath, target);
@@ -167,7 +176,7 @@ public class Packager {
 
         BuildFileIndex(streamPath);
 
-        if (Directory.Exists(tempLuaDir)) Directory.Delete(tempLuaDir, true);
+//        if (Directory.Exists(tempLuaDir)) Directory.Delete(tempLuaDir, true);
         AssetDatabase.Refresh();
     }
 
@@ -187,11 +196,15 @@ public class Packager {
     /// <summary>
     /// 处理Lua代码包
     /// </summary>
+    /// AppConfig.LuaTempDir="assets/luaatemp/"
+    ///string dataPath = Application.dataPath.Replace("/Assets", "");
+    ///string tempLuaDir = dataPath + "/" + AppConfig.LuaTempDir;
     static void HandleLuaBundle(string tempLuaDir) {
+        /*
         //string tempLuaDir = AppConfig.AppDataPath.ToLower() + "/"+AppConfig.LuaTempDir+"/";
-        if (!Directory.Exists(tempLuaDir)) Directory.CreateDirectory(tempLuaDir);
+        if (!Directory.Exists(tempLuaDir)) Directory.CreateDirectory(tempLuaDir);//用来存.bytes文件
 
-        string[] srcDirs = { AppConfig.LuaAssetsDir };
+        string[] srcDirs = { AppConfig.LuaAssetsDir };//lua源文件 Application.dataPath + "/lua/"
         for (int i = 0; i < srcDirs.Length; i++) 
         {
             if (AppConfig.LuaByteMode) 
@@ -225,6 +238,9 @@ public class Packager {
             name = "lua/lua_" + name.ToLower();
 
             string path = "Assets" + dirs[i].Replace(Application.dataPath, "");
+            
+            path = path.Replace("\\", "/");
+            Debug.Log("bulid lua path=" + path);//
             AddBuildMap(name, "*.bytes", path);
         }
         AddBuildMap("lua/lua", "*.bytes", AppConfig.LuaTempDir);
@@ -246,7 +262,72 @@ public class Packager {
             }
         }
         AssetDatabase.Refresh();
+        */
+        // 处理lua文件
+        HandleLuaFile();
+        // 开始打包
+        //BuildAssetBundles();
     }
+    static void CheckAndCreateDirectory(string path)
+    {
+        if (Directory.Exists(path))
+        {
+            Directory.Delete(path, true);
+        }
+        Directory.CreateDirectory(path);
+        AssetDatabase.Refresh();
+    }
+    // 处理lua文件
+    static void HandleLuaFile()
+    {
+        EditorUtility.DisplayProgressBar("Copy lua file to bytes", "copy file... 0%", 0);
+
+        // 清理这个目录下的 *.bytes文件，方便重新生成
+        CheckAndCreateDirectory(bytesPath);
+
+        // 读取luaPath下的lua源文件
+        // 把 *.lua文件都转化为 *.bytes文件
+        // 然后拷贝到bytesPath下
+        CopyLuaToBytes();
+
+        // 设置打包项 第三个参数默认是只取当前目录下的文件，如果指定为：SearchOption.AllDirectories，则表示子目录的文件也取出来
+        string[] dirs = Directory.GetDirectories(bytesPath, "*", SearchOption.AllDirectories);//返回给定目录下的子目录列表
+        for (int i = 0; i < dirs.Length; i++)
+        {
+            string name = dirs[i].Replace(bytesPath + "\\", string.Empty);
+            name = name.Replace("\\", "_").Replace("/", "_");
+            name = "lua/lua_" + name.ToLower() + ".unity3d";
+
+            string path = dirs[i].Replace("\\", "/");
+            AddBuildMap(name, "*.bytes", path);
+        }
+
+        // 添加到打包列表中
+        AddBuildMap("lua/lua.unity3d", "*.bytes", bytesPath + "/");
+
+        AssetDatabase.Refresh();
+        EditorUtility.ClearProgressBar();
+    }
+
+    // 把*.lua拷贝为*.bytes，用于打包
+    static void CopyLuaToBytes()
+    {
+        string luaFileFullPath = Application.dataPath + luaPath;
+        string[] files = Directory.GetFiles(luaFileFullPath, "*.lua", SearchOption.AllDirectories);
+
+        for (int i = 0; i < files.Length; i++)
+        {
+            float progress = (float)i / files.Length;
+            EditorUtility.DisplayProgressBar("Copy lua file to bytes", "copy file..." + Mathf.Round(progress * 100) + "%", progress);
+
+            string luaFilePath = files[i].Remove(0, luaFileFullPath.Length);
+            string dest = bytesPath + "/" + luaFilePath + ".bytes";
+            string dir = Path.GetDirectoryName(dest);
+            Directory.CreateDirectory(dir);
+            File.Copy(files[i], dest, true);
+        }
+    }
+
     public static void CopyLuaBytesFiles(string sourceDir, string destDir, bool appendext = true, string searchPattern = "*.lua", SearchOption option = SearchOption.AllDirectories)
     {
         if (!Directory.Exists(sourceDir))
@@ -410,71 +491,94 @@ public class Packager {
         }
     }
 
+    public static void HandleSplitPrefabsBundles()
+    {
+        string path = "Assets/AssetBundleRes/SplitPrefabs/";
+        string[] dirs = Directory.GetDirectories(path);
+        Debug.Log("dirs.Length : " + dirs.Length.ToString());
+        if (dirs.Length == 0)
+            return;
+        for (int i = 0; i < dirs.Length; i++)
+        {
+            string asset_name = "SplitPrefabs_" + Path.GetFileName(dirs[i]);
+            List<string> file_list = new List<string>();//文件列表
+            paths.Clear(); files.Clear(); Recursive(dirs[i], false);
+            UnityEngine.Debug.Log("terrain asset_name : " + asset_name + " filenum:" + files.Count.ToString());
+            if (files.Count > 0)
+            {
+                AssetBundleBuild build = new AssetBundleBuild();
+                build.assetBundleName = asset_name;
+                build.assetNames = files.ToArray();
+                maps.Add(build);
+            }
+        }
+    }
+
     // public static void HandleUIBundles(string dataPath="")
     // {
-        // string ui_path = "Assets/AssetBundleRes/ui/";
-        // string ui_prefab_path = ui_path + "prefab";
-        // string ui_texture_path = ui_path + "texutre";
-        // string[] ui_dirs = Directory.GetDirectories(ui_prefab_path);
-        // if (ui_dirs.Length == 0)
-        //     return;
-        // for (int i = 0; i < ui_dirs.Length; i++)
-        // {
-        //     string asset_name = "ui_" + Path.GetFileName(ui_dirs[i]);
+    // string ui_path = "Assets/AssetBundleRes/ui/";
+    // string ui_prefab_path = ui_path + "prefab";
+    // string ui_texture_path = ui_path + "texutre";
+    // string[] ui_dirs = Directory.GetDirectories(ui_prefab_path);
+    // if (ui_dirs.Length == 0)
+    //     return;
+    // for (int i = 0; i < ui_dirs.Length; i++)
+    // {
+    //     string asset_name = "ui_" + Path.GetFileName(ui_dirs[i]);
 
-        //     List<string> prefab_list = new List<string>();//预制文件列表
-        //     paths.Clear(); files.Clear(); Recursive(ui_dirs[i]);
-        //     foreach (string f in files)
-        //     {
-        //         string name = Path.GetFileName(f);
-        //         string ext = Path.GetExtension(f);
-        //         if (ext.Equals(".prefab"))
-        //         {
-        //             prefab_list.Add(f);
-        //             prefab_list.Add(f + ".meta");
-        //         }
-        //     }
-        //     if (prefab_list.Count > 0)
-        //     {
-        //         AssetBundleBuild build = new AssetBundleBuild();
-        //         build.assetBundleName = asset_name;
-        //         //DeleteUICache(dataPath, build.assetBundleName);
-        //         build.assetNames = prefab_list.ToArray();
-        //         maps.Add(build);
-        //         //string temp = asset_name.ToLower();
-        //         //assets_list.Add(build.assetBundleName);
-        //     }
-        // }
-        // ui_dirs = Directory.GetDirectories(ui_texture_path);
-        // if (ui_dirs.Length == 0)
-        //     return;
-        // for (int i = 0; i < ui_dirs.Length; i++)
-        // {
-        //     string asset_name = "ui_" + Path.GetFileName(ui_dirs[i]);
+    //     List<string> prefab_list = new List<string>();//预制文件列表
+    //     paths.Clear(); files.Clear(); Recursive(ui_dirs[i]);
+    //     foreach (string f in files)
+    //     {
+    //         string name = Path.GetFileName(f);
+    //         string ext = Path.GetExtension(f);
+    //         if (ext.Equals(".prefab"))
+    //         {
+    //             prefab_list.Add(f);
+    //             prefab_list.Add(f + ".meta");
+    //         }
+    //     }
+    //     if (prefab_list.Count > 0)
+    //     {
+    //         AssetBundleBuild build = new AssetBundleBuild();
+    //         build.assetBundleName = asset_name;
+    //         //DeleteUICache(dataPath, build.assetBundleName);
+    //         build.assetNames = prefab_list.ToArray();
+    //         maps.Add(build);
+    //         //string temp = asset_name.ToLower();
+    //         //assets_list.Add(build.assetBundleName);
+    //     }
+    // }
+    // ui_dirs = Directory.GetDirectories(ui_texture_path);
+    // if (ui_dirs.Length == 0)
+    //     return;
+    // for (int i = 0; i < ui_dirs.Length; i++)
+    // {
+    //     string asset_name = "ui_" + Path.GetFileName(ui_dirs[i]);
 
-        //     List<string> asset_list = new List<string>();//资源文件列表
-        //     paths.Clear(); files.Clear(); Recursive(ui_dirs[i]);
-        //     foreach (string f in files)
-        //     {
-        //         string name = Path.GetFileName(f);
-        //         string ext = Path.GetExtension(f);
-        //         if (ext.Equals(".png"))
-        //         {
-        //             asset_list.Add(f);
-        //             asset_list.Add(f + ".meta");
-        //         }
-        //     }
-        //     if (asset_list.Count > 0)
-        //     {
-        //         AssetBundleBuild build = new AssetBundleBuild();
-        //         build.assetBundleName = asset_name;
-        //         //DeleteUICache(dataPath, build.assetBundleName);
-        //         build.assetNames = asset_list.ToArray();
-        //         maps.Add(build);
-        //         //string temp = asset_name.ToLower();
-        //         //assets_list.Add(build.assetBundleName);
-        //     }
-        // }
+    //     List<string> asset_list = new List<string>();//资源文件列表
+    //     paths.Clear(); files.Clear(); Recursive(ui_dirs[i]);
+    //     foreach (string f in files)
+    //     {
+    //         string name = Path.GetFileName(f);
+    //         string ext = Path.GetExtension(f);
+    //         if (ext.Equals(".png"))
+    //         {
+    //             asset_list.Add(f);
+    //             asset_list.Add(f + ".meta");
+    //         }
+    //     }
+    //     if (asset_list.Count > 0)
+    //     {
+    //         AssetBundleBuild build = new AssetBundleBuild();
+    //         build.assetBundleName = asset_name;
+    //         //DeleteUICache(dataPath, build.assetBundleName);
+    //         build.assetNames = asset_list.ToArray();
+    //         maps.Add(build);
+    //         //string temp = asset_name.ToLower();
+    //         //assets_list.Add(build.assetBundleName);
+    //     }
+    // }
     // }
 
     //[MenuItem("Test/Build Sproto BinFile")]
@@ -629,12 +733,12 @@ public class Packager {
             isWin = true;
             luaexe = "luajit.exe";
             args = "-b -g " + srcFile + " " + outFile;
-            exedir = dataPath + "Tools/LuaEncoder/luajit/";
+            exedir = dataPath + "/Tools/LuaEncoder/luajit/";
         } else if (Application.platform == RuntimePlatform.OSXEditor) {
             isWin = false;
             luaexe = "./luajit";
             args = "-b -g " + srcFile + " " + outFile;
-            exedir = dataPath + "Tools/LuaEncoder/luajit_mac/";
+            exedir = dataPath + "/Tools/LuaEncoder/luajit_mac/";
         }
         Directory.SetCurrentDirectory(exedir);
         System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();

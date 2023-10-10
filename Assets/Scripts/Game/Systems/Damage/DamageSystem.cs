@@ -4,18 +4,20 @@ using Unity.Entities;
 using UnityEngine;
 using UnityMMO;
 using UnityMMO.Component;
+using Unity.Jobs;
 
-[DisableAutoCreation]
+//[DisableAutoCreation]
 public class HandleDamage : BaseComponentSystem
 {
     private EntityQuery Group;
-    
+
     public HandleDamage(GameWorld gameWorld) : base(gameWorld)
     {}
 
     protected override void OnCreate()
     {
         base.OnCreate();
+
         Group = GetEntityQuery(typeof(HealthStateData));
     }
     
@@ -24,6 +26,9 @@ public class HandleDamage : BaseComponentSystem
         var entityArray = Group.ToEntityArray(Allocator.TempJob);
         var healthStateArray = Group.ToComponentDataArray<HealthStateData>(Allocator.TempJob);
         // var collOwnerArray = Group.ToComponentDataArray<HitCollisionOwnerData>();
+
+
+       // DynamicBuffer<DamageEvent> buffer = EntityManager.GetBuffer<DamageEvent>(entity);
         for (int i = 0; i < entityArray.Length; i++)
         {
             var healthState = healthStateArray[i];
@@ -44,7 +49,7 @@ public class HandleDamage : BaseComponentSystem
             var damageBuffer = EntityManager.GetBuffer<DamageEvent>(entity);
             for (var eventIndex=0;eventIndex < damageBuffer.Length; eventIndex++)
             {
-                isDamaged = true;
+                
     
                 var damageEvent = damageBuffer[eventIndex];
     
@@ -56,7 +61,10 @@ public class HandleDamage : BaseComponentSystem
                 impulseVec += damageEvent.direction * damageEvent.impulse;
                 damageVec += damageEvent.direction * damageEvent.damage;
                 damage += damageEvent.damage;
-    
+                if (damage > 0)
+                {
+                    isDamaged = true;
+                }
                 //damageHistory.ApplyDamage(ref damageEvent, m_world.worldTime.tick);
     
                 // if (damageBuffer[eventIndex].instigator != Entity.Null && EntityManager.Exists(damageEvent.instigator) && EntityManager.HasComponent<DamageHistoryData>(damageEvent.instigator))
@@ -80,6 +88,12 @@ public class HandleDamage : BaseComponentSystem
     
             if (isDamaged)
             {
+                var UIDData = EntityManager.GetComponentData<UID>(entity);
+                Debug.Log("dis=====curHP" + healthState.CurHp + " " + damage+ UIDData.Value);
+                float CurHp = healthState.CurHp - damage;
+                if (CurHp < 0) CurHp = 0;
+                ECSHelper.ChangeHP(entity, (long)CurHp, 0, 0);
+
                 var damageImpulse = impulseVec.magnitude;
                 var damageDir = damageImpulse > 0 ? impulseVec.normalized : damageVec.normalized;
                 

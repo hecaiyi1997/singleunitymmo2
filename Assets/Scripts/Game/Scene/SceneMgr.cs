@@ -50,7 +50,9 @@ public class SceneMgr : MonoBehaviour
     Transform freeLookCameraTrans;
     Transform mainCameraTrans;
 
-    void Awake()
+    public WorldManager worldmgr = null;
+
+        void Awake()
 	{
 		Instance = this; // worst singleton ever but it works
         curSceneID = 0;
@@ -71,13 +73,24 @@ public class SceneMgr : MonoBehaviour
         moveQueryContainer = GameObject.Find("SceneObjContainer/MoveQueryContainer").transform;
         flyWordContainer = GameObject.Find("SceneObjContainer/FlyWordContainer").transform;
         sceneObjContainer = GameObject.Find("SceneObjContainer").transform;
-	}
+
+        worldmgr = new WorldManager();
+        }
 
     void Update()
     {
         if (detector != null && m_Controller != null)
-            m_Controller.RefreshDetector(detector);
-    }
+            {
+                m_Controller.RefreshDetector(detector);
+
+                Vector3 pos = RoleMgr.GetInstance().GetMainRole().transform.position;
+                Debug.Log("main role pos" + pos.x + ":" + pos.y + ";" + pos.z);
+                WorldManager.currinst.Update(pos);
+
+            }
+
+
+        }
 
     public void CheckMainRolePos()
     {
@@ -127,6 +140,7 @@ public class SceneMgr : MonoBehaviour
     {
         //load scene info from json file(which export from SceneInfoExporter.cs)
         XLuaFramework.ResourceManager.GetInstance().LoadAsset<TextAsset>(SceneInfoPath+"scene_"+scene_id.ToString() +"/scene_info.json", delegate(UnityEngine.Object[] objs) {
+            //Debug.Log("loadscenseinfo " + SceneInfoPath + "scene_" + scene_id.ToString() + "/scene_info.json");
             LoadingView.Instance.SetData(0.4f, "读取场景信息文件...");
             TextAsset txt = objs[0] as TextAsset;
             string scene_json = txt.text;
@@ -134,6 +148,8 @@ public class SceneMgr : MonoBehaviour
             SceneInfo scene_info = JsonUtility.FromJson<SceneInfo>(scene_json);
             curSceneInfo = scene_info;
             Debug.Log("LoadSceneInfo start LoadSceneRes count:"+scene_info.ResPathList.Count+" "+scene_info.MonsterList.Count);
+            //Debug.Log("LoadSceneInfo start LoadSceneRes :" + scene_info.ResPathList[0] );
+            //Debug.Log("LoadSceneInfo start LoadSceneRes :" + scene_info.ResPathList[1]);
             // ApplyLightInfo(scene_info);
             //scene_info.ResPathList中的顺序值就是ResID
             ResMgr.GetInstance().LoadSceneRes(scene_info.ResPathList, delegate(bool isOk)
@@ -179,12 +195,12 @@ public class SceneMgr : MonoBehaviour
             string baseWorldScenePath = "";
             if (XLuaFramework.AppConfig.DebugMode)//false
             {
-                baseWorldScenePath = "Assets/AssetBundleRes/scene/base_world/base_world_"+scene_id+".unity";
+                baseWorldScenePath = "Assets/AssetBundleRes/scene/base_world/base_world_"+scene_id+ ".unity";
             }
             else
             {
                 baseWorldScenePath = "base_world_"+scene_id;
-                XLuaFramework.ResourceManager.GetInstance().LoadNavMesh(baseWorldScenePath);//windows StreamingAssets/base_world_1001也
+                XLuaFramework.ResourceManager.GetInstance().LoadNavMesh(baseWorldScenePath);//windows StreamingAssets/base_world_1001 乃场景的ab包
             }
             LoadingView.Instance.SetData(0.8f, "加载基础场景...");
             AsyncOperation asy = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(baseWorldScenePath, UnityEngine.SceneManagement.LoadSceneMode.Additive);
@@ -199,10 +215,26 @@ public class SceneMgr : MonoBehaviour
                 Debug.Log("load base world:"+asyOp.isDone.ToString());
                 isLoadingScene = false;
                 isBaseWorldLoadOk = true;
+
+                /*把这些内容放在场景加载完成之后加载玩家
+                XLuaManager.Instance.userinfo.Get("role_id", out long id);
+                XLuaManager.Instance.userinfo.Get("career", out int career);
+                XLuaManager.Instance.userinfo.Get("pos_x", out long pos_x);
+                XLuaManager.Instance.userinfo.Get("pos_y", out long pos_y);
+                XLuaManager.Instance.userinfo.Get("pos_z", out long pos_z);
+                XLuaManager.Instance.userinfo.Get("cur_hp", out long cur_hp);
+                XLuaManager.Instance.userinfo.Get("max_hp", out long max_hp);
+                XLuaManager.Instance.userinfo.Get("name", out string name);
+
+
+                Debug.Log("GameVariable.IsSingleMode=true !"+id + pos_x + ":" + pos_y + ":" + pos_z);
+                AddMainRole(id, 1100, name, career, new Vector3( pos_x,pos_y,pos_z), cur_hp, max_hp);//把uid 等同role_id
+                */
                 // CorrectMainRolePos();
                 LoadingView.Instance.SetData(1, "加载场景完毕");
                 LoadingView.Instance.SetActive(false, 0.5f);
-                Timer.Register(0.5f, () => {
+                Timer.Register(2.0f, () => {
+                    XLuaManager.Instance.onStartTrgger.Invoke();//这句话一定要在玩家加载完成之后
                     //切换场景后需要重置一下 NavMeshAgent 组件
                     RoleMgr.GetInstance().UpdateMainRoleNavAgent();
                 });
@@ -210,8 +242,16 @@ public class SceneMgr : MonoBehaviour
                 CorrectMainRolePos();
                 XLuaFramework.CSLuaBridge.GetInstance().CallLuaFunc(GlobalEvents.SceneChanged);
                 //SpeechVoice.Instance.Speech_Voice("很久很久以前，有一个出生南蛮之地的少年，为了追寻自己的梦想，去到很远的异国他乡去寻找梦想，他能找到他的未来吗？我们拭目以待吧");
+                Vector3 pos = RoleMgr.GetInstance().GetMainRole().transform.position;
+            
+                WorldManager.currinst.scene = UnityEngine.SceneManagement.SceneManager.GetSceneByName("base_world_" + scene_id);
+                UnityEngine.SceneManagement.SceneManager.SetActiveScene(WorldManager.currinst.scene);
+                WorldManager.currinst.loadCurrentViewChunks(pos);
+                //XLuaManager.Instance.onsceneloadedTrgger.Invoke();//可以生成怪物了，生成的地图加到base_world_1001场景了
+                //WorldManager.currinst.Loadallchunk();
             };
         });
+
     }
 
     public void StopAllTimeline()
@@ -238,10 +278,12 @@ public class SceneMgr : MonoBehaviour
         RemoveAllSceneObjects();
         var sceneObjects = GameObject.Find("SceneMgr").transform;
         XLuaFramework.Util.ClearChild(sceneObjects);
-        SpeechVoice.Instance.StopVoice();
-    }
+#if UNITY_EDITOR
+            SpeechVoice.Instance.StopVoice();
+#endif
+        }
 
-    public void ReqEnterScene(int scene_id, int door_id=0)
+        public void ReqEnterScene(int scene_id, int door_id=0)
     {
         SprotoType.scene_enter_to.request req = new SprotoType.scene_enter_to.request();
         req.scene_id = scene_id;
@@ -378,8 +420,46 @@ public class SceneMgr : MonoBehaviour
         }
         CorrectMainRolePos();
     }
+        //IEnumerator<WaitForSeconds>
+        public void reliveMainRolesafe()
+    {
+            XLuaManager.Instance.userinfo.Get("role_id", out long id);
+            XLuaManager.Instance.userinfo.Get("career", out int career);
+            XLuaManager.Instance.userinfo.Get("pos_x", out long pos_x);
+            XLuaManager.Instance.userinfo.Get("pos_y", out long pos_y);
+            XLuaManager.Instance.userinfo.Get("pos_z", out long pos_z);
+            XLuaManager.Instance.userinfo.Get("cur_hp", out long cur_hp);
+            XLuaManager.Instance.userinfo.Get("max_hp", out long max_hp);
+            XLuaManager.Instance.userinfo.Get("name", out string name);
+            Debug.Log("setName namenamename SAFE" + pos_x + ":" + pos_y + ":" + pos_z);
+            AddMainRole(id, 1100, name, career, new Vector3(0, 0, 0), max_hp, max_hp);//把uid 等同role_id
+            Timer.Register(0.5f, () => {
+                RoleMgr.GetInstance().UpdateMainRoleNavAgent();
+                XLuaFramework.CSLuaBridge.GetInstance().CallLuaFunc2Num(GlobalEvents.MainRoleHPChanged, max_hp, max_hp);
+            });
+            //yield return new WaitForSeconds(0.5f);
+            //RoleMgr.GetInstance().UpdateMainRoleNavAgent();
+        }
 
-    public Entity AddMainRole(long uid, long typeID, string name, int career, Vector3 pos, float curHp, float maxHp)
+    public void reliveMainRolelocal()
+    {
+            XLuaManager.Instance.userinfo.Get("role_id", out long id);
+            XLuaManager.Instance.userinfo.Get("career", out int career);
+            XLuaManager.Instance.userinfo.Get("pos_x", out float pos_x);
+            XLuaManager.Instance.userinfo.Get("pos_y", out float pos_y);
+            XLuaManager.Instance.userinfo.Get("pos_z", out float pos_z);
+            XLuaManager.Instance.userinfo.Get("cur_hp", out int cur_hp);
+            XLuaManager.Instance.userinfo.Get("max_hp", out int max_hp);
+            XLuaManager.Instance.userinfo.Get("name", out string name);
+            Debug.Log("setName namenamename local" + pos_x + ":" + pos_y + ":" + pos_z);
+
+           AddMainRole(id, 1100, name, career, new Vector3(pos_x, pos_y, pos_z), max_hp, max_hp);//把uid 等同role_id                                                                                    //yield return new WaitForSeconds(0.5f);
+            Timer.Register(0.5f, () => {
+                RoleMgr.GetInstance().UpdateMainRoleNavAgent();
+                XLuaFramework.CSLuaBridge.GetInstance().CallLuaFunc2Num(GlobalEvents.MainRoleHPChanged, max_hp, max_hp);
+            });
+        }
+        public Entity AddMainRole(long uid, long typeID, string name, int career, Vector3 pos, float curHp, float maxHp)
 	{
         Entity role = RoleMgr.GetInstance().AddMainRole(uid, typeID, name, career, pos, curHp, maxHp);
         // entityDic.Add(uid, role);
@@ -428,6 +508,43 @@ public class SceneMgr : MonoBehaviour
             return npc;
         }
         return Entity.Null;
+    }
+        public void RecordSceneObjectsingleTerrain(long uid, long typeID, Vector3 pos, Vector3 targetPos, float curHp, float maxHp)
+        {
+            WorldManager.currinst.RecordpersistentChunks(pos);
+
+        }
+        public void AddSceneObjectsingleTerrain(long uid, long typeID, Vector3 pos, Vector3 targetPos, float curHp, float maxHp)
+        {
+            StartCoroutine(WorldManager.currinst.loadpersistentChunks(pos));
+             
+        }
+        /*
+         Role=1,
+        Monster=2,
+        NPC=3,
+         */
+        public Entity AddSceneObjectsingle(long uid, long typeID, Vector3 pos, Vector3 targetPos, float curHp, float maxHp)
+    {
+            int type1 =(int) (uid / 10000000000);
+
+            SceneObjectType type = SceneObjectType.Monster;
+            if (type1 == 2)
+            {
+               // WorldManager.currinst.loadpersistentChunks(pos);
+                Entity monster = MonsterMgr.GetInstance().AddMonster(uid, typeID, pos, targetPos, curHp, maxHp);
+                entitiesDic[SceneObjectType.Monster].Add(uid, monster);
+                return monster;
+            }
+            else if (type1 == 3)
+            {
+                Debug.Log("type == SceneObjectType.NPC: ");
+                Entity npc = NPCMgr.GetInstance().AddNPC(uid, typeID, pos, targetPos);
+                entitiesDic[SceneObjectType.NPC].Add(uid, npc);
+                return npc;
+            }
+            return Entity.Null;
+
     }
 
     public string GetNameByUID(long uid)

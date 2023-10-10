@@ -1,0 +1,50 @@
+ManifestFileVersion: 0
+CRC: 2549664460
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b60b591d7ab16ccb91241299a78d904d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f2327bf7865e9be1411a219bfe3df009
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/npc/npc_3000/Materials/model_clothe_100102.mat
+- Assets/AssetBundleRes/npc/npc_3000/action/model_clothe_100102@casual2.FBX
+- Assets/AssetBundleRes/npc/npc_3000/model_clothe_3000.FBX
+- Assets/AssetBundleRes/npc/npc_3000/model_clothe_3000.jpg
+- Assets/AssetBundleRes/npc/npc_3000/model_clothe_3000.prefab
+- Assets/AssetBundleRes/npc/npc_3000/action/model_clothe_100102@casual1.FBX
+- Assets/AssetBundleRes/npc/npc_3000/action/action.controller
+- Assets/AssetBundleRes/npc/npc_3000/action/model_clothe_100102@idle.FBX
+Dependencies: []

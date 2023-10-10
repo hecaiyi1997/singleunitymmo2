@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 1552635282
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4dbdc8487234994f307251d668585cf0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 55d48f4ad9c3b13330b9eb5ee5686477
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/effect/sharder/mb_fresnel.shader
+- Assets/AssetBundleRes/effect/sharder/mb_uvrollalphablend_twotex_mulculloff.shader
+- Assets/AssetBundleRes/effect/sharder/mb_add_zwriteoff.shader
+- Assets/AssetBundleRes/effect/sharder/Mobile_Particle_Add.shader
+- Assets/AssetBundleRes/effect/sharder/ShaderAdditiveCulleFront.shader
+- Assets/AssetBundleRes/effect/sharder/mb_add_mask.shader
+- Assets/AssetBundleRes/effect/sharder/mb_dissolve_alphablend.shader
+- Assets/AssetBundleRes/effect/sharder/mb_uvrolladd_onetexculloff.shader
+- Assets/AssetBundleRes/effect/sharder/Mobile_Particle_AlphaBlend.shader
+- Assets/AssetBundleRes/effect/sharder/mb_uvrollalphablend_onetex.shader
+- Assets/AssetBundleRes/effect/sharder/UVRoll_add.shader
+- Assets/AssetBundleRes/effect/sharder/mb_uvrollalphablend_onetexculloff.shader
+Dependencies: []

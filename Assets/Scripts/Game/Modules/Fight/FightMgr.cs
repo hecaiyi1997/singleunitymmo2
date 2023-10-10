@@ -137,6 +137,7 @@ public class FightMgr
 
     private void HandleCastSkill(SprotoType.scene_skill_event_info skillEvent)
     {
+            Debug.Log("CastSkillCastSkillCastSkill");
         long uid = skillEvent.attacker_uid;
         Entity scene_entity = SceneMgr.Instance.GetSceneObject(uid);
         var isMainRole = RoleMgr.GetInstance().IsMainRoleEntity(scene_entity);

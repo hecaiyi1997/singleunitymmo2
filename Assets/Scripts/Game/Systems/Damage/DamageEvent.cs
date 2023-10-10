@@ -7,6 +7,9 @@ using Unity.Entities;
 
 public struct DamageEvent : IBufferElementData
 {
+    /*
+    IBufferElementData（以下简称BED）是一个接口，用来定义存储在DynamicBuffer中的类型。DynamicBuffer是一个类似数组的容器
+     */
     public static void AddEvent(DynamicBuffer<DamageEvent> damageBuffer, Entity instigator, float damage, Vector3 direction, float impulse)
     {
         DamageEvent e;

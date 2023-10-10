@@ -1,0 +1,120 @@
+ManifestFileVersion: 0
+CRC: 3559953495
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7147ca75b68a01c970486eec0d205653
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f668707739964ae3a1087564e276be3b
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 124
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/scene/login/texture/other/xms_chuangjue_01.jpg
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/fbx/CHUANGJUE_1_02.FBX
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/texture/chuangjue_map_img_tga_06.jpg
+- Assets/AssetBundleRes/scene/login/texture/other/xms_chuangjue_04.png
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/fbx/CHUANGJUE_1_03.FBX
+- Assets/AssetBundleRes/scene/login/animations/other_animations/camera_character_idle.anim
+- Assets/AssetBundleRes/scene/login/animations/other_animations/effect_character_creat_01_shu01.anim
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/fbx/move/chuangjue_1_liangbuhuacao001.FBX
+- Assets/AssetBundleRes/scene/login/models/xms_chuangjue_cong01.FBX
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/fbx/CHUANGJUE_1_18.FBX
+- Assets/AssetBundleRes/scene/login/materials/model_foot_120112010_huo03.mat
+- Assets/AssetBundleRes/scene/login/animations/other_animations/effect_character_creat_01_denglong01.anim
+- Assets/AssetBundleRes/scene/login/texture/other/xms_chuangjue_08.png
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/fbx/CHUANGJUE_1_15.FBX
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/texture/chuangjue_map_img_tga_05.jpg
+- Assets/AssetBundleRes/scene/login/materials/xms_chuangjue_cong01.mat
+- Assets/AssetBundleRes/scene/login/texture/wenli/wenli_0043.tga
+- Assets/AssetBundleRes/scene/login/animations/other_animations/xms_chuangjue_shuiche02.controller
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/fbx/CHUANGJUE_1_00.FBX
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/texture/Materials/chuangjue_map_img_mat_04.mat
+- Assets/AssetBundleRes/scene/login/texture/wuti/wuti_003.tga
+- Assets/AssetBundleRes/scene/login/texture/wuti/wuti_001.tga
+- Assets/AssetBundleRes/scene/login/models/xms_chuangjue_shuiche02.FBX
+- Assets/AssetBundleRes/scene/login/models/xms_chuangjue_shuiche01.FBX
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/fbx/CHUANGJUE_1_13.FBX
+- Assets/AssetBundleRes/scene/login/animations/chuangjue_1_anbucao001.anim
+- Assets/AssetBundleRes/scene/login/texture/other/xms_chuangjue_05.png
+- Assets/AssetBundleRes/scene/login/texture/other/xms_chuangjue_07.png
+- Assets/AssetBundleRes/scene/login/animations/other_animations/effect_character_creat_01_gua0.controller
+- Assets/AssetBundleRes/scene/login/texture/wuti/wuti_010.tga
+- Assets/AssetBundleRes/scene/login/animations/chuangjue_1_anbucao001.controller
+- Assets/AssetBundleRes/scene/login/texture/other/xms_chuangjue_06.png
+- Assets/AssetBundleRes/scene/login/texture/path/path_0429.tga
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/texture/chuangjue_map_img_tga_01.jpg
+- Assets/AssetBundleRes/scene/login/materials/model_foot_120112010_huo04.mat
+- Assets/AssetBundleRes/scene/login/animations/other_animations/effect_character_creat_01_gua0.anim
+- Assets/AssetBundleRes/scene/login/materials/ef_model_weapon_r_1102_liuguang02.mat
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/alphatexture/chuangjue_tga_06.tga
+- Assets/AssetBundleRes/scene/login/texture/other/xms_chuangjue_09.png
+- Assets/AssetBundleRes/scene/login/texture/glow/glow_0032.tga
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/fbx/CHUANGJUE_1_20.FBX
+- Assets/AssetBundleRes/scene/login/texture/other/xms_chuangjue_03.png
+- Assets/AssetBundleRes/scene/login/animations/other_animations/Camera-character_creat_show3_male.anim
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/scene_for_login.prefab
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/fbx/CHUANGJUE_1_31.FBX
+- Assets/AssetBundleRes/scene/login/materials/effect_xemlvup_glow01.mat
+- Assets/AssetBundleRes/scene/login/sharder/mb_uvrolladd_culloff.shader
+- Assets/AssetBundleRes/scene/login/texture/other/xms_chuangjue_02.png
+- Assets/AssetBundleRes/scene/login/animations/other_animations/xms_chuangjue_cong01.anim
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/fbx/move/chuangjue_1_anbuhuacao001.FBX
+- Assets/AssetBundleRes/scene/login/animations/other_animations/camera_create_role.controller
+- Assets/AssetBundleRes/scene/login/animations/other_animations/xms_chuangjue_shuiche02.anim
+- Assets/AssetBundleRes/scene/login/models/plane002.FBX
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/fbx/move/chuangjue_1_lingbucao001.FBX
+- Assets/AssetBundleRes/scene/login/texture/other/xms_chuangjue_10.png
+- Assets/AssetBundleRes/scene/login/texture/wuti/wuti_032.tga
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/texture/Materials/chuangjue_map_img_mat_01.mat
+- Assets/AssetBundleRes/scene/login/animations/other_animations/effect_character_creat_01_denglong01.controller
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/camera_for_create_role.prefab
+- Assets/AssetBundleRes/scene/login/animations/other_animations/xms_chuangjue_cong01.controller
+- Assets/AssetBundleRes/scene/login/animations/other_animations/effect_character_creat_01_shu01.controller
+- Assets/AssetBundleRes/scene/login/animations/other_animations/Camera-character_creat_show3_female.anim
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/texture/Materials/chuangjue_map_img_mat_03.mat
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/fbx/move/chuangjue_1_anbucao001.FBX
+- Assets/AssetBundleRes/scene/login/texture/glow/glow_0023.tga
+- Assets/AssetBundleRes/scene/login/materials/effect_xemlvup_lizi01.mat
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/map/fbx/CHUANGJUE_1_35.FBX
+- Assets/AssetBundleRes/scene/login/objs/other_effect/chuangjue/alphatexture/Materials/chuangjue_mat_06.mat
+Dependencies: []

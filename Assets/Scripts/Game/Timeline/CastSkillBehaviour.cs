@@ -7,11 +7,11 @@ using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
 using UnityMMO;
-
+using UnityMMO.Component;
 // A behaviour that is attached to a playable
 public class CastSkillBehaviour : PlayableBehaviour
 {
-    public Entity Owner;
+    public Entity Owner;//发出杀招人
     public EntityManager EntityMgr;
     private int SkillID;
     
@@ -35,10 +35,13 @@ public class CastSkillBehaviour : PlayableBehaviour
     // Called when the state of the playable is set to Play
     public override void OnBehaviourPlay(Playable playable, FrameData info)
     {
+        Debug.Log("isDead && isMainRole dis=====OnBehaviourPlay");
         var isMainRole = RoleMgr.GetInstance().IsMainRoleEntity(Owner);
+        var locoState = SceneMgr.Instance.EntityManager.GetComponentData<LocomotionState>(Owner);
         // Debug.Log("cast skill behav isMainRole :"+isMainRole.ToString());
         if (isMainRole)
         {
+            if (LocomotionState.State.Dead == locoState.LocoState) return;
             var trans = EntityMgr.GetComponentObject<Transform>(Owner);
             if (trans != null)
             {
@@ -52,6 +55,24 @@ public class CastSkillBehaviour : PlayableBehaviour
                 req.target_pos_z = (long)(trans.localPosition.z * GameConst.RealToLogic);
                 req.direction = (long)(trans.eulerAngles.y * GameConst.RealToLogic);
                 // Debug.Log("req.direction : "+req.direction+" skillID "+SkillID);
+                /**********************************************************************************************/
+                Dictionary<long, Entity> monsterdic = SceneMgr.Instance.GetSceneObjects(SceneObjectType.Monster);
+                foreach(var item in monsterdic)
+                {
+                    Entity e = item.Value;
+                    Vector3 monsterpos= SceneMgr.Instance.EntityManager.GetComponentObject<Transform>(e).localPosition;
+                    float dis=Vector3.Distance(trans.localPosition, monsterpos);
+                    
+                    if (dis < 10)
+                    {
+                        Debug.Log("isDead && isMainRole dis=====" + dis);
+                        var dynamicBuffer = SceneMgr.Instance.EntityManager.AddBuffer<DamageEvent>(e);
+                        dynamicBuffer.Add(new DamageEvent { instigator = e, damage=20, direction = Vector3.zero, impulse =0});
+                    }
+                }
+
+                /***********************************************************************************************/
+                /*
                 NetMsgDispatcher.GetInstance().SendMessage<Protocol.scene_cast_skill>(req, delegate(Sproto.SprotoTypeBase result){
                     SprotoType.scene_cast_skill.response ack = result as SprotoType.scene_cast_skill.response;
                     // Debug.Log("ack : "+(ack!=null).ToString());
@@ -78,6 +99,7 @@ public class CastSkillBehaviour : PlayableBehaviour
                     //     }
                     // }
                 });
+                */
             }
         }
     }

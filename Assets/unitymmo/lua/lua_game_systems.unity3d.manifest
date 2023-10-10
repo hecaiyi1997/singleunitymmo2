@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2287533708
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7317726f4933e61ae5350d737b0037eb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/Game/systems/aoi_system.lua.bytes
+- Assets/luatemp/Game/systems/movement_system.lua.bytes
+- Assets/luatemp/Game/systems/visual_system.lua.bytes
+- Assets/luatemp/Game/systems/animation_system.lua.bytes
+- Assets/luatemp/Game/systems/input_system.lua.bytes
+- Assets/luatemp/Game/systems/res_system.lua.bytes
+Dependencies: []

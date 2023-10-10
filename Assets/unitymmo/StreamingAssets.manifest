@@ -1,0 +1,280 @@
+ManifestFileVersion: 0
+CRC: 174788654
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: scene_common
+      Dependencies: {}
+    Info_1:
+      Name: scene_login
+      Dependencies: {}
+    Info_2:
+      Name: scene_scene_1001
+      Dependencies:
+        Dependency_0: scene_common
+    Info_3:
+      Name: scene_scene_2001
+      Dependencies: {}
+    Info_4:
+      Name: scene_newterain
+      Dependencies:
+        Dependency_0: scene_scene_1001
+    Info_5:
+      Name: lua/lua_bp.unity3d
+      Dependencies: {}
+    Info_6:
+      Name: lua/lua_common.unity3d
+      Dependencies: {}
+    Info_7:
+      Name: lua/lua_config.unity3d
+      Dependencies: {}
+    Info_8:
+      Name: lua/lua_ecs.unity3d
+      Dependencies: {}
+    Info_9:
+      Name: lua/lua_proto.unity3d
+      Dependencies: {}
+    Info_10:
+      Name: lua/lua_tools.unity3d
+      Dependencies: {}
+    Info_11:
+      Name: lua/lua_bp_common.unity3d
+      Dependencies: {}
+    Info_12:
+      Name: lua/lua_bp_src.unity3d
+      Dependencies: {}
+    Info_13:
+      Name: lua/lua_bp_tests.unity3d
+      Dependencies: {}
+    Info_14:
+      Name: lua/lua_bp_src_action.unity3d
+      Dependencies: {}
+    Info_15:
+      Name: lua/lua_common_ui.unity3d
+      Dependencies: {}
+    Info_16:
+      Name: lua/lua_common_unityengine.unity3d
+      Dependencies: {}
+    Info_17:
+      Name: lua/lua_common_util.unity3d
+      Dependencies: {}
+    Info_18:
+      Name: lua/lua_ecs_common.unity3d
+      Dependencies: {}
+    Info_19:
+      Name: lua/lua_ecs_src.unity3d
+      Dependencies: {}
+    Info_20:
+      Name: lua/lua_ecs_test.unity3d
+      Dependencies: {}
+    Info_21:
+      Name: lua/lua_game_bag.unity3d
+      Dependencies: {}
+    Info_22:
+      Name: lua/lua_game_chat.unity3d
+      Dependencies: {}
+    Info_23:
+      Name: lua/lua_game_common.unity3d
+      Dependencies: {}
+    Info_24:
+      Name: lua/lua_game_error.unity3d
+      Dependencies: {}
+    Info_25:
+      Name: lua/lua_game_gm.unity3d
+      Dependencies: {}
+    Info_26:
+      Name: lua/lua_game_login.unity3d
+      Dependencies: {}
+    Info_27:
+      Name: lua/lua_game_mainui.unity3d
+      Dependencies: {}
+    Info_28:
+      Name: lua/lua_game_scene.unity3d
+      Dependencies: {}
+    Info_29:
+      Name: lua/lua_game_systems.unity3d
+      Dependencies: {}
+    Info_30:
+      Name: lua/lua_game_task.unity3d
+      Dependencies: {}
+    Info_31:
+      Name: lua/lua_game_test.unity3d
+      Dependencies: {}
+    Info_32:
+      Name: lua/lua_game_common_action.unity3d
+      Dependencies: {}
+    Info_33:
+      Name: lua/lua_game_common_ui.unity3d
+      Dependencies: {}
+    Info_34:
+      Name: lua/lua.unity3d
+      Dependencies: {}
+    Info_35:
+      Name: effect_animations
+      Dependencies: {}
+    Info_36:
+      Name: effect_materials
+      Dependencies:
+        Dependency_0: scene_login
+        Dependency_1: effect_sharder
+        Dependency_2: effect_texture
+    Info_37:
+      Name: effect_models
+      Dependencies:
+        Dependency_0: effect_texture
+    Info_38:
+      Name: effect_objs
+      Dependencies:
+        Dependency_0: scene_login
+        Dependency_1: effect_animations
+        Dependency_2: effect_materials
+        Dependency_3: effect_models
+    Info_39:
+      Name: effect_projectors
+      Dependencies: {}
+    Info_40:
+      Name: effect_sharder
+      Dependencies: {}
+    Info_41:
+      Name: effect_texture
+      Dependencies: {}
+    Info_42:
+      Name: sound_role
+      Dependencies: {}
+    Info_43:
+      Name: role_action
+      Dependencies: {}
+    Info_44:
+      Name: role_body
+      Dependencies:
+        Dependency_0: effect_sharder
+        Dependency_1: role_action
+    Info_45:
+      Name: role_hair
+      Dependencies:
+        Dependency_0: effect_sharder
+    Info_46:
+      Name: role_prefab
+      Dependencies:
+        Dependency_0: effect_projectors
+    Info_47:
+      Name: role_timeline
+      Dependencies:
+        Dependency_0: effect_objs
+        Dependency_1: sound_role
+        Dependency_2: role_action
+    Info_48:
+      Name: npc_npc_3000
+      Dependencies: {}
+    Info_49:
+      Name: npc_npc_3001
+      Dependencies: {}
+    Info_50:
+      Name: npc_npc_3002
+      Dependencies: {}
+    Info_51:
+      Name: npc_prefab
+      Dependencies:
+        Dependency_0: effect_projectors
+    Info_52:
+      Name: monster_monster_2000
+      Dependencies: {}
+    Info_53:
+      Name: monster_monster_2001
+      Dependencies: {}
+    Info_54:
+      Name: monster_monster_2002
+      Dependencies: {}
+    Info_55:
+      Name: monster_monster_2003
+      Dependencies:
+        Dependency_0: effect_materials
+    Info_56:
+      Name: monster_monster_2004
+      Dependencies: {}
+    Info_57:
+      Name: monster_monster_2005
+      Dependencies: {}
+    Info_58:
+      Name: monster_prefab
+      Dependencies:
+        Dependency_0: effect_projectors
+    Info_59:
+      Name: monster_timeline
+      Dependencies:
+        Dependency_0: sound_role
+        Dependency_1: monster_monster_2000
+        Dependency_2: monster_monster_2001
+        Dependency_3: monster_monster_2002
+        Dependency_4: monster_monster_2003
+        Dependency_5: monster_monster_2004
+        Dependency_6: monster_monster_2005
+    Info_60:
+      Name: ui_bag
+      Dependencies:
+        Dependency_0: ui_common
+    Info_61:
+      Name: ui_bigimage
+      Dependencies: {}
+    Info_62:
+      Name: ui_chat
+      Dependencies:
+        Dependency_0: ui_common
+    Info_63:
+      Name: ui_common
+      Dependencies: {}
+    Info_64:
+      Name: ui_gm
+      Dependencies:
+        Dependency_0: ui_common
+    Info_65:
+      Name: ui_goods
+      Dependencies: {}
+    Info_66:
+      Name: ui_icon
+      Dependencies: {}
+    Info_67:
+      Name: ui_loading
+      Dependencies: {}
+    Info_68:
+      Name: ui_login
+      Dependencies:
+        Dependency_0: ui_bigimage
+        Dependency_1: ui_common
+    Info_69:
+      Name: ui_mainui
+      Dependencies:
+        Dependency_0: ui_icon
+    Info_70:
+      Name: ui_rolehead
+      Dependencies: {}
+    Info_71:
+      Name: ui_scene
+      Dependencies:
+        Dependency_0: ui_common
+    Info_72:
+      Name: ui_task
+      Dependencies:
+        Dependency_0: ui_common
+    Info_73:
+      Name: ui_test
+      Dependencies: {}
+    Info_74:
+      Name: splitprefabs_terrainprefabs
+      Dependencies:
+        Dependency_0: scene_newterain
+    Info_75:
+      Name: goods_materials
+      Dependencies:
+        Dependency_0: goods_textures
+    Info_76:
+      Name: goods_models
+      Dependencies: {}
+    Info_77:
+      Name: goods_prefabs
+      Dependencies:
+        Dependency_0: goods_materials
+        Dependency_1: goods_models
+    Info_78:
+      Name: goods_textures
+      Dependencies: {}

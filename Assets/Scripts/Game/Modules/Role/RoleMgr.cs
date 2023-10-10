@@ -46,20 +46,41 @@ public class RoleMgr
         // Debug.Log("add main role : "+uid+" "+new System.Diagnostics.StackTrace().ToString());
         roleGameOE.name = "MainRole_"+uid;
         roleGameOE.transform.SetParent(container);
-        roleGameOE.transform.localPosition = pos;
+        
+        Vector3 ps = new Vector3 { x = 965, y = 250, z = 1005 };
+        if (pos != Vector3.zero) ps = pos;
+        roleGameOE.transform.localPosition = ps;
         Entity role = roleGameOE.Entity;
-        RoleMgr.GetInstance().SetName(uid, name);
-        InitRole(roleGameOE, uid, typeID, pos, pos, curHp, maxHp, false);
+        SetName(uid, name);
+        Debug.Log("setName namenamename" + name+GetName(uid)+ roleGameOE.transform.localPosition.x+":"+roleGameOE.transform.localPosition.y+ ":" + roleGameOE.transform.localPosition.z);
+        var roleInfo = roleGameOE.GetComponent<RoleInfo>();
+        roleInfo.Name = name;
+        roleInfo.Career = career;
+        Debug.Log("init info.carrer=" + roleInfo.Career);
+
+        InitRole(roleGameOE, uid, typeID, ps, ps, curHp, maxHp, false);
+
         EntityManager.AddComponentData(role, new PosSynchInfo {LastUploadPos = float3.zero});
         EntityManager.AddComponent(role, ComponentType.ReadWrite<UserCommand>());
         var nameboardData = EntityManager.GetComponentObject<NameboardData>(role);
         nameboardData.SetName(name);
-        var roleInfo = roleGameOE.GetComponent<RoleInfo>();
-        roleInfo.Name = name;
-        roleInfo.Career = career;
         mainRoleGOE = roleGameOE;
         SceneMgr.Instance.ApplyMainRole(roleGameOE);
-        return role;
+        
+        UpdateLooksInfo(uid, new RoleLooksInfo
+            {
+                uid = uid,
+                career = (int)career,
+                body = 1,
+                hair = 1,
+                weapon = 1,
+                wing = 1,
+                horse = 1,
+                hp = (int)curHp,
+                maxHp = (int)maxHp,
+                name = name,
+            });
+            return role;
 	}
 
     public void UpdateMainRoleNavAgent()
@@ -77,7 +98,7 @@ public class RoleMgr
         return mainRoleGOE;
     }
 
-    public long GetMainRoleUID()
+        public long GetMainRoleUID()
     {
         if (mainRoleGOE != null)
         {
@@ -123,6 +144,7 @@ public class RoleMgr
         EntityManager.AddComponentData(role, new LooksInfo {CurState=LooksInfo.State.None, LooksEntity=Entity.Null});
         EntityManager.AddComponentData(role, new SceneObjectTypeData {Value=SceneObjectType.Role});
         EntityManager.AddComponentData(role, new TypeID {Value=typeID});
+        //EntityManager.AddComponentData(role, new UID { Value = uid });
         EntityManager.AddComponentData(role, new GroundInfo {GroundNormal=Vector3.zero, Altitude=0});
         EntityManager.AddComponentData(role, new JumpData{JumpCount=0});
         EntityManager.AddComponentData(role, ActionData.Empty);
@@ -141,8 +163,61 @@ public class RoleMgr
         
         MoveQuery rmq = EntityManager.GetComponentObject<MoveQuery>(role);
         rmq.Initialize(isNeedNavAgent);
-    }
+        Debug.Log("GameVariable.IsSingleMode=" + GameVariable.IsSingleMode);
+        if (GameVariable.IsSingleMode)
+        {
+                this.CreateLooks(role);
 
+        }
+        var dynamicBuffer = SceneMgr.Instance.EntityManager.AddBuffer<DamageEvent>(role);
+        dynamicBuffer.Add(new DamageEvent { instigator = role, damage = 0, direction = Vector3.zero, impulse = 0 });
+        }
+
+    private void CreateLooks(Entity ownerEntity)
+    {
+           
+            RoleInfo info = EntityManager.GetComponentObject<RoleInfo>(ownerEntity);
+            Debug.Log("info.carrer=" + info.Career);
+            var looksInfo = EntityManager.GetComponentData<LooksInfo>(ownerEntity);
+            int career = info.Career;
+            int body = 1;
+            int hair = 1;
+            // Debug.Log("body : "+body+" hair:"+hair);
+            string bodyPath = ResPath.GetRoleBodyResPath(career, body);
+            string hairPath = ResPath.GetRoleHairResPath(career, hair);
+            Debug.Log("SpawnRoleLooks bodyPath : "+bodyPath);
+            XLuaFramework.ResourceManager.GetInstance().LoadAsset<GameObject>(bodyPath, delegate (UnityEngine.Object[] objs) {
+                if (objs != null && objs.Length > 0)
+                {
+                    GameObject bodyObj = objs[0] as GameObject;
+                    GameObjectEntity bodyOE = m_GameWorld.Spawn<GameObjectEntity>(bodyObj);
+                    var parentTrans = EntityManager.GetComponentObject<Transform>(ownerEntity);
+                    //parentTrans.localPosition = new Vector3 { x = 965, y = 550, z = 1005 } ;
+                    bodyOE.transform.SetParent(parentTrans);
+                    bodyOE.transform.localPosition = Vector3.zero;
+                    bodyOE.transform.localRotation = Quaternion.identity;
+                    ECSHelper.UpdateNameboardHeight(ownerEntity, bodyOE.transform);
+                    LoadHair(hairPath, bodyOE.transform.Find("head"));
+                    // Debug.Log("load ok role model");
+                    looksInfo.CurState = LooksInfo.State.Loaded;
+                    looksInfo.LooksEntity = bodyOE.Entity;
+                    EntityManager.SetComponentData<LooksInfo>(ownerEntity, looksInfo);
+                }
+                else
+                {
+                    Debug.LogError("cannot fine file " + bodyPath);
+                }
+            });
+        }
+    void LoadHair(string hairPath, Transform parentNode)
+     {
+            XLuaFramework.ResourceManager.GetInstance().LoadPrefabGameObjectWithAction(hairPath, delegate (UnityEngine.Object obj) {
+                var hairObj = obj as GameObject;
+                hairObj.transform.SetParent(parentNode);
+                hairObj.transform.localPosition = Vector3.zero;
+                hairObj.transform.localRotation = Quaternion.identity;
+            });
+     }
     public string GetName(long uid)
     {
         string name = "";

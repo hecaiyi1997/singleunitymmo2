@@ -47,8 +47,9 @@ function UI.ItemListCreator:OnLoad()
 	self.last_unvisible_row = 0
 end
 
-local InitInfo = function ( self, info )
+local InitInfo = function ( self, info )--现在info.data_list是一个物品列表
 	self:HideAllItems()
+	print("#info.data_list=",#info.data_list)
 	if not info or not info.data_list or #info.data_list <= 0 then return false end
 
 	--item_width或item_height至少要有一个不为空
@@ -88,7 +89,7 @@ local InitInfo = function ( self, info )
 end
 
 --根据传入的配置和滚动容器大小判断显示的方式:垂直,水平,格子
-function UI.ItemListCreator:UpdateItems(info)
+function UI.ItemListCreator:UpdateItems(info)   --现在info.data_list是一个物品列表
 	local is_init_ok = InitInfo(self, info)
 	if not is_init_ok then return end
 	

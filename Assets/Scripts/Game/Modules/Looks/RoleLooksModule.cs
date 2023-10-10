@@ -120,7 +120,7 @@ public class HandleRoleLooksNetRequest : BaseComponentSystem
                     if (m_world.GetEntityManager().HasComponent<NameboardData>(owner))
                     {
                         var nameboardData = m_world.GetEntityManager().GetComponentObject<NameboardData>(owner);
-                        nameboardData.SetName(name);
+                        nameboardData.SetName(XLuaManager.Instance.userinfo.Get<string>("name"));
                     }
                     bool hasTrans = m_world.GetEntityManager().HasComponent<Transform>(owner);
                     if (hasTrans)
@@ -243,7 +243,7 @@ public class HandleRoleLooksSpawnRequests : BaseComponentSystem
             // Debug.Log("body : "+body+" hair:"+hair);
             string bodyPath = ResPath.GetRoleBodyResPath(career, body);
             string hairPath = ResPath.GetRoleHairResPath(career, hair);
-            // Debug.Log("SpawnRoleLooks bodyPath : "+bodyPath);
+            Debug.Log("SpawnRoleLooks bodyPath : "+bodyPath);
             XLuaFramework.ResourceManager.GetInstance().LoadAsset<GameObject>(bodyPath, delegate(UnityEngine.Object[] objs) {
                 if (objs!=null && objs.Length>0)
                 {

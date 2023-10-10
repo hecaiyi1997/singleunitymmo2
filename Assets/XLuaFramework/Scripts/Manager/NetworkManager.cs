@@ -47,6 +47,7 @@ namespace XLuaFramework {
         Action<byte[]> onReceiveLineCallBack = null;
         Action<byte[]> onReceiveMsgCallBack = null;
         Action<int,long> onApplyTalk = null;
+
         public Action<int,long> onApplyTalkExp
         {
             get

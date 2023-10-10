@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 1641377700
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 20b39831946af6eb28a19f3bc4ad268c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/bp/src/action/action_interval.lua.bytes
+- Assets/luatemp/bp/src/action/node_wrapper.lua.bytes
+Dependencies: []

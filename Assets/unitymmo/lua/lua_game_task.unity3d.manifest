@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 1560097519
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 24618cef969f822799cfdc6d211db949
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/Game/Task/TaskConst.lua.bytes
+- Assets/luatemp/Game/Task/TaskController.lua.bytes
+- Assets/luatemp/Game/Task/TaskModel.lua.bytes
+- Assets/luatemp/Game/Task/TalkDialogView.lua.bytes
+- Assets/luatemp/Game/Task/Taskserver.lua.bytes
+- Assets/luatemp/Game/Task/TaskDialogView.lua.bytes
+- Assets/luatemp/Game/Task/openwordsView.lua.bytes
+Dependencies: []

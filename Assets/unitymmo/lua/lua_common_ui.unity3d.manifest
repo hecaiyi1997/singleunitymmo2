@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1667050337
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 754b4f9a05fb118abed1dcb3665b5d3d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/Common/UI/UINode.lua.bytes
+- Assets/luatemp/Common/UI/UIHelper.lua.bytes
+- Assets/luatemp/Common/UI/Countdown.lua.bytes
+- Assets/luatemp/Common/UI/UILooksNode.lua.bytes
+- Assets/luatemp/Common/UI/UIComponent.lua.bytes
+- Assets/luatemp/Common/UI/ItemListCreator.lua.bytes
+Dependencies: []

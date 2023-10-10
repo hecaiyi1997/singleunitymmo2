@@ -1,0 +1,56 @@
+ManifestFileVersion: 0
+CRC: 3513185326
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d5a59b14a1d92a9796e16f613de7b31c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f2327bf7865e9be1411a219bfe3df009
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/monster/monster_2005/action/model_clothe_406101@attack.FBX
+- Assets/AssetBundleRes/monster/monster_2005/action/model_clothe_406101@attack2.FBX
+- Assets/AssetBundleRes/monster/monster_2005/model_clothe_2005.FBX
+- Assets/AssetBundleRes/monster/monster_2005/action/model_clothe_406101@run.FBX
+- Assets/AssetBundleRes/monster/monster_2005/Materials/model_clothe_406101.mat
+- Assets/AssetBundleRes/monster/monster_2005/action/model_clothe_406101@idle.FBX
+- Assets/AssetBundleRes/monster/monster_2005/action/action.controller
+- Assets/AssetBundleRes/monster/monster_2005/model_clothe_2005.jpg
+- Assets/AssetBundleRes/monster/monster_2005/action/model_clothe_406101@death.FBX
+- Assets/AssetBundleRes/monster/monster_2005/action/model_clothe_406101@casual.FBX
+- Assets/AssetBundleRes/monster/monster_2005/action/model_clothe_406101@behit.FBX
+- Assets/AssetBundleRes/monster/monster_2005/model_clothe_2005.prefab
+- Assets/AssetBundleRes/monster/monster_2005/Materials/model_clothe_2005.mat
+- Assets/AssetBundleRes/monster/monster_2005/action/model_clothe_406101@dizzy.FBX
+Dependencies: []

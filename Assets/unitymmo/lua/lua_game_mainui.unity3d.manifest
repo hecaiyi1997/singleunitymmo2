@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 3039272153
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 82991769ffc7ad9b7dfa3732cfc2d11e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/Game/MainUI/MainUIMenuIcon.lua.bytes
+- Assets/luatemp/Game/MainUI/MainUITaskView.lua.bytes
+- Assets/luatemp/Game/MainUI/MainUIActIconView.lua.bytes
+- Assets/luatemp/Game/MainUI/MainUISmallChatView.lua.bytes
+- Assets/luatemp/Game/MainUI/MainUIModel.lua.bytes
+- Assets/luatemp/Game/MainUI/MainUITaskTeamBaseView.lua.bytes
+- Assets/luatemp/Game/MainUI/MainUIJoystickView.lua.bytes
+- Assets/luatemp/Game/MainUI/MainUIRoleHeadView.lua.bytes
+- Assets/luatemp/Game/MainUI/MainUIMenuView.lua.bytes
+- Assets/luatemp/Game/MainUI/MainUISkillBtnView.lua.bytes
+- Assets/luatemp/Game/MainUI/MainUIController.lua.bytes
+- Assets/luatemp/Game/MainUI/MainUIConst.lua.bytes
+Dependencies: []

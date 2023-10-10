@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1549079857
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f358ce55191a6f3d85d58434c4c7cbfe
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/Proto/proto_500_chat.lua.bytes
+- Assets/luatemp/Proto/proto_1_account.lua.bytes
+- Assets/luatemp/Proto/proto_100_scene.lua.bytes
+- Assets/luatemp/Proto/proto_200_task.lua.bytes
+- Assets/luatemp/Proto/proto_400_gm.lua.bytes
+- Assets/luatemp/Proto/proto_300_bag.lua.bytes
+Dependencies: []

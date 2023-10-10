@@ -17,33 +17,58 @@ function BagModel:Reset(  )
 end
 
 function BagModel:GetFullGoodsList( pos )
-	return self.fullGoodsList[pos]
+	local dd=self.fullGoodsList[pos]   --self.fullGoodsList[bagInfo.pos] = fullGoodsList  --这是背包里面的所有物品，一个物品是一个table
+	for i,v in pairs(dd) do
+		print(i,"BagModel:GetFullGoodsList",v)
+		for n,m in pairs(v) do --每一个物品一个table
+			print(n,"vvvvvvvvBagModel:GetFullGoodsListvvvvv",m)
+		end
+	end
+	return dd 
 end
 
 function BagModel:GetBagInfo( pos )
 	return self.bagInfo[pos]
 end
 
-function BagModel:SetBagInfo( bagInfo )
+function BagModel:SetBagInfo( bagInfo ) ---bagInfo={cellNum=200, pos=pos,goodsList = goodsList},而goodsList只是一个列表{table，table，}
 	if not bagInfo or not bagInfo.pos then return end
 	
 	self.bagInfo[bagInfo.pos] = bagInfo
-	for i,v in ipairs(bagInfo.goodsList) do
-		v.cfg = ConfigMgr:GetGoodsCfg(v.typeID)
-	end
-	local fullGoodsList = {}
-	self.fullGoodsList[bagInfo.pos] = fullGoodsList
-	local goodsIndex = 1
-	for i=1,BagConst.MaxCell do
-		local goods = bagInfo.goodsList[goodsIndex]
-		if goods and goods.cell == i then
-			goodsIndex = goodsIndex + 1
-		else
-			goods = false
+
+	for i,v in pairs(bagInfo.goodsList) do
+		print(i,"BagModel:SetBagInfo",v)
+		for n,m in pairs(v) do --每一个物品一个table
+			print(n,"vvvvvvvvBagModel:SetBagInfovvvvv",m)
 		end
-		fullGoodsList[i] = goods
 	end
-	self:Fire(BagConst.Event.BagChange, bagInfo.pos)
+	self.fullGoodsList[bagInfo.pos] =bagInfo.goodsList
+
+	--for i,v in pairs(self.fullGoodsList[bagInfo.pos]) do
+		--print(i,"BagModel:GetFullGoodsList2222",v)
+		--for n,m in pairs(v) do --每一个物品一个table
+			--print(n,"vvvvvvvvBagModel:GetFullGoodsListvvvvv222",m)
+		--end
+	--end
+	self:GetFullGoodsList( bagInfo.pos )
+--	print("BagModel:SetBagInfo",bagInfo.pos)
+--	local fullGoodsList = {}
+--	self.fullGoodsList[bagInfo.pos] = fullGoodsList  --fullGoodsList这是背包里面的所有物品，一个物品是一个table
+--	local goodsIndex = 1
+
+--	for i=0,#bagInfo.goodsList do
+--		local goods = bagInfo.goodsList[i+1];--他就是一个good
+--		if goods then
+--			goodsIndex = goodsIndex + 1
+--		else
+--			goods = false
+--		end
+--		fullGoodsList[goodsIndex-1] = goods--让第一个有物品
+--	end
+	
+	print("BagModel:Fire",BagConst.Event.BagChange)
+	--self:Fire(BagConst.Event.BagChange, bagInfo.pos)
+	GlobalEventSystem:Fire(BagConst.Event.BagChange,bagInfo)
 end
 
 function BagModel:RemoveGoods( uid, pos )

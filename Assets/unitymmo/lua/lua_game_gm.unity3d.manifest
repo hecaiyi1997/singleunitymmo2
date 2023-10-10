@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3857063990
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 09407fe0608bc6901ce94645d075425d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/Game/GM/GMController.lua.bytes
+- Assets/luatemp/Game/GM/GMView.lua.bytes
+- Assets/luatemp/Game/GM/GMConst.lua.bytes
+- Assets/luatemp/Game/GM/gm_client_func.lua.bytes
+- Assets/luatemp/Game/GM/GMSettingView.lua.bytes
+- Assets/luatemp/Game/GM/GMModel.lua.bytes
+Dependencies: []

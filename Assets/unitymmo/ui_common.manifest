@@ -1,0 +1,152 @@
+ManifestFileVersion: 0
+CRC: 1631570343
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c753abcf2095b4feb2f5176e86e54f54
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7465510d493e69dbf8ecf61b09247fbe
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 84a92b25f83d49b9bc132d206b370281, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c216ff46cbe715647a2e50a191424f49, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0c8577abac7683e47b09b9e86b882944, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6b25524d991c63143a2e99152bee2ca6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 07994bfe8b0e4adb97d706de5dea48d5, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/ui/common/com_btn_7.png
+- Assets/AssetBundleRes/ui/common/com_title_bg_1.png
+- Assets/AssetBundleRes/ui/common/icon_vip4.png
+- Assets/AssetBundleRes/ui/common/com_btn_1.png
+- Assets/AssetBundleRes/ui/common/com_title_bg_2.png
+- Assets/AssetBundleRes/ui/common/AlertView.prefab
+- Assets/AssetBundleRes/ui/common/Message.prefab
+- Assets/AssetBundleRes/ui/common/com_icon_bg_1.png
+- Assets/AssetBundleRes/ui/common/icon_vip2.png
+- Assets/AssetBundleRes/ui/common/icon_vip7.png
+- Assets/AssetBundleRes/ui/common/com_select.png
+- Assets/AssetBundleRes/ui/common/com_tab_sel.png
+- Assets/AssetBundleRes/ui/common/icon_vip14.png
+- Assets/AssetBundleRes/ui/common/GoodsInfoView.prefab
+- Assets/AssetBundleRes/ui/common/Background.prefab
+- Assets/AssetBundleRes/ui/common/com_icon_bg_4.png
+- Assets/AssetBundleRes/ui/common/Button2.prefab
+- Assets/AssetBundleRes/ui/common/com_btn_close.png
+- Assets/AssetBundleRes/ui/common/com_txt_bg_1.png
+- Assets/AssetBundleRes/ui/common/com_bg_2.png
+- Assets/AssetBundleRes/ui/common/ui_loadingcircle.png
+- Assets/AssetBundleRes/ui/common/UILooksNode.prefab
+- Assets/AssetBundleRes/ui/common/Button3.prefab
+- Assets/AssetBundleRes/ui/common/icon_vip13.png
+- Assets/AssetBundleRes/ui/common/icon_vip3.png
+- Assets/AssetBundleRes/ui/common/icon_vip12.png
+- Assets/AssetBundleRes/ui/common/com_icon_bg_2.png
+- Assets/AssetBundleRes/ui/common/com_tab_nor.png
+- Assets/AssetBundleRes/ui/common/com_blood_red.png
+- Assets/AssetBundleRes/ui/common/com_blood_blue.png
+- Assets/AssetBundleRes/ui/common/com_btn_8.png
+- Assets/AssetBundleRes/ui/common/com_icon_bg_5.png
+- Assets/AssetBundleRes/ui/common/TextNormal.prefab
+- Assets/AssetBundleRes/ui/common/Nameboard.prefab
+- Assets/AssetBundleRes/ui/common/com_line_1.png
+- Assets/AssetBundleRes/ui/common/TextSpecial.prefab
+- Assets/AssetBundleRes/ui/common/com_btn_close_4.png
+- Assets/AssetBundleRes/ui/common/com_btn_2.png
+- Assets/AssetBundleRes/ui/common/com_icon_bg_3.png
+- Assets/AssetBundleRes/ui/common/com_btn_5.png
+- Assets/AssetBundleRes/ui/common/com_default_win_bg.png
+- Assets/AssetBundleRes/ui/common/icon_vip1.png
+- Assets/AssetBundleRes/ui/common/com_title_bg_4.png
+- Assets/AssetBundleRes/ui/common/Button1.prefab
+- Assets/AssetBundleRes/ui/common/com_icon_bg_0.png
+- Assets/AssetBundleRes/ui/common/ui_font_tishi.png
+- Assets/AssetBundleRes/ui/common/icon_vip10.png
+- Assets/AssetBundleRes/ui/common/icon_vip11.png
+- Assets/AssetBundleRes/ui/common/FightFlyWord.prefab
+- Assets/AssetBundleRes/ui/common/com_btn_4.png
+- Assets/AssetBundleRes/ui/common/window_bg_1.png
+- Assets/AssetBundleRes/ui/common/WindowBig.prefab
+- Assets/AssetBundleRes/ui/common/icon_vip9.png
+- Assets/AssetBundleRes/ui/common/com_blood_green.png
+- Assets/AssetBundleRes/ui/common/com_blood_bg.png
+- Assets/AssetBundleRes/ui/common/com_btn_3.png
+- Assets/AssetBundleRes/ui/common/icon_vip6.png
+- Assets/AssetBundleRes/ui/common/com_btn_close_3.png
+- Assets/AssetBundleRes/ui/common/com_title_bg_3.png
+- Assets/AssetBundleRes/ui/common/GoodsItem.prefab
+- Assets/AssetBundleRes/ui/common/icon_vip0.png
+- Assets/AssetBundleRes/ui/common/ui_mask_bg.png
+- Assets/AssetBundleRes/ui/common/EmptyContainer.prefab
+- Assets/AssetBundleRes/ui/common/icon_vip15.png
+- Assets/AssetBundleRes/ui/common/icon_vip8.png
+- Assets/AssetBundleRes/ui/common/com_tab_line_bg.png
+- Assets/AssetBundleRes/ui/common/icon_vip5.png
+- Assets/AssetBundleRes/ui/common/com_btn_6.png
+- Assets/AssetBundleRes/ui/common/window_gray_bg_1.png
+- Assets/AssetBundleRes/ui/common/com_btn_close_2.png
+- Assets/AssetBundleRes/ui/common/common_empty.png
+- Assets/AssetBundleRes/ui/common/WindowNoTab.prefab
+Dependencies: []

@@ -1,0 +1,130 @@
+ManifestFileVersion: 0
+CRC: 862183286
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3572d665714eceda77f774f7779f8a9c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 97f67fb044d3234a8abd4dde8fcfb675
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 96
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_baodian_002.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_005_2.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_skill_nan_08_shandian.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_006.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_normal atk01_007.prefab
+- Assets/AssetBundleRes/effect/objs/scene_effect/FX_tiaoyue01.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_001.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_004_1.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_baodian_001.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_010.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_skill_nan_08_chibang_01.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_baodian_003.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_005.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_007.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_normal atk01_002.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_009.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_baodian_001.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_normal atk01_008.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_003.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_004_3.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_007_2.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_skill_nan_08_chibang_02.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_008_02.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_normal atk01_002.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_015.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_016.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_011_2.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill014_02.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_004_2.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_normal atk01_004.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_baodian_002.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_007_2.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_008_01.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_002.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_normal atk01_004.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_002.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_011.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_011.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_baodian_003.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_008_1.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_004_2.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_normal atk01_008.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_normal atk01_005.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_015.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_normal atk01_003.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_normal atk01_005.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_016.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_normal atk01_006.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_017.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_009.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_008_2.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_001.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_006_2.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_011_2.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill013.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_normal atk01_007.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill014.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_005.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_jump3_001.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_004_1.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_normal atk01_003.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_007.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_normal atk01_001.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill014.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_012.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill013_02.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_012.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_003.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill_006_2.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_jump4_001.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_jump3_01.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_jump4_01.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_skill013.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_004_3.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/female/effect_female_normal atk01_001.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_017.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_skill_006.prefab
+- Assets/AssetBundleRes/effect/objs/skills_effect/male/effect_male_normal atk01_006.prefab
+Dependencies:
+- D:/Users/UnityMMO-farmework/StreamingAssets/effect_animations
+- D:/Users/UnityMMO-farmework/StreamingAssets/effect_materials
+- D:/Users/UnityMMO-farmework/StreamingAssets/effect_models
+- D:/Users/UnityMMO-farmework/StreamingAssets/scene_login

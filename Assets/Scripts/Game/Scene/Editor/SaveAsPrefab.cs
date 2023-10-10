@@ -7,7 +7,7 @@ class SaveAsPrefab
     [MenuItem("Terrain/Save SelectObjs As Prefab")]
     private static void OnClickSaveAsPrefab()
     {
-        string save_path = "Assets/Temp/";
+        string save_path = "Assets/AssetBundleRes/SplitPrefabs/";
         if (!Directory.Exists(save_path))
             Directory.CreateDirectory(save_path);
 

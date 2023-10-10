@@ -225,6 +225,7 @@ end
 --关闭界面时销毁该节点
 function UINode:AutoDestroy( deleteNode )
 	self.autoDestroyNodes = self.autoDestroyNodes or {}
+	
 	table.insert(self.autoDestroyNodes, deleteNode)
 end
 

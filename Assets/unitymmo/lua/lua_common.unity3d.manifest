@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 2862431960
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7fad0b0ca665eeb4af20d22a815612cd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/luatemp/Common/TimerManager.lua.bytes
+- Assets/luatemp/Common/EventSystem.lua.bytes
+- Assets/luatemp/Common/GlobalEventSystem.lua.bytes
+- Assets/luatemp/Common/Messenger.lua.bytes
+- Assets/luatemp/Common/BaseClass.lua.bytes
+- Assets/luatemp/Common/class.lua.bytes
+- Assets/luatemp/Common/UpdateManager.lua.bytes
+Dependencies: []

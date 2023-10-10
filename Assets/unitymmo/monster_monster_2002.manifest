@@ -1,0 +1,55 @@
+ManifestFileVersion: 0
+CRC: 3202191861
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d7a5a9c1760f550b073c8ad34c75299b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f2327bf7865e9be1411a219bfe3df009
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/monster/monster_2002/action/model_clothe_10050103@behit.FBX
+- Assets/AssetBundleRes/monster/monster_2002/action/model_clothe_10050103@casual.FBX
+- Assets/AssetBundleRes/monster/monster_2002/action/model_clothe_10050103@dizzy.FBX
+- Assets/AssetBundleRes/monster/monster_2002/action/action.controller
+- Assets/AssetBundleRes/monster/monster_2002/action/model_clothe_10050103@run.FBX
+- Assets/AssetBundleRes/monster/monster_2002/model_clothe_2002.prefab
+- Assets/AssetBundleRes/monster/monster_2002/action/model_clothe_10050103@death.FBX
+- Assets/AssetBundleRes/monster/monster_2002/model_clothe_2002.jpg
+- Assets/AssetBundleRes/monster/monster_2002/action/model_clothe_10050103@attack.FBX
+- Assets/AssetBundleRes/monster/monster_2002/Materials/model_clothe_2002.mat
+- Assets/AssetBundleRes/monster/monster_2002/model_clothe_2002.FBX
+- Assets/AssetBundleRes/monster/monster_2002/action/model_clothe_10050103@idle.FBX
+- Assets/AssetBundleRes/monster/monster_2002/action/model_clothe_10050103@attack2.FBX
+Dependencies: []

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Unity.Entities;
 using UnityEngine;
+using UnityMMO.Component;
 
 namespace UnityMMO
 {
@@ -31,12 +32,14 @@ public class AutoFight : MonoBehaviour
 
     private void Update() 
     {
-        // Debug.Log("mainRoleMoveQuery.IsAutoFinding : "+mainRoleMoveQuery.IsAutoFinding+" lastTime:"+lastAttackTime+" target:"+(target!=Entity.Null));
-        if (mainRoleMoveQuery.IsAutoFinding || mainRoleMoveQuery.navAgent.pathPending || !mainRoleMoveQuery.navAgent.isStopped)
+            // Debug.Log("mainRoleMoveQuery.IsAutoFinding : "+mainRoleMoveQuery.IsAutoFinding+" lastTime:"+lastAttackTime+" target:"+(target!=Entity.Null));
+        var State = SceneMgr.Instance.EntityManager.GetComponentData<LocomotionState>(mainRoleGOE.Entity);
+        if (mainRoleMoveQuery.IsAutoFinding || mainRoleMoveQuery.navAgent.pathPending || !mainRoleMoveQuery.navAgent.isStopped || State.LocoState== LocomotionState.State.Dead)
             return;
         if (Time.time - lastAttackTime < attackInterval)
             return;
-        if (target == Entity.Null)
+        var locoState = SceneMgr.Instance.EntityManager.GetComponentData<LocomotionState>(target);
+        if (target == Entity.Null && locoState.LocoState != LocomotionState.State.Dead)
         {
             FindTarget();
         }
@@ -48,6 +51,7 @@ public class AutoFight : MonoBehaviour
 
     private void FindTarget()
     {
+        Debug.Log("FindTarget=====");
         Entity nearestMon = Entity.Null;
         float minDis = float.MaxValue;
         //find the nearest monster
@@ -70,6 +74,7 @@ public class AutoFight : MonoBehaviour
 
     private void AttackTarget()
     {
+        Debug.Log("isDead && isMainRole AttackTarget");
         var isExist = SceneMgr.Instance.EntityManager.Exists(target);
         if (!isExist)
         {

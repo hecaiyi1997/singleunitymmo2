@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 1108559790
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2f9c32bc8f5be98e573319a09c2b1efc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cc27a7c2b7aeda57fe404097db2213c0
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundleRes/Goods/Materials/Bottle_green.mat
+- Assets/AssetBundleRes/Goods/Materials/Stars_particles.mat
+- Assets/AssetBundleRes/Goods/Materials/Dust_particles.mat
+- Assets/AssetBundleRes/Goods/Materials/Coin.mat
+- Assets/AssetBundleRes/Goods/Materials/Bottle_red.mat
+- Assets/AssetBundleRes/Goods/Materials/Bottle_blue.mat
+- Assets/AssetBundleRes/Goods/Materials/Box_Of_Pandora.mat
+- Assets/AssetBundleRes/Goods/Materials/Glow_particles.mat
+Dependencies:
+- D:/Users/UnityMMO-farmework/StreamingAssets/goods_textures
